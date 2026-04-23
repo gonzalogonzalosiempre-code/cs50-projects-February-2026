@@ -14,7 +14,9 @@ int main(void)
         break;
     }
 }
-
-
+for (int e = 0; e < i; e++)
+{
+    printf("hola\n");
+}
 }
 
