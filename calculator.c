@@ -16,5 +16,8 @@ int main(void)
     return;
   }
   char operador = get_char("Digame su operador +, - o *\n");
-     if (operador = )
+     if (operador == int )
+     {
+        printf("No es un operador ")
+     }
 }
