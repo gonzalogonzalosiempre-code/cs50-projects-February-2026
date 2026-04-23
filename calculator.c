@@ -9,12 +9,15 @@ int main(void)
     printf("Introduzca denuevo ");
     return 1;
   }
-  int e = get_int("introduzca su segundo numero ");
-  if (e < 0)
-  
+  do
   {
-    printf("Introduzca denuevo ");
-    return 1;
+    int e = get_int("introduzca su segundo numero ");
+    if(e < 0){
+        printf("Incorrecto Introduzca un numero diferente ");
+    }
+  }
+  while(e < 0);
+
   }
   char operador = get_char("Digame su operador +, - o *\n");
      if (operador == '+')
