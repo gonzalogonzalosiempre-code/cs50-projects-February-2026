@@ -7,8 +7,12 @@ int main(void)
     while(true)
 {
     i = get_int("Numero de veces ");
-    if 
-
+    if (i < 0){
+     continue;
+    }
+    else {
+        break;
+    }
 }
 
 }
