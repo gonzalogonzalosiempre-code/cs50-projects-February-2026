@@ -2,7 +2,8 @@
 #include <cs50.h>
 
 int main(void)
-int i;
+{
+    int i;
   do
   {
     i = get_int("introduzca su segundo numero ");
@@ -13,6 +14,7 @@ int i;
   while(i < 0);
 
   int e;
+
   do
   {
     e = get_int("introduzca su segundo numero ");
@@ -22,7 +24,6 @@ int i;
   }
   while(e < 0);
 
-  }
   char operador = get_char("Digame su operador +, - o *\n");
      if (operador == '+')
      {
@@ -37,3 +38,5 @@ int i;
         printf("su resultado es %i\n", i * e);
      }
 }
+
+
