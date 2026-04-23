@@ -4,6 +4,6 @@
 int main(void)
 {
   string respueta = get_string("Su Nombre es? ");
-  printf("Hola %s\n", respueta, Como estas?");
+  printf("Hola %s\n", respueta, "Como estas?");
 }
 
