@@ -16,13 +16,11 @@ int main(void)
     return;
   }
   char operador = get_char("Digame su operador +, - o *\n");
-     if (operador == int )
-     scanf(" %c", &operador);
      if (operador == '+')
      {
         printf("su resultado es %i + %i\n", i, e);
      }
-     else if (operador == '-');
+     else if (operador == '-')
      {
     printf("su resultado es %i - %i\n", i, e);
      }
