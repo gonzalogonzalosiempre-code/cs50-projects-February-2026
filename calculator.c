@@ -10,10 +10,11 @@ int main(void)
     return;
   }
   int e = get_int("introduzca su segundo numero ");
-  if (i < 0)
+  if (e < 0)
   {
     printf("Introduzca denuevo ");
     return;
   }
-  int operador = get
+  int operador = get_int("Tipo de operador ");
+  if (operador == )
 }
