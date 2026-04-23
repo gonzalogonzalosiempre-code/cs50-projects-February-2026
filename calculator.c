@@ -22,8 +22,12 @@ int main(void)
      {
         printf("su resultado es %i + %i\n", i, e);
      }
-     if (operador == '-');
-     printf("su resultado es %i - %i\n", i, e);
-
-
+     else if (operador == '-');
+     {
+    printf("su resultado es %i - %i\n", i, e);
+     }
+     else
+     {
+        printf("su resultado es %i * %i\n", i, e);
+     }
 }
