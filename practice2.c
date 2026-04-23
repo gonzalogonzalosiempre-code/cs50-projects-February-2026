@@ -3,11 +3,12 @@
 
 int main(void)
 {
-  int i = get_int("Numero de veces ");
-while(i < 0)
+    int i;
+    while(true)
 {
- printf("meow\n");
-  i++;
+    i = get_int("Numero de veces ");
+    if 
+
 }
 
 }
