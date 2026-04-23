@@ -15,6 +15,6 @@ int main(void)
     printf("Introduzca denuevo ");
     return;
   }
-  int operador = get_int("Tipo de operador ");
-  if (operador == )
+  char operador = get_char("Digame su operador +, - o *\n");
+     if (operador = )
 }
