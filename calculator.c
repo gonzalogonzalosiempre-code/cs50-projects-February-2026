@@ -11,6 +11,7 @@ int main(void)
   }
   int e = get_int("introduzca su segundo numero ");
   if (e < 0)
+  
   {
     printf("Introduzca denuevo ");
     return 1;
