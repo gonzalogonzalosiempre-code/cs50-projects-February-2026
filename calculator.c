@@ -18,8 +18,12 @@ int main(void)
   char operador = get_char("Digame su operador +, - o *\n");
      if (operador == int )
      scanf(" %c", &operador);
-     if (operador == '+' || operador == '-' || operador == '*')
+     if (operador == '+')
      {
+        printf("su resultado es %i + %i\n", i, e);
      }
+     if (operador == '-');
+     printf("su resultado es %i - %i\n", i, e);
+
 
 }
