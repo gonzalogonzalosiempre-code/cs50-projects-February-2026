@@ -2,16 +2,20 @@
 #include <cs50.h>
 
 int main(void)
-{
-  int i = get_int("introduzca su primer numero ");
-  if (i < 0)
-  {
-    printf("Introduzca denuevo ");
-    return 1;
-  }
+int i;
   do
   {
-    int e = get_int("introduzca su segundo numero ");
+    i = get_int("introduzca su segundo numero ");
+    if(i < 0){
+        printf("Incorrecto Introduzca un numero diferente ");
+    }
+  }
+  while(i < 0);
+
+  int e;
+  do
+  {
+    e = get_int("introduzca su segundo numero ");
     if(e < 0){
         printf("Incorrecto Introduzca un numero diferente ");
     }
