@@ -3,7 +3,7 @@
 
 int main(void)
 {
-  int i = 0
+  int i = get_int("Numero de veces ");
 while(i < 0)
 {
  printf("meow\n");
