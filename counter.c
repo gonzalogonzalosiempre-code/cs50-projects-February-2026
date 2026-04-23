@@ -1,12 +1,11 @@
 #include <stdio.h>
+#include <cs50.h>
 
 int main(void)
 {
-    int i = 0;
-    while (i < 3)
-    {
-        printf("cat\n");
-        i++;
-    }
+   int i = get_int("Cual es i? ");
+   for (i = 0; i < 3; i++) {
+    printf("hola\n");
+   }
 }
 
