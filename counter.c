@@ -4,7 +4,7 @@
 int main(void)
 {
    int i = get_int("Cual es i? ");
-   for (i = 0; i < 3; i++) {
+   for (i = 0; i < 0; i--) {
     printf("hola\n");
    }
 }
