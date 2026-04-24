@@ -9,6 +9,7 @@ int main(void)
     {
       for ( int e = 0; j < 5; ++e)
       {
+        while(e== 5)
         
       }
        printf("\n");
