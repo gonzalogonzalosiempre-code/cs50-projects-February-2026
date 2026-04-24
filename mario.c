@@ -10,7 +10,12 @@ int main(void)
     {
       for (int i = 0; i < 5; ++i)
     {
+    do
+    {
+     i += 1;
      printf("#");
+    }
+    while (i > 5);
     }
     printf("\n");
     }
