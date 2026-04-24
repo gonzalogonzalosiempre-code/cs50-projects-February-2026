@@ -8,8 +8,9 @@ int main(void)
     for ( int j = 0; j < NumeroAltura; ++j)
     {
       int e = 0;
-      for (; e < 5; ++e)
+      while(e < 5)
       {
+        e += 1;
         printf("#");
       }
        printf("\n");
