@@ -24,7 +24,7 @@ int main(void)
  }
  void Resultado(int NumeroAltura)
  {
-     for ( int j = 1; j <= NumeroAltura; ++j)
+     for ( int j = 0; j <= NumeroAltura; ++j)
     {
     //Suma en 1 el numero del primer bucle es decir, el primer bucle crea 1 linea, el bucle que empieza en 0 le suma se suma 1 para llegar al valor del primer bucle por consiguiente
     //le pedimos que imprima # el numero de veces de i y asi por cada linea creada imprime tambien #
