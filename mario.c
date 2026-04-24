@@ -15,8 +15,8 @@ int main(void)
        printf("#");
        e += 1;
       }
-      while(e == 5);
       }
+      while(e == 5);
        printf("\n");
     }
 }
