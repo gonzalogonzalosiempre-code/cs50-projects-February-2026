@@ -8,15 +8,10 @@ int main(void)
     for ( int j = 0; j < NumeroAltura; ++j)
     {
       int e = 0;
-      do
-      {
       for (; e < 5; ++e)
       {
-       printf("#");
-       e += 1;
+        printf("#");
       }
-      }
-      while(e == 5);
        printf("\n");
     }
 }
