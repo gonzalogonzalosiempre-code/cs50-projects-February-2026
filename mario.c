@@ -7,12 +7,15 @@ int main(void)
     int NumeroAltura = get_int("Que altura tendra la piramide? ");
     for ( int j = 0; j < NumeroAltura; ++j)
     {
-      for ( int e = 0; j < 5; ++e)
+      int e = 0;
+      do
       {
-        while(e== 5)
-        {
-            printf
-        }
+      for ( e == 0; j < 1; ++e)
+      {
+       printf ("#");
+       e += 1;
+      }
+      while(e == 5);
       }
        printf("\n");
     }
