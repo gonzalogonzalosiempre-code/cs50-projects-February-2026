@@ -10,7 +10,7 @@ int main(void)
       int e = 0;
       do
       {
-      for ( e ; e < 1; ++e)
+      for (; e < 5; ++e)
       {
        printf("#");
        e += 1;
