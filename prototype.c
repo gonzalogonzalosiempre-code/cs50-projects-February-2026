@@ -4,7 +4,7 @@
 int main(void)
 {
     int Altura = get_int("Ingrese la Altura deseada? ");
-    for (int i = 1; i <= Altura; ++i)
+    for (int i = 0; i <= Altura; ++i)
     {
      for (int e = 1; e <= i; ++e)
      {
