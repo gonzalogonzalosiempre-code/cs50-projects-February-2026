@@ -3,9 +3,15 @@
 
 int main(void)
 {
-    for (int i = 0; i < 5; ++i)
+    //Columnas
+    int NumeroAltura = get_int("Que altura tendra la piramide? ");
+    for (int j = 0; j < NumeroAltura; ++j)
+    //Anchura
+    {
+      for (int i = 0; i < 5; ++i)
     {
      printf("#");
     }
     printf("\n");
+    }
 }
