@@ -26,11 +26,11 @@ int main(void)
  {
      for ( int j = 0; j <= NumeroAltura; ++j)
     {
+        printf(" ");
     //Suma en 1 el numero del primer bucle es decir, el primer bucle crea 1 linea, el bucle que empieza en 0 le suma se suma 1 para llegar al valor del primer bucle por consiguiente
     //le pedimos que imprima # el numero de veces de i y asi por cada linea creada imprime tambien #
       for (int i = 1; i <= j; ++i)
       {
-        printf(" ");
         printf("#");
       }
        printf("\n");
