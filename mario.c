@@ -8,14 +8,14 @@ int main(void)
     for (int j = 0; j < NumeroAltura; ++j)
     //Anchura
     {
-      for (int i = 0; i < 5; ++i)
+      for (int i = 0; i < 1; ++i)
     {
     do
     {
      i += 1;
-     printf("#");
     }
     while (i > 5);
+    printf("#");
     }
     printf("\n");
     }
