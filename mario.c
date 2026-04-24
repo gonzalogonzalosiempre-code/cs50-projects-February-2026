@@ -30,6 +30,7 @@ int main(void)
     //le pedimos que imprima # el numero de veces de i y asi por cada linea creada imprime tambien #
       for (int i = 1; i <= j; ++i)
       {
+        printf(" ");
         printf("#");
       }
        printf("\n");
