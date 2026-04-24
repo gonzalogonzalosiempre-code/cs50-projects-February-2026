@@ -7,8 +7,14 @@ int Pregunta(void);
 int main(void)
 {
     int Pregunta()
+    void Resultado(NumeroAltura)
 
 }
+
+
+
+
+
  int Pregunta()
  {
     int NumeroAltura;
@@ -21,7 +27,7 @@ int main(void)
     return NumeroAltura;
     //Crea el primer bucle que crea una linea en la terminal es decir cuenta 1 y asi sucesivamente hasta que llega a el numero del valor de retorno
  }
- void Resultado(int piramide)
+ void Resultado(int NumeroAltura)
  {
      for ( int j = 1; j <= NumeroAltura; ++j)
     {
