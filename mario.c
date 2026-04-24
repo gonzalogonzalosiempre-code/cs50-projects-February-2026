@@ -17,7 +17,6 @@ int main(void)
 }
  int NumeroAltura Pregunta()
  {
-    int NumeroAltura;
     //Devuelve la pregunta si es numero negativo, hasta que sea un numero positivo
     do
     {
