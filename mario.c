@@ -11,8 +11,11 @@ int main(void)
         {
             do
             {
+            printf("#");
+            }
+            do
+            {
                 i += 1;
-                printf("#");
             }
             while (i == 5);
         }
