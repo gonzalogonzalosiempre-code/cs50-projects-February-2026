@@ -1,20 +1,15 @@
 #include <stdio.h>
 #include <cs50.h>
 
-void Resultado(int piramide);
 int Pregunta(void);
+void Resultado(int piramide);
 
 int main(void)
 {
-    int Pregunta()
-    void Resultado(NumeroAltura)
+    int NumeroAltura = Pregunta();
+    Resultado(NumeroAltura);
 
 }
-
-
-
-
-
  int Pregunta()
  {
     int NumeroAltura;
