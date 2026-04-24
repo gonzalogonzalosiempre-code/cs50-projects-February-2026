@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <cs50.h>
 
+int Pregunta(void)
 int main(void)
 {
     int NumeroAltura;
