@@ -9,10 +9,11 @@ int main(void)
     {
         for(int i = 0; i < 1; ++i)
         {
+             # = i;
             do
             {
                 i += 1;
-                printf("#");
+                printf("%c, #");
                 printf("\n");
             }
             while (i == 5);
