@@ -9,7 +9,13 @@ int main(void)
     {
        for (int i = 0; i < 5; ++i)
        {
-        
+        do
+        {
+            j += 1;
+            printf("#");
+        }
+        while(j == 5);
+        printf("\n");
        }
      }
 }
