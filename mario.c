@@ -9,12 +9,14 @@ int main(void)
     {
        for (int i = 0; i < NumeroAltura; ++i)
        {
-        do
-        {
-            printf("#");
+     while(true)
+     if (j < 5)
+     {
+        printf("#");
             j += 1;
-        }
-        while(j < 5);
+     } else {
+        break;
+     }
         printf("\n");
        }
      }
