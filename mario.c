@@ -9,15 +9,7 @@ int main(void)
     {
        for (int i = 0; i < 1; ++i)
        {
-       do
-       {
-        printf("#");
-        if (i == 1)
-        {
-            i += 1;
-        }
-       }
-       while(i < 5);
+ 
      }
         printf("\n");
     }
