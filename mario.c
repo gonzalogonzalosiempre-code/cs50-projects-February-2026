@@ -11,13 +11,13 @@ int main(void)
        {
        do
        {
+        printf("#");
         if (i == 1)
         {
             i += 1;
         }
-        printf("#");
+         printf("#");
        }
-       while(i < 5);
      }
         printf("\n");
     }
