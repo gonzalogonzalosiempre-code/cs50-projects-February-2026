@@ -10,9 +10,9 @@ int main(void)
       int e = 0;
       do
       {
-      for ( e == 0; j < 1; ++e)
+      for ( e ; e < 1; ++e)
       {
-       printf ("#");
+       printf("#");
        e += 1;
       }
       while(e == 5);
