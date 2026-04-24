@@ -10,12 +10,7 @@ int main(void)
     {
        for (int i = 0; i < NumeroAltura; ++i)
        {
-     do
-     {
-        printf("#");
-            j += 1;
-     }
-     while(j < 5);
+       
      }
         printf("\n");
     }
