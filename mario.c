@@ -5,19 +5,19 @@ int main(void)
 {
     //Columnas
     int NumeroAltura = get_int("Que altura tendra la piramide? ");
-    for (int j = 0; j < 1; ++j)
+    int j;
+    for ( j = 0; j < 1; ++j)
     {
        for (int i = 0; i < NumeroAltura; ++i)
        {
-     while(true)
-     if (j < 5)
+     do
      {
         printf("#");
             j += 1;
-     } else {
-        break;
+     }
+     while(j < 5);
      }
         printf("\n");
        }
-     }
 }
+
