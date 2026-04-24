@@ -18,6 +18,6 @@ int main(void)
      while(j < 5);
      }
         printf("\n");
-       }
+    }
 }
 
