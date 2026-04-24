@@ -14,9 +14,9 @@ int main(void)
     {
      i += 1;
     }
-    while (i > 5);
-    printf("#");
+    while (i == 5);
     }
+    printf("#");
     printf("\n");
     }
 }
