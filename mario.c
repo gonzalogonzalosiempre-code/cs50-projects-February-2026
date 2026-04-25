@@ -37,7 +37,7 @@ int main(void)
     }
         for ( int j = 0; j <= i; ++j)
     {
-        printf(" ");
+      printf("  ");
       for (int k = 1; k <= j; ++k)
       {
         printf("#");
