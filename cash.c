@@ -25,6 +25,8 @@ void Operacion(int Cambio)
     }
     //Finaliza las Operaciones
 
+    if (25 * O1 = Cambio)
+
     //Empieza Operaciones de Impresion si caben mas numeros
     if (O5 != 0)
     {
