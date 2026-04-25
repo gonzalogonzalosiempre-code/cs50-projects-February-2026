@@ -26,19 +26,19 @@ void Resultado(int Altura)
     for (int i = 1; i <= Altura; ++i)
     {
     for (int j = Altura - i; j >= 0; --j)
-     {
+    {
         printf(" ");
-     }
-      for (int e = 1; e <= i; ++e)
+    }
+    for (int e = 1; e <= i; ++e)
     {
         printf("#");
     }
-     printf("  ");
-      for (int k = 1; k <= i; ++k)
-      {
+        printf("  ");
+    for (int k = 1; k <= i; ++k)
+    {
         printf("#");
-      }
-      printf("\n");
+    }
+        printf("\n");
     }
 }
 
