@@ -34,7 +34,7 @@ int Pregunta()
     int Cambio;
     do
     {
-      Cambio = get_int("Cual es su cambio..?");
+      Cambio = get_int("Cual es su monto..?");
     }
      while(Cambio <= 0);
 
