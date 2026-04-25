@@ -61,11 +61,10 @@ void Operacion(int Cambio)
     {
     for (int i = 0; i <= O5; ++i)
     {
-        printf(" %i ");
+        printf(" 25 ");
     }
-    else 
     }
-    if ( O6 < 0)
+    if ( 10 )
     {
     printf("%i" O6);
     }
