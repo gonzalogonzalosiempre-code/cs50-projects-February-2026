@@ -2,7 +2,7 @@
 #include <cs50.h>
 
 int Pregunta(void);
-void Resultado2(int )
+void Resultado2(int Altura);
 void Resultado(int piramide);
 
 int main(void)
@@ -37,6 +37,21 @@ int main(void)
        printf("\n");
     }
  }
+ void Resultado2(int Altura)
+ {
+    for (int i = 0; i <= Altura; ++i)
+    {
+         for (int j = Altura - i; j >= 0; --j)
+     {
+        printf(" ");
+     }
+      for (int e = 1; e <= i; ++e)
+    {
+        printf("#");
+    }
+    printf("\n");
+    }
+}
 
 
 
