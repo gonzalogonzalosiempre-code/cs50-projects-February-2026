@@ -23,23 +23,23 @@ void Operacion(int Cambio)
      int O8 = ("%i % 1")
     }
     if (Cambio = Resultado)
-    printf("Cambio de 25 es: %i\n" ...);
-    printf("Cambio de 10 es: %i\n" ...);
-    printf("Cambio de 5 es: %i\n" ...);
-    printf("Cambio de 1 es: %i\n" ...);
-    if ( O5 > 0)
+    printf("Cambio de 25 es: %i " ...);
+    printf("Cambio de 10 es: %i " ...);
+    printf("Cambio de 5 es: %i " ...);
+    printf("Cambio de 1 es: %i " ...);
+    if ( O5 < 0)
     {
     printf("%i", O5);
     }
-    if ( O6 > 0)
+    if ( O6 < 0)
     {
     printf("%i" O6);
     }
-    if ( O7 > 0)
+    if ( O7 < 0)
     {
     printf("%i" O7);
     }
-    if ( O8 > 0)
+    if ( O8 < 0)
     {
     printf("%i" O8);
     }
