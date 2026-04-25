@@ -47,7 +47,7 @@ void Operacion(int Cambio)
      printf(" %i " ...);
     }
     }
-    if
+    if (O8 != 0)
     {
      for (int j = 0; j <= O7; ++j)
     {
@@ -57,9 +57,13 @@ void Operacion(int Cambio)
     //Finaliza las Operaciones
 
     //Empieza las operaciones para Imprimir numeros
-    if ( O5 < 0)
+    if (25 * O1 != Cambio)
     {
-    printf("%i", O5);
+    for (int i = 0; i <= O5; ++i)
+    {
+        printf(" %i ");
+    }
+    else 
     }
     if ( O6 < 0)
     {
