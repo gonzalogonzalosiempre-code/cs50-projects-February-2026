@@ -3,11 +3,12 @@
 
 int Pregunta(void);
 void Resultado2(int Altura);
-void Resultado(int piramide);
+void Resultado(int Altura);
 
 int main(void)
 {
     int NumeroAltura = Pregunta();
+    Resultado2(NumeroAltura);
     Resultado(NumeroAltura);
 
 }
