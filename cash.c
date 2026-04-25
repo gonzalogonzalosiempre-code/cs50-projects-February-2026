@@ -6,21 +6,21 @@ int main(void)
 {
    Pregunta();
 }
-void Operacion(int)
+void Operacion(int Cambio)
 {
     if (Cambio = Cambio)
     {
-        ("%i / 25")
-        ("%i / 10")
-        ("%i / 5")
-        ("%i / 1")
+     int O1 = ("%i / 25")
+     int O2 = ("%i / 10")
+     int O3 = ("%i / 5")
+     int O4 = ("%i / 1")
     }
     if (Cambio = Cambio)
     {
-        ("%i % 25")
-        ("%i % 10")
-        ("%i % 5")
-        ("%i % 1")
+     int O5 = ("%i % 25")
+     int O6 = ("%i % 10")
+     int O7 = ("%i % 5")
+     int O8 = ("%i % 1")
     }
     if (Cambio = Resultado)
     printf("Cambio de 25 es: %i\n" ...)
