@@ -23,9 +23,10 @@ void Operacion(int)
         ("%i % 1")
     }
     if (Cambio = Resultado)
-    printf("Numero de )
-
-
+    printf("Cambio de 25 es: %i\n" ...)
+    printf("Cambio de 10 es: %i\n" ...)
+    printf("Cambio de 5 es: %i\n" ...)
+    printf("Cambio de 1 es: %i\n" ...)
 }
 
 int Pregunta()
