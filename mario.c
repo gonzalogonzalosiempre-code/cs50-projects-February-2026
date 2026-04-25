@@ -2,7 +2,6 @@
 #include <cs50.h>
 
 int Pregunta(void);
-void Resultado2(int Altura);
 void Resultado(int Altura);
 
 int main(void)
