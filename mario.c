@@ -35,7 +35,7 @@ int main(void)
     {
         printf("#");
     }
-        for ( int j = 0; j <= Altura; ++j)
+        for ( int j = 0; j <= i; ++j)
     {
         printf(" ");
       for (int k = 1; k <= j; ++k)
