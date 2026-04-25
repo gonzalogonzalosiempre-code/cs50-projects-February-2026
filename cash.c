@@ -22,6 +22,7 @@ void Operacion(int Cambio)
      int O7 = ("%i % 5")
      int O8 = ("%i % 1")
     }
+    if ( O5 > 0)
     if (Cambio = Resultado)
     printf("Cambio de 25 es: %i\n" ...)
     printf("Cambio de 10 es: %i\n" ...)
