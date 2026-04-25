@@ -22,22 +22,35 @@ void Operacion(int Cambio)
      int O7 = ("%i % 5")
      int O8 = ("%i % 1")
     }
+
     
-    if (Cambio = Resultado)
+    if (O5 != 0)
+    {
+     for (int i = 0; i <= O5; ++i)
     {
     printf("Cambio de 25 es: %i " ...);
     }
-    if
+    }
+    if (O6 != 0)
     {
-    printf("Cambio de 10 es: %i " ...);
+     for (int e = 0; i <= O6; ++e)
+    {
+     printf(" %i " ...);
+    }
+    }
+    if (O7 != 0)
+    {
+     for (int o = 0; o <= O7; ++o)
+    {
+     printf("Cambio de 5 es: %i " ...);
+    }
     }
     if
     {
-    printf("Cambio de 5 es: %i " ...);
-    }
-    if
+     for (int j = 0; j <= O7; ++j)
     {
-    printf("Cambio de 1 es: %i " ...);
+     printf("Cambio de 1 es: %i " ...);
+    }
     }
 
 
