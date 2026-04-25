@@ -8,6 +8,7 @@ int main(void)
 }
 void Operacion(int Cambio)
 {
+    //Empieza las Operaciones
     if (Cambio = Cambio)
     {
      int O1 = ("%i / 25")
@@ -22,13 +23,14 @@ void Operacion(int Cambio)
      int O7 = ("%i % 5")
      int O8 = ("%i % 1")
     }
+    //Finaliza las Operaciones
 
-    
+    //Empieza Operaciones de Impresion si caben mas numeros
     if (O5 != 0)
     {
      for (int i = 0; i <= O5; ++i)
     {
-    printf("Cambio de 25 es: %i " ...);
+    printf(" %i " ...);
     }
     }
     if (O6 != 0)
@@ -52,8 +54,9 @@ void Operacion(int Cambio)
      printf("Cambio de 1 es: %i " ...);
     }
     }
+    //Finaliza las Operaciones
 
-
+    //Empieza las operaciones para Imprimir numeros
     if ( O5 < 0)
     {
     printf("%i", O5);
@@ -70,6 +73,7 @@ void Operacion(int Cambio)
     {
     printf("%i" O8);
     }
+    //Finaliza las Operaciones
 }
 
 int Pregunta()
