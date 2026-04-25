@@ -18,13 +18,13 @@ int main(void)
     {
      NumeroAltura = get_int("Que altura tendra la piramide? ");
     }
-    while(NumeroAltura < 0);
+    while(NumeroAltura < 1 || NumeroAltura > 8);
     return NumeroAltura;
     //Crea el primer bucle que crea una linea en la terminal es decir cuenta 1 y asi sucesivamente hasta que llega a el numero del valor de retorno
  }
  void Resultado(int Altura)
  {
-    for (int i = 0; i <= Altura; ++i)
+    for (int i = 1; i <= Altura; ++i)
     {
     for (int j = Altura - i; j >= 0; --j)
      {
