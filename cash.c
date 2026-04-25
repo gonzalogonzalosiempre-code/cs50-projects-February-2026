@@ -30,7 +30,7 @@ void Operacion(int Cambio)
     {
      for (int i = 0; i <= O5; ++i)
     {
-    printf(" %i " ...);
+     printf(" %i " ...);
     }
     }
     if (O6 != 0)
@@ -44,14 +44,14 @@ void Operacion(int Cambio)
     {
      for (int o = 0; o <= O7; ++o)
     {
-     printf("Cambio de 5 es: %i " ...);
+     printf(" %i " ...);
     }
     }
     if
     {
      for (int j = 0; j <= O7; ++j)
     {
-     printf("Cambio de 1 es: %i " ...);
+     printf(" %i " ...);
     }
     }
     //Finaliza las Operaciones
