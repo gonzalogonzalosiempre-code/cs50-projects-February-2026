@@ -23,6 +23,7 @@ void Operacion(int)
         ("%i % 1")
     }
     if (Cambio = Resultado)
+    printf("Numero de )
 
 
 }
