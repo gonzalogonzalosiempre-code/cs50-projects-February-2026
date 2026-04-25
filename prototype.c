@@ -9,10 +9,10 @@ int main(void)
       for (int j = Altura; j >= 0; --j)
     {
         printf(" ");
-    }
      for (int e = 1; e <= i; ++e)
      {
         printf("#");
+     }
      }
     printf("\n");
     }
