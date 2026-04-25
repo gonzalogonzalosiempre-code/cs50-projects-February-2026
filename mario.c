@@ -25,7 +25,7 @@ void Resultado(int Altura)
 {
     for (int i = 1; i <= Altura; ++i)
     {
-    for (int j = Altura - i; j >= 0; --j)
+    for (int j = Altura - i; j > 0; --j)
     {
         printf(" ");
     }
