@@ -35,15 +35,12 @@ int main(void)
     {
         printf("#");
     }
-        for ( int j = 0; j <= i; ++j)
-    {
-      printf("  ");
+     printf("  ");
       for (int k = 1; k <= i; ++k)
       {
         printf("#");
       }
-    }
-    printf("\n");
+      printf("\n");
     }
 }
 
