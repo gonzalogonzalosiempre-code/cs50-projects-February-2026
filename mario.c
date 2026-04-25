@@ -27,7 +27,7 @@ int main(void)
  {
     for (int i = 0; i <= Altura; ++i)
     {
-         for (int j = Altura - i; j >= 0; --j)
+    for (int j = Altura - i; j >= 0; --j)
      {
         printf(" ");
      }
