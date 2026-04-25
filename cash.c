@@ -26,6 +26,12 @@ void Operacion(int Cambio)
     //Finaliza las Operaciones
 
     if (25 * O1 = Cambio)
+    {
+        for (int k = 0; k <= 0; ++k)
+        {
+            printf(" 25 ");
+        }
+    }
 
     //Empieza Operaciones de Impresion si caben mas numeros
     if (O5 != 0)
