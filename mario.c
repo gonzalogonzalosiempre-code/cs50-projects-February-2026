@@ -8,10 +8,9 @@ int main(void)
 {
     int NumeroAltura = Pregunta();
     Resultado(NumeroAltura);
-
 }
- int Pregunta()
- {
+int Pregunta()
+{
     int NumeroAltura;
     //Devuelve la pregunta si es numero negativo, hasta que sea un numero positivo
     do
@@ -21,9 +20,9 @@ int main(void)
     while(NumeroAltura < 1 || NumeroAltura > 8);
     return NumeroAltura;
     //Crea el primer bucle que crea una linea en la terminal es decir cuenta 1 y asi sucesivamente hasta que llega a el numero del valor de retorno
- }
- void Resultado(int Altura)
- {
+}
+void Resultado(int Altura)
+{
     for (int i = 1; i <= Altura; ++i)
     {
     for (int j = Altura - i; j >= 0; --j)
