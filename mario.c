@@ -34,6 +34,7 @@ int main(void)
       for (int e = 1; e <= i; ++e)
     {
         printf("#");
+    }
       for ( int j = 0; j <= Altura; ++j)
     {
         printf(" ");
@@ -43,6 +44,7 @@ int main(void)
       {
         printf("#");
       }
+    }
     printf("\n");
     }
 }
