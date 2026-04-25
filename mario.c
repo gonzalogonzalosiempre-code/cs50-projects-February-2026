@@ -34,10 +34,7 @@ int main(void)
       for (int e = 1; e <= i; ++e)
     {
         printf("#");
-    }
-    printf("\n");
-    }
-     for ( int j = 0; j <= Altura; ++j)
+      for ( int j = 0; j <= Altura; ++j)
     {
         printf(" ");
     //Suma en 1 el numero del primer bucle es decir, el primer bucle crea 1 linea, el bucle que empieza en 0 le suma se suma 1 para llegar al valor del primer bucle por consiguiente
@@ -46,7 +43,7 @@ int main(void)
       {
         printf("#");
       }
-       printf("\n");
+    printf("\n");
     }
 }
 
