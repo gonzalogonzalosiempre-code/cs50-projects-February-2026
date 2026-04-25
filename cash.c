@@ -59,12 +59,12 @@ void Operacion(int Cambio)
     //Empieza las operaciones para Imprimir numeros
     if (25 * O1 != Cambio)
     {
-    for (int i = 0; i <= O5; ++i)
+    for (int i = 0; i <= O1; ++i)
     {
         printf(" 25 ");
     }
     else
-    
+
     }
     if ( 10 )
     {
