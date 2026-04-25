@@ -9,7 +9,6 @@ int main(void)
 {
     int NumeroAltura = Pregunta();
     Resultado2(NumeroAltura);
-    Resultado(NumeroAltura);
 
 }
  int Pregunta()
@@ -24,20 +23,6 @@ int main(void)
     return NumeroAltura;
     //Crea el primer bucle que crea una linea en la terminal es decir cuenta 1 y asi sucesivamente hasta que llega a el numero del valor de retorno
  }
- void Resultado(int NumeroAltura)
- {
-     for ( int j = 0; j <= NumeroAltura; ++j)
-    {
-        printf(" ");
-    //Suma en 1 el numero del primer bucle es decir, el primer bucle crea 1 linea, el bucle que empieza en 0 le suma se suma 1 para llegar al valor del primer bucle por consiguiente
-    //le pedimos que imprima # el numero de veces de i y asi por cada linea creada imprime tambien #
-      for (int i = 1; i <= j; ++i)
-      {
-        printf("#");
-      }
-       printf("\n");
-    }
- }
  void Resultado2(int Altura)
  {
     for (int i = 0; i <= Altura; ++i)
@@ -51,6 +36,17 @@ int main(void)
         printf("#");
     }
     printf("\n");
+    }
+     for ( int j = 0; j <= Altura; ++j)
+    {
+        printf(" ");
+    //Suma en 1 el numero del primer bucle es decir, el primer bucle crea 1 linea, el bucle que empieza en 0 le suma se suma 1 para llegar al valor del primer bucle por consiguiente
+    //le pedimos que imprima # el numero de veces de i y asi por cada linea creada imprime tambien #
+      for (int i = 1; i <= j; ++i)
+      {
+        printf("#");
+      }
+       printf("\n");
     }
 }
 
