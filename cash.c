@@ -63,6 +63,8 @@ void Operacion(int Cambio)
     {
         printf(" 25 ");
     }
+    else
+    
     }
     if ( 10 )
     {
