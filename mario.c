@@ -2,6 +2,7 @@
 #include <cs50.h>
 
 int Pregunta(void);
+int Pregunta2(void);
 void Resultado(int piramide);
 
 int main(void)
@@ -22,6 +23,23 @@ int main(void)
     return NumeroAltura;
     //Crea el primer bucle que crea una linea en la terminal es decir cuenta 1 y asi sucesivamente hasta que llega a el numero del valor de retorno
  }
+ int Pregunta2()
+{
+    int Altura = get_int("Ingrese la Altura deseada? ");
+    for (int i = 0; i <= Altura; ++i)
+    {
+         for (int j = Altura - i; j >= 0; --j)
+     {
+        printf(" ");
+     }
+      for (int e = 1; e <= i; ++e)
+    {
+        printf("#");
+    }
+    printf("\n");
+    }
+    return Altura
+}
  void Resultado(int NumeroAltura)
  {
      for ( int j = 0; j <= NumeroAltura; ++j)
@@ -36,6 +54,8 @@ int main(void)
        printf("\n");
     }
  }
+
+
 
 
 
