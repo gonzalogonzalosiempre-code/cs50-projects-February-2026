@@ -7,7 +7,7 @@ void Resultado(int Altura);
 int main(void)
 {
     int NumeroAltura = Pregunta();
-    Resultado2(NumeroAltura);
+    Resultado(NumeroAltura);
 
 }
  int Pregunta()
@@ -22,7 +22,7 @@ int main(void)
     return NumeroAltura;
     //Crea el primer bucle que crea una linea en la terminal es decir cuenta 1 y asi sucesivamente hasta que llega a el numero del valor de retorno
  }
- void Resultado2(int Altura)
+ void Resultado(int Altura)
  {
     for (int i = 0; i <= Altura; ++i)
     {
