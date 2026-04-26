@@ -34,6 +34,10 @@ int main(void)
     //Comprobamos si la operacion usa 2 digitos
     if (OP1 > 9)
     {
-        OP1 = (OP1 - 10 + OP1)
+        OP1 = (OP1 - 10 + 1)
+    }
+    else if (OP2 > 9)
+    {
+        OP2 = (OP2 = 10 + 1)
     }
 }
