@@ -30,8 +30,9 @@ void Operacion(int Cambio)
     {
      for (int i = 0; i <= O5; ++i)
     {
-     printf(" %i " ...);
+     printf(" 25 " ...);
     }
+     printf(" %i ", O5);
     }
     if (O6 != 0)
     {
