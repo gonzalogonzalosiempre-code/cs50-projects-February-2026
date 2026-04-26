@@ -3,6 +3,7 @@
 
 int main(void)
 {
+    //Recopila Almacena Digitos y Datos
     int Digito1 = get_int("Ingrese su 1 Digito.. ");
     int Digito2 = get_int("Ingrese su 2 Digito.. ");
     int Digito3 = get_int("Ingrese su 3 Digito.. ");
@@ -19,6 +20,7 @@ int main(void)
     int Digito14 = get_int("Ingrese su 14 Digito.. ");
     int Digito15 = get_int("Ingrese su 15 Digito.. ");
     int Digito16 = get_int("Ingrese su 16 Digito.. ");
+    //Termina la Recopilacion
 
     //Empieza las operaciones
     int OP1 = (Digito2 * 2);
@@ -34,42 +36,53 @@ int main(void)
     //Comprobamos si la operacion usa 2 digitos
     if (OP1 > 9)
     {
-        OP1 = (OP1 - 10 + 1)
+        OP1 = (OP1 - 10 + 1);
     }
     if (OP2 > 9)
     {
-        OP2 = (OP2 - 10 + 1)
+        OP2 = (OP2 - 10 + 1);
     }
     if (OP3 > 9)
     {
-        OP3 = (OP3 - 10 + 1)
+        OP3 = (OP3 - 10 + 1);
     }
     if (OP4 > 9)
     {
-        OP4 = (OP4 - 10 + 1)
+        OP4 = (OP4 - 10 + 1);
     }
     if (OP5 > 9)
     {
-        OP5 = (OP5 - 10 + 1)
+        OP5 = (OP5 - 10 + 1);
     }
     if (OP6 > 9)
     {
-        OP6 = (OP6 - 10 + 1)
+        OP6 = (OP6 - 10 + 1);
     }
     if (OP7 > 9)
     {
-        OP7 = (OP7 - 10 + 1)
+        OP7 = (OP7 - 10 + 1);
     }
     if (OP8 > 9)
     {
-        OP8 = (OP8 - 10 + 1)
+        OP8 = (OP8 - 10 + 1);
     }
     if (OP9 > 9)
     {
-        OP9 = (OP9 - 10 + 1)
+        OP9 = (OP9 - 10 + 1);
     }
     //Termina los comprobantes
 
-    //Empieza las sumas
-    int SumaTotal = ()
+    //Empieza las Sumas
+    int SumaUno = (Digito1 + Digito3 + Digito5 + Digito7 + Digito9 + Digito11 + Digito13 + Digito15);
+    int SumaDos = (OP1 + OP2 + OP3 + OP4 + OP5 + OP6 + OP7 + OP8 + OP9);
+    int SumaTotal = (SumaDos + SumaUno);
+    if (SumaTotal % 10 == 0)
+    {
+        printf("Tu Numero es Valido\n");
+    }
+    else
+    {
+        printf("Tu Numero es Invalido\n");
+    }
+    //Terminan las Sumas
 }
