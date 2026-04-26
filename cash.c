@@ -27,10 +27,14 @@ void Operacion(int Cambio)
 
     if (25 * O1 = Cambio)
     {
-        for (int k = 0; k <= 0; ++k)
+        for (int k = 0; k <= O1; ++k)
         {
             printf(" 25 ");
         }
+    }
+    if (10 * O2 = Cambio)
+    {
+        for (int l = 0;)
     }
 
     //Empieza Operaciones de Impresion si caben mas numeros
