@@ -58,9 +58,9 @@ void Operacion(int Cambio)
     }
      printf(" %i ", O8);
     }
-    else
+    else if 
     {
-        continue;
+
     }
     //Finaliza las Operaciones
 
