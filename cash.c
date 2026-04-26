@@ -30,7 +30,7 @@ void Operacion(int Cambio)
     {
      for (int i = 0; i <= O5; ++i)
     {
-     printf(" 25 " ...);
+     printf(" 25 ");
     }
      printf(" %i ", O5);
     }
@@ -38,22 +38,25 @@ void Operacion(int Cambio)
     {
      for (int e = 0; i <= O6; ++e)
     {
-     printf(" %i " ...);
+     printf(" 10 ");
     }
+     printf(" %i ", O6);
     }
     if (O7 != 0)
     {
      for (int o = 0; o <= O7; ++o)
     {
-     printf(" %i " ...);
+     printf(" 5 ");
     }
+     printf(" %i ", O7);
     }
     if (O8 != 0)
     {
      for (int j = 0; j <= O7; ++j)
     {
-     printf(" %i " ...);
+     printf(" 1 ");
     }
+     printf(" %i ", O8);
     }
     //Finaliza las Operaciones
 int Pregunta()
