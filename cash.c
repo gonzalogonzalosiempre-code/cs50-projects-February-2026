@@ -58,13 +58,9 @@ void Operacion(int Cambio)
     }
      printf(" %i ", O8);
     }
-    else if 
+    else
     {
-
-    }
-    //Finaliza las Operaciones
-
-     //Empieza las operaciones
+      //Empieza las operaciones
     if (25 * O1 == Cambio)
     {
         for (int k = 0; k <= O1; ++k)
@@ -98,6 +94,9 @@ void Operacion(int Cambio)
         printf("Valor no Calculable \n");
     }
     //Termina las operaciones
+    }
+    //Finaliza las Operaciones
+
 int Pregunta()
 {
     int Cambio;
