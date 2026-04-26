@@ -10,15 +10,15 @@ int main(void)
 void Operacion(int Cambio)
 {
     //Empieza las Operaciones
-     int O1 = ("%i / 25", Cambio);
-     int O2 = ("%i / 10", Cambio);
-     int O3 = ("%i / 5", Cambio);
-     int O4 = ("%i / 1", Cambio);
+     int O1 = ( 25 / Cambio);
+     int O2 = ( 10 / Cambio);
+     int O3 = ( 5 / Cambio);
+     int O4 = ( 1 / Cambio);
 
-     int O5 = ("%i % 25", Cambio);
-     int O6 = ("%i % 10", Cambio);
-     int O7 = ("%i % 5", Cambio);
-     int O8 = ("%i % 1", Cambio);
+     int O5 = ( 25 % Cambio);
+     int O6 = ( 10 % Cambio);
+     int O7 = ( 5 % Cambio);
+     int O8 = ( 1 % Cambio);
 
     //Finaliza las Operaciones
 
