@@ -16,7 +16,7 @@
     //Finaliza las Operaciones
 
     //Empieza las operaciones
-    if (25 * O1 = Cambio)
+    if (25 * O1 == Cambio)
     {
         for (int k = 0; k <= O1; ++k)
         {
@@ -30,14 +30,14 @@
             printf(" 10 ");
         }
     }
-    else if (5 * O3 = Cambio)
+    else if (5 * O3 == Cambio)
     {
         for (int u = 0; u <= O3: ++u)
         {
             printf(" 5 ");
         }
     }
-    else if (1 * O4 = Cambio)
+    else if (1 * O4 == Cambio)
     {
         for (int t = 0: t <= O4; ++t)
         {
