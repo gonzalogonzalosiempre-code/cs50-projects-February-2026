@@ -68,4 +68,8 @@ int main(void)
     {
         OP9 = (OP9 - 10 + 1)
     }
+    //Termina los comprobantes
+
+    //Empieza las sumas
+    
 }
