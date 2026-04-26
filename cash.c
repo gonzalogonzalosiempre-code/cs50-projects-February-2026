@@ -11,10 +11,10 @@ void Operacion(int Cambio)
     //Empieza las Operaciones
     if (Cambio = Cambio)
     {
-     int O1 = ("%i / 25")
-     int O2 = ("%i / 10")
-     int O3 = ("%i / 5")
-     int O4 = ("%i / 1")
+     int O1 = ("%i / 25", Cambio)
+     int O2 = ("%i / 10", Cambio)
+     int O3 = ("%i / 5", Cambio)
+     int O4 = ("%i / 1", Cambio)
     }
     if (Cambio = Cambio)
     {
