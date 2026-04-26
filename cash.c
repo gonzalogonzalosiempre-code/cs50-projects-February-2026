@@ -18,10 +18,10 @@ void Operacion(int Cambio)
     }
     if (Cambio = Cambio)
     {
-     int O5 = ("%i % 25")
-     int O6 = ("%i % 10")
-     int O7 = ("%i % 5")
-     int O8 = ("%i % 1")
+     int O5 = ("%i % 25", Cambio)
+     int O6 = ("%i % 10", Cambio)
+     int O7 = ("%i % 5", Cambio)
+     int O8 = ("%i % 1", Cambio)
     }
     //Finaliza las Operaciones
 
