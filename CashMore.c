@@ -29,8 +29,8 @@ int main(void)
     int OP4 = (Digito8 * 2);
     int OP5 = (Digito10 * 2);
     int OP6 = (Digito12 * 2);
-    int OP8 = (Digito14 * 2);
-    int OP9 = (Digito16 * 2);
+    int OP7 = (Digito14 * 2);
+    int OP8 = (Digito16 * 2);
     //Terminan las operaciones
 
     //Comprobamos si la operacion usa 2 digitos
@@ -66,15 +66,11 @@ int main(void)
     {
         OP8 = (OP8 - 10 + 1);
     }
-    if (OP9 > 9)
-    {
-        OP9 = (OP9 - 10 + 1);
-    }
     //Termina los comprobantes
 
     //Empieza las Sumas
     int SumaUno = (Digito1 + Digito3 + Digito5 + Digito7 + Digito9 + Digito11 + Digito13 + Digito15);
-    int SumaDos = (OP1 + OP2 + OP3 + OP4 + OP5 + OP6 + OP7 + OP8 + OP9);
+    int SumaDos = (OP1 + OP2 + OP3 + OP4 + OP5 + OP6 + OP7 + OP8);
     int SumaTotal = (SumaDos + SumaUno);
     if (SumaTotal % 10 == 0)
     {
