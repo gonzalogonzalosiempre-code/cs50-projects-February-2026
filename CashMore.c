@@ -31,5 +31,9 @@ int main(void)
     int OP9 = (Digito16 * 2);
     //Terminan las operaciones
 
-    //Comienza las Sumas
+    //Comprobamos si la operacion usa 2 digitos
+    if (OP1 > 9)
+    {
+        
+    }
 }
