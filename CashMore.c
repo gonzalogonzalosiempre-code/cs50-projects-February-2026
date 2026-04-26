@@ -23,5 +23,11 @@ int main(void)
     //Empieza las operaciones
     int OP1 = (Digito2 * 2);
     int OP2 = (Digito4 * 2);
-    int OP3 = (Digito6 * 2)
+    int OP3 = (Digito6 * 2);
+    int OP4 = (Digito8 * 2);
+    int OP5 = (Digito10 * 2);
+    int OP6 = (Digito12 * 2);
+    int OP8 = (Digito14 * 2);
+    int OP9 = (Digito16 * 2);
+    //Terminan las operaciones
 }
