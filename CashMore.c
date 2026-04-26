@@ -71,5 +71,5 @@ int main(void)
     //Termina los comprobantes
 
     //Empieza las sumas
-    
+    int SumaTotal = ()
 }
