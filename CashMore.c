@@ -30,4 +30,6 @@ int main(void)
     int OP8 = (Digito14 * 2);
     int OP9 = (Digito16 * 2);
     //Terminan las operaciones
+
+    //Comienza las Sumas
 }
