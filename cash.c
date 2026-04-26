@@ -19,10 +19,9 @@ void Operacion(int Cambio)
      int O6 = ( Cambio % 10);
      int O7 = ( Cambio % 5);
      int O8 = ( Cambio % 1);
-
     //Finaliza las Operaciones
 
-    //Empieza Operaciones de Impresion si caben mas numeros
+    //Empieza Operaciones de Impresion si quiere sumar monedas
     if (O5 != 0)
     {
      for (int i = 0; i < O1; ++i)
@@ -57,7 +56,8 @@ void Operacion(int Cambio)
     }
     else
     {
-    //Empieza las operaciones
+    //Finaliza Y empieza siguiente Operacion
+    //Empieza las operaciones si quiere solo un tipo de moneda
     if (25 * O1 == Cambio)
     {
         for (int k = 0; k < O1; ++k)
@@ -96,12 +96,13 @@ void Operacion(int Cambio)
 }
 int Pregunta()
 {
+    //Bucle para solo recibir numeros enteros, positivos
     int Cambio;
     do
     {
       Cambio = get_int("Cual es su monto..?");
     }
      while(Cambio <= 0);
-
+    //Devuelve el Valor int
      return Cambio;
 }
