@@ -97,7 +97,7 @@ void Operacion(int Cambio)
     //Termina las operaciones
     }
     //Finaliza las Operaciones
-
+}
 int Pregunta()
 {
     int Cambio;
