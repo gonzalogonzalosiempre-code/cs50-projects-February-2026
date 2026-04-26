@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int Pregunta(Void);
+char Pregunta(Void);
 int main(void)
 {
  Pregunta()
 }
 
-int Pregunta()
+char Pregunta()
 {
-    int Digito1
+    int c
 }
 
