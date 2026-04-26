@@ -25,7 +25,7 @@ void Operacion(int Cambio)
     //Empieza Operaciones de Impresion si caben mas numeros
     if (O5 != 0)
     {
-     for (int i = 0; i <= O1; ++i)
+     for (int i = 0; i < O1; ++i)
     {
      printf(" 25 ");
     }
@@ -33,7 +33,7 @@ void Operacion(int Cambio)
     }
     else if (O6 != 0)
     {
-     for (int e = 0; e <= O2; ++e)
+     for (int e = 0; e < O2; ++e)
     {
      printf(" 10 ");
     }
@@ -41,7 +41,7 @@ void Operacion(int Cambio)
     }
     else if (O7 != 0)
     {
-     for (int o = 0; o <= O3; ++o)
+     for (int o = 0; o < O3; ++o)
     {
      printf(" 5 ");
     }
@@ -49,7 +49,7 @@ void Operacion(int Cambio)
     }
     else if (O8 != 0)
     {
-     for (int j = 0; j <= O4; ++j)
+     for (int j = 0; j < O4; ++j)
     {
      printf(" 1 ");
     }
@@ -60,28 +60,28 @@ void Operacion(int Cambio)
     //Empieza las operaciones
     if (25 * O1 == Cambio)
     {
-        for (int k = 0; k <= O1; ++k)
+        for (int k = 0; k < O1; ++k)
         {
             printf(" 25 ");
         }
     }
     else if (10 * O2 == Cambio)
     {
-        for (int l = 0; l <= O2; ++l)
+        for (int l = 0; l < O2; ++l)
         {
             printf(" 10 ");
         }
     }
     else if (5 * O3 == Cambio)
     {
-        for (int u = 0; u <= O3; ++u)
+        for (int u = 0; u < O3; ++u)
         {
             printf(" 5 ");
         }
     }
     else if (1 * O4 == Cambio)
     {
-        for (int t = 0; t <= O4; ++t)
+        for (int t = 0; t < O4; ++t)
         {
             printf(" 1 ");
         }
