@@ -1,29 +1,25 @@
 #include <stdio.h>
 #include <cs50.h>
 int Pregunta(void);
-void Operacion(int)
+void Operacion(int);
 int main(void)
 {
-   int Respueta = Pregunta();
-   Operacion(Respuesta);
+   int Cambio = Pregunta();
+   Operacion(Cambio);
 }
 void Operacion(int Cambio)
 {
     //Empieza las Operaciones
-    if (Cambio = Cambio)
-    {
-     int O1 = ("%i / 25", Cambio)
-     int O2 = ("%i / 10", Cambio)
-     int O3 = ("%i / 5", Cambio)
-     int O4 = ("%i / 1", Cambio)
-    }
-    if (Cambio = Cambio)
-    {
-     int O5 = ("%i % 25", Cambio)
-     int O6 = ("%i % 10", Cambio)
-     int O7 = ("%i % 5", Cambio)
-     int O8 = ("%i % 1", Cambio)
-    }
+     int O1 = ("%i / 25", Cambio);
+     int O2 = ("%i / 10", Cambio);
+     int O3 = ("%i / 5", Cambio);
+     int O4 = ("%i / 1", Cambio);
+
+     int O5 = ("%i % 25", Cambio);
+     int O6 = ("%i % 10", Cambio);
+     int O7 = ("%i % 5", Cambio);
+     int O8 = ("%i % 1", Cambio);
+
     //Finaliza las Operaciones
 
     //Empieza Operaciones de Impresion si caben mas numeros
@@ -37,7 +33,7 @@ void Operacion(int Cambio)
     }
     else if (O6 != 0)
     {
-     for (int e = 0; i <= O2; ++e)
+     for (int e = 0; e <= O2; ++e)
     {
      printf(" 10 ");
     }
@@ -69,7 +65,7 @@ void Operacion(int Cambio)
             printf(" 25 ");
         }
     }
-    else if (10 * O2 = Cambio)
+    else if (10 * O2 == Cambio)
     {
         for (int l = 0; l <= O2; ++l)
         {
@@ -78,14 +74,14 @@ void Operacion(int Cambio)
     }
     else if (5 * O3 == Cambio)
     {
-        for (int u = 0; u <= O3: ++u)
+        for (int u = 0; u <= O3; ++u)
         {
             printf(" 5 ");
         }
     }
     else if (1 * O4 == Cambio)
     {
-        for (int t = 0: t <= O4; ++t)
+        for (int t = 0; t <= O4; ++t)
         {
             printf(" 1 ");
         }
