@@ -22,7 +22,7 @@ void OperacionLuhn(long Resultado)
    Almacena = (Almacena + PrimerResultado);
    Almacena2 = (Almacena2 + PrimerResultado2);
   }
-  if (Resultado >= 0)
+  if (Resultado < 0)
   {
   ValorTotal = (Almacena + Almacena2);
   if (ValorTotal % 10 == 0)
@@ -42,7 +42,7 @@ long Pregunta()
   {
     NumeroTarjeta = get_long("Ingrese su Numero de tarjeta.. ");
   }
-    while(NumeroTarjeta > 16);
+    while(NumeroTarjeta <= 0);
     return NumeroTarjeta;
 }
 
