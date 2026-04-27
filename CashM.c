@@ -16,13 +16,15 @@ void OperacionLuhn(long Resultado)
   {
    long PrimerResultado = (Resultado % 10); //Primer Digito
    long RestaResultado = (Resultado / 10);  //Resta
+   Resultado = (Resultado / 10);
    long PrimerResultado2 = (Resultado % 10); //Segundo Digito
    long RestaResultado2 = (Resultado / 10);  //Resta
+   Resultado = (Resultado / 10);
 
    Almacena = (Almacena + PrimerResultado);
    Almacena2 = (Almacena2 + PrimerResultado2);
   }
-  if (Resultado < 0)
+  if (Resultado > 0)
   {
   ValorTotal = (Almacena + Almacena2);
   if (ValorTotal % 10 == 0)
