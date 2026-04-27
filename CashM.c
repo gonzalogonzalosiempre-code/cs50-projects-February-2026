@@ -34,15 +34,15 @@ void OperacionLuhn(long Resultado)
   printf("Tu tarjeta es Invalida\n");
   }
   }
+}
 long Pregunta()
-  {
-    long NumeroTarjeta
+{
+    long NumeroTarjeta;
     do
   {
     NumeroTarjeta = get_long("Ingrese su Numero de tarjeta.. ");
   }
     while(NumeroTarjeta > 16);
     return NumeroTarjeta;
-  }
-  }
+}
 
