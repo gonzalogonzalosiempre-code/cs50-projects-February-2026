@@ -19,9 +19,14 @@ void OperacionLuhn(long Resultado)
    long PrimerResultado2 = (Resultado % 10); //Segundo Digito
    long RestaResultado2 = (Resultado / 10);  //Resta
    Resultado = (Resultado / 10);
+   
+   if (PrimerResultado2  > 9)
+   {
+    PrimerResultado2 = (PrimerResultado2 - 10 + 1);
+   }
 
    Almacena = (Almacena + PrimerResultado);
-   Almacena2 = (Almacena2 + PrimerResultado2);
+   Almacena2 = (Almacena2 + PrimerResultado2 );
   }
 
   long ValorTotal = (Almacena + Almacena2);
