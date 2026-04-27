@@ -35,14 +35,14 @@ void OperacionLuhn(long Resultado)
   }
   }
 long Pregunta()
-{
+  {
     long NumeroTarjeta
     do
-    {
+  {
     NumeroTarjeta = get_long("Ingrese su Numero de tarjeta.. ");
-    }
+  }
     while(NumeroTarjeta > 16);
     return NumeroTarjeta;
-}
-}
+  }
+  }
 
