@@ -12,7 +12,7 @@ void OperacionLuhn(long Resultado)
   long Almacena;
   long Almacena2;
   long ValorTotal;
-  while (Resultado == 0 )
+  while (Resultado < 0 )
   {
    long PrimerResultado = (Resultado % 10); //Primer Digito
    long RestaResultado = (Resultado / 10);  //Resta
