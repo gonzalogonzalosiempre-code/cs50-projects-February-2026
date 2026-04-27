@@ -5,7 +5,7 @@ void OperacionLuhn(long);
 int main(void)
 {
 long Tarjeta = Pregunta();
-OpaeracionLuhn(Tarjeta)
+OperacionLuhn(Tarjeta);
 }
 
 void OperacionLuhn(Resultado)
