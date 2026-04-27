@@ -20,7 +20,7 @@ void OperacionLuhn(long Resultado)
    long RestaResultado2 = (Resultado / 10);  //Resta
    Resultado = (Resultado / 10);
    PrimerResultado2 = (PrimerResultado2 * 2);
-   
+
    if (PrimerResultado2  > 9)
    {
     PrimerResultado2 = (PrimerResultado2 - 10 + 1);
@@ -38,7 +38,6 @@ void OperacionLuhn(long Resultado)
   else
   {
   printf("Tu tarjeta es Invalida\n");
-  }
   }
 }
 long Pregunta()
