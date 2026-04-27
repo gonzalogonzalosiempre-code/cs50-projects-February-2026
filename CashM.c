@@ -7,7 +7,6 @@ int main(void)
 long Tarjeta = Pregunta();
 OperacionLuhn(Tarjeta);
 }
-
 void OperacionLuhn(long Resultado)
 {
   long Almacena;
@@ -34,7 +33,7 @@ void OperacionLuhn(long Resultado)
   {
   printf("Tu tarjeta es Invalida\n");
   }
-}
+  }
 long Pregunta()
 {
     long NumeroTarjeta
@@ -44,5 +43,6 @@ long Pregunta()
     }
     while(NumeroTarjeta > 16);
     return NumeroTarjeta;
+}
 }
 
