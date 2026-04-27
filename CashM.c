@@ -8,8 +8,9 @@ long Tarjeta = Pregunta();
 OperacionLuhn(Tarjeta);
 }
 
-void OperacionLuhn(Resultado)
+void OperacionLuhn(long Resultado)
 {
+  long Almacena2
   while (Resultado == 0 )
   {
    long PrimerResultado = (Resultado % 10); //Primer Digito
@@ -18,7 +19,7 @@ void OperacionLuhn(Resultado)
    long RestaResultado2 = (Resultado / 10);  //Resta
 
    long Almacena = (Almacena + PrimerResultado);
-   long Almacena2 = (Almacena2 + PimerResultado2);
+   long Almacena2 = (Almacena2 + PrimerResultado2);
   }
   if (Resultado == 0)
   {
