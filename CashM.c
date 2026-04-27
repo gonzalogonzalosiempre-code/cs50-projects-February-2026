@@ -10,7 +10,9 @@ OperacionLuhn(Tarjeta);
 
 void OperacionLuhn(long Resultado)
 {
-  long Almacena2
+  long Almacena;
+  long Almacena2;
+  long ValorTotal;
   while (Resultado == 0 )
   {
    long PrimerResultado = (Resultado % 10); //Primer Digito
@@ -18,12 +20,12 @@ void OperacionLuhn(long Resultado)
    long PrimerResultado2 = (Resultado % 10); //Segundo Digito
    long RestaResultado2 = (Resultado / 10);  //Resta
 
-   long Almacena = (Almacena + PrimerResultado);
-   long Almacena2 = (Almacena2 + PrimerResultado2);
+   Almacena = (Almacena + PrimerResultado);
+   Almacena2 = (Almacena2 + PrimerResultado2);
   }
   if (Resultado == 0)
   {
-  long ValorTotal = (Almacena + Almacena2);
+  ValorTotal = (Almacena + Almacena2);
   }
   if (ValorTotal % 10 == 0)
   {
@@ -31,7 +33,7 @@ void OperacionLuhn(long Resultado)
   }
   else
   {
-  printf("Tu tarjeta es Invalida\n"):
+  printf("Tu tarjeta es Invalida\n");
   }
 }
 long Pregunta()
