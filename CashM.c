@@ -23,10 +23,9 @@ void OperacionLuhn(long Resultado)
    Almacena = (Almacena + PrimerResultado);
    Almacena2 = (Almacena2 + PrimerResultado2);
   }
-  if (Resultado == 0)
+  if (Resultado >= 0)
   {
   ValorTotal = (Almacena + Almacena2);
-  }
   if (ValorTotal % 10 == 0)
   {
   printf("Tu Tarjeta es Valida!\n");
