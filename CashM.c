@@ -9,10 +9,9 @@ OperacionLuhn(Tarjeta);
 }
 void OperacionLuhn(long Resultado)
 {
-  long Almacena;
-  long Almacena2;
-  long ValorTotal;
-  while (Resultado < 0 )
+  long Almacena = 0;
+  long Almacena2 = 0;
+  while (Resultado > 0 )
   {
    long PrimerResultado = (Resultado % 10); //Primer Digito
    long RestaResultado = (Resultado / 10);  //Resta
@@ -24,9 +23,8 @@ void OperacionLuhn(long Resultado)
    Almacena = (Almacena + PrimerResultado);
    Almacena2 = (Almacena2 + PrimerResultado2);
   }
-  if (Resultado > 0)
-  {
-  ValorTotal = (Almacena + Almacena2);
+
+  long ValorTotal = (Almacena + Almacena2);
   if (ValorTotal % 10 == 0)
   {
   printf("Tu Tarjeta es Valida!\n");
