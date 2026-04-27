@@ -23,7 +23,7 @@ void OperacionLuhn(long Resultado)
 
    if (PrimerResultado2  > 9)
    {
-    PrimerResultado2 = (PrimerResultado2 - 10 + 1);
+   PrimerResultado2 = (PrimerResultado2 - 10 + 1);
    }
 
    Almacena = (Almacena + PrimerResultado);
