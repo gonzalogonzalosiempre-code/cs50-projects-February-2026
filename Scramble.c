@@ -3,7 +3,7 @@
 #include <ctype.h>
 #include <string.h>
 
-int Pregunta(string Respuesta1);
+int Pregunta(int Tamaño, string Respuesta1);
 void OperacionJuez(string, string);
 
 int main(void)
