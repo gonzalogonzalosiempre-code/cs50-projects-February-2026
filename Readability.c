@@ -17,9 +17,11 @@ int main(void)
       }
       if (isspace(Texto[i]))
       {
-       PalabrasNumero += 1;
+       PalabrasNumero += i;
       }
-      if (ispuntc(Texto[i]) || is)
-
+      if (ispuntc(Texto[i]))
+      {
+        MediaFrases += i;
+      }
     }
 }
