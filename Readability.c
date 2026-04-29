@@ -31,13 +31,18 @@ int main(void)
 
    printf("%f\n", (double) NivelDeGrado);
 
-   if (NivelDeGrado < 2)
+   if (NivelDeGrado > 2)
    {
     printf("Before Grade 1\n");
    }
-   else if (NiivelDeGrado > 1 )
+   else if (NivelDeGrado < 1 && NivelDeGrado > 5)
    {
-    printf
+    printf("Grade 1-5\n");
    }
+   else if (NivelDeGrado == 6 )
+   {
+    printf("Grade 6\n");
+   }
+   else if 
 
 }
