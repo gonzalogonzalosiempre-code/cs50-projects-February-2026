@@ -4,8 +4,7 @@
 #include <string.h>
 
 int Pregunta(string Respuesta1);
-void OperacionJuez(string, string);
-
+void Operacion(int , int);
 int main(void)
 {
   string Respuesta1 = get_string("Su Primer Palabra es.. ");
@@ -13,18 +12,7 @@ int main(void)
   int Puntaje = Pregunta(Respuesta1);
   int Puntaje2 = Pregunta(Respuesta2);
 
-  if (Puntaje > Puntaje2)
-  {
-    printf("Jugador Uno Gano!\n");
-  }
-  else if (Puntaje < Puntaje2)
-  {
-    printf("Jugador Dos Gano!\n");
-  }
-  else
-  {
-    printf("Empate!\n");
-  }
+  Operacion(Puntaje, Puntaje2);
 }
 
 int Pregunta(string Respuesta1)
@@ -44,3 +32,20 @@ int Pregunta(string Respuesta1)
     }
   return Resultado;
 }
+void Operacion(int Puntaje1, int Puntaje2)
+{
+  if (Puntaje1 > Puntaje2)
+  {
+    printf("Jugador Uno Gano!\n");
+  }
+  else if (Puntaje1 < Puntaje2)
+  {
+    printf("Jugador Dos Gano!\n");
+  }
+  else
+  {
+    printf("Empate!\n");
+  }
+}
+
+
