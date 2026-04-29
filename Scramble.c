@@ -19,7 +19,7 @@ int Pregunta(int Tamaño, string Respuesta1)
     int PuntajeSuma;
     string Respuesta1[] = get_string("Ingrese su primera palabra.. ");
 
-    for (int i = 0; i < strlen(Respuesta1[]); ++i)
+    for (int i = 0; i < strlen(Respuesta1); ++i)
   {
     PuntajeSuma = Respuesta1[i] - A;
     for (int e = 0; Puntaje[e] == PuntajeSuma; ++e)
