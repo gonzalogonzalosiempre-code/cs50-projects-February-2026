@@ -13,15 +13,15 @@ int main(void)
     {
       if (isalpha(Texto[i]))
       {
-      LetrasNumero += i;
+        LetrasNumero += i;
       }
       if (isspace(Texto[i]))
       {
-       PalabrasNumero += i;
+        PalabrasNumero += i;
       }
-      if (ispuntc(Texto[i]))
+      if (ispunct(Texto[i]))
       {
-        MediaFrases += i;
+        NumeroFrases += i;
       }
     }
    int L = LetrasNumero / PalabrasNumero * 100;
