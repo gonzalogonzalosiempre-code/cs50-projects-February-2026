@@ -19,10 +19,18 @@ string Pregunta(string Respuesta1)
   {
     1,3,3,2,1,4,2,4,1,8,5,1,3,1,1,3,10,1,1,1,1,4,4,8,4,10;
   }
-
-  for (int i = 0; i < strlen(Respuesta1[]); ++1)
+  int AlmacenaSumas;
+  for (int i = 0; i < strlen(Respuesta1[]); ++i)
   {
-    Respuesta1[i] = 
+    Repuesta1[i] - A;
+    for (int e = 0; e < Puntaje[i]; ++e)
+    {
+      if (Respuesta1[i] == Puntaje[i])
+      {
+        AlmacenaSumas = AlmacenaSumas + Puntaje[i];
+      }
+    }
+
 
   }
 
