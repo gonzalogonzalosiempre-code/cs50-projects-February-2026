@@ -24,6 +24,6 @@ int main(void)
         MediaFrases += i;
       }
     }
-
+   int L = 
 
 }
