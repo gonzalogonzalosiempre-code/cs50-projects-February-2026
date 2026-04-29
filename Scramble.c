@@ -15,15 +15,16 @@ string Pregunta(string Respuesta1)
 {
     string Respuesta1[] = get_string("Ingrese su primera palabra.. ");
 
-    int Puntaje[]
+    int Puntaje[27];
   {
     1,3,3,2,1,4,2,4,1,8,5,1,3,1,1,3,10,1,1,1,1,4,4,8,4,10;
   }
 
-  for (int i = 0; i < strlen(Respuesta1); ++1)
+  for (int i = 0; i < strlen(Respuesta1[]); ++1)
   {
-}
+    Respuesta1[i] = Puntaje[i];
+    if (Respuesta1[] = )
+  }
 
-}
 
-
+  }
