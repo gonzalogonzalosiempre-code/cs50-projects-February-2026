@@ -22,15 +22,8 @@ int Pregunta(string Respuesta1)
 
     for (int i = 0; i < strlen(Respuesta1); ++i)
   {
-    PuntajeSuma = Respuesta1[i] - 65;
-    for (int e = 0; Puntaje[e] == PuntajeSuma; ++e)
-    {
-      if (PuntajeSuma == Puntaje[e])
-      {
-        AlmacenaSumas = AlmacenaSumas + Puntaje[e];
-        printf("%i\n", AlmacenaSumas);
-      }
-    }
+    PuntajeSuma = PuntajeSuma + Respuesta1[i] - 65;
   }
+
   return AlmacenaSumas;
 }
