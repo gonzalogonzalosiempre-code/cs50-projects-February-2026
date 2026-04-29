@@ -22,8 +22,8 @@ string Pregunta(string Respuesta1)
 
   for (int i = 0; i < strlen(Respuesta1[]); ++1)
   {
-    Respuesta1[i] = Puntaje[i];
-    
+    int ValorNuevo = 
+
   }
 
 
