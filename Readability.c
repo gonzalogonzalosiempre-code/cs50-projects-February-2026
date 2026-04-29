@@ -9,7 +9,7 @@ int main(void)
     int PalabrasNumero = 0;
     int LetrasNumero = 0;
     int NumeroFrases = 0;
-    for (int i = 0, int n = strlen(Texto); i < n; ++i)
+    for (int i = 0, n = strlen(Texto); i < n; ++i)
     {
       if (isalpha(Texto[i]))
       {
@@ -25,6 +25,10 @@ int main(void)
       }
     }
    int L = LetrasNumero / PalabrasNumero * 100;
-   int S = 
+   int S = NumeroFrases / PalabrasNumero * 100;
+
+   int NivelDeGrado = 0.0588 * L - 0.296 * S - 15.8;
+
+   printf("%i\n", NivelDeGrado);
 
 }
