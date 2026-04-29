@@ -6,5 +6,8 @@
 int main(void)
 {
     string Texto = get_string("Ingrese Su obra/Texto: ");
-    
+    for (int i = 0, int n = strlen(Texto); i < n; ++i)
+    {
+      
+    }
 }
