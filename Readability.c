@@ -8,7 +8,7 @@ int main(void)
     string Texto = get_string("Ingrese Su obra/Texto: ");
     int PalabrasNumero = 0;
     int LetrasNumero = 0;
-    int MediaFrases = 0;
+    int NumeroFrases = 0;
     for (int i = 0, int n = strlen(Texto); i < n; ++i)
     {
       if (isalpha(Texto[i]))
@@ -24,4 +24,6 @@ int main(void)
         MediaFrases += i;
       }
     }
+
+
 }
