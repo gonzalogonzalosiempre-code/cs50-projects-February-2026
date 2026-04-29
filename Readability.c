@@ -11,11 +11,15 @@ int main(void)
     int MediaFrases = 0;
     for (int i = 0, int n = strlen(Texto); i < n; ++i)
     {
+      if (isalpha(Texto[i]))
+      {
       LetrasNumero += i;
+      }
       if (isspace(Texto[i]))
       {
        PalabrasNumero += 1;
       }
-      
+      if (ispuntc(Texto[i]) || is)
+
     }
 }
