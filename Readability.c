@@ -24,6 +24,7 @@ int main(void)
         MediaFrases += i;
       }
     }
-   int L = 
+   int L = LetrasNumero / PalabrasNumero * 100;
+   int S = 
 
 }
