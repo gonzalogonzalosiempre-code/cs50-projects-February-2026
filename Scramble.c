@@ -35,11 +35,11 @@ int Pregunta(string Respuesta1)
     {
       if (isupper(Respuesta1[i]))
       {
-        Resultado += Puntaje[Respuesta1[i]] - 'A';
+        Resultado += Puntaje[Respuesta1[i] - 'A'];
       }
-      else if
+      else if (islower(Respuesta1[i]))
       {
-        Resultado += Puntaje[Respuesta1[i]] - 'a';
+        Resultado += Puntaje[Respuesta1[i] - 'a'];
       }
     }
   return Resultado;
