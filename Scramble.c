@@ -3,7 +3,7 @@
 #include <ctype.h>
 #include <string.h>
 
-int Pregunta(int Tamaño, string Respuesta1);
+int Pregunta(string Respuesta1);
 void OperacionJuez(string, string);
 
 int main(void)
@@ -11,7 +11,7 @@ int main(void)
  string Respuesta1 = Pregunta(Respuesta1);
 }
 
-int Pregunta(int Tamaño, string Respuesta1)
+int Pregunta( string Respuesta1)
 {
     int Puntaje[] = { 1,3,3,2,1,4,2,4,1,8,5,1,3,1,1,3,10,1,1,1,1,4,4,8,4,10;}
 
@@ -27,9 +27,8 @@ int Pregunta(int Tamaño, string Respuesta1)
       if (PuntajeSuma == Puntaje[e])
       {
         AlmacenaSumas = AlmacenaSumas + Puntaje[e];
-
-        return AlmacenaSumas;
       }
     }
   }
+  return AlmacenaSumas;
 }
