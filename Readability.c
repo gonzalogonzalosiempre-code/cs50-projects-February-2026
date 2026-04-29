@@ -7,14 +7,15 @@ int main(void)
 {
     string Texto = get_string("Ingrese Su obra/Texto: ");
     int PalabrasNumero = 0;
-    int MediaLetrasNumero = 0;
+    int LetrasNumero = 0;
     int MediaFrases = 0;
     for (int i = 0, int n = strlen(Texto); i < n; ++i)
     {
-      int Letras += i;
+      LetrasNumero += i;
       if (isspace(Texto[i]))
       {
        PalabrasNumero += 1;
       }
+      
     }
 }
