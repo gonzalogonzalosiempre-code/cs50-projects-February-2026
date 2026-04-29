@@ -13,6 +13,12 @@ int main(void)
 int Pregunta(string Respuesta1)
 {
     int Puntaje[] = { 1,3,3,2,1,4,2,4,1,8,5,1,3,1,1,3,10,1,1,1,1,4,4,8,4,10};
-    
+    for (i = 0, n = strlen(Respuesta1); i < n; ++i)
+    {
+      if (isupper(Respuesta1[i]))
+      {
+        
+      }
+    }
 
 }
