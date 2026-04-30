@@ -12,13 +12,6 @@ int main(void)
     int Edad;
     printf("Introduce Tu Nombre..\n");
     scanf("%s\n", Nombre);
-    printf("Introduce Tu Edad..\n");
-    scanf("%i", &Edad);
-    struct Persona Persona1;
-    {
-        Persona1.edad = Edad;
-        strcpy(Persona1.nombre, Nombre);
-    }
 
     for (int i = 0; i < strlen(Nombre); ++i)
     {
