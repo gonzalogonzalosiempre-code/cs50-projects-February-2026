@@ -11,7 +11,7 @@ int main(void)
     char Nombre[15];
     int Edad;
     printf("Introduce Tu Nombre..\n");
-    scanf("%c", &Nombre);
+    scanf("%s\n", Nombre);
     printf("Introduce Tu Edad..\n");
     scanf("%i", &Edad);
     struct Persona Persona1;
