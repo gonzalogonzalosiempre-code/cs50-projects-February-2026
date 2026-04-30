@@ -8,6 +8,8 @@ struct Persona
 };
 int main(void)
 {
+    string Nombre;
+    int Edad;
     printf("Introduce Tu Nombre..\n");
     scanf("%s", &Nombre);
     printf("Introduce Tu Edad..\n");
