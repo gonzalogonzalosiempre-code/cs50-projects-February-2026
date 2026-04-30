@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <string.h>
 
-struct Persona;
+struct Persona
 {
     int edad;
     char nombre[50];
-}
+};
 int main(void)
 {
     printf("Introduce Tu Nombre..\n");
