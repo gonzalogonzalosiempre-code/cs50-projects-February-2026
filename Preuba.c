@@ -4,14 +4,14 @@
 struct Persona
 {
     int edad;
-    char nombre[50];
+    char nombre[15];
 };
 int main(void)
 {
-    string Nombre;
+    char Nombre[15];
     int Edad;
     printf("Introduce Tu Nombre..\n");
-    scanf("%s", &Nombre);
+    scanf("%c", &Nombre);
     printf("Introduce Tu Edad..\n");
     scanf("%i", &Edad);
     struct Persona Persona1;
