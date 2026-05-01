@@ -11,7 +11,7 @@ int main(void)
     char Nombre[15];
     int Edad;
     printf("Introduce Tu Nombre..\n");
-    scanf("%s\n", Nombre);
+    scanf("%s", Nombre);
 
     for (int i = 0; i < strlen(Nombre); ++i)
     {
