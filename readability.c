@@ -24,8 +24,8 @@ int main(void)
         NumeroFrases ++;
       }
     }
-   int L = LetrasNumero / PalabrasNumero * 100;
-   int S = NumeroFrases / PalabrasNumero * 100;
+   int L = ((float)LetrasNumero / PalabrasNumero) * 100;
+   int S = ((float)NumeroFrases / PalabrasNumero) * 100;
 
    int NivelDeGrado = 0.0588 * L - 0.296 * S - 15.8;
    printf("%i\n", NivelDeGrado);
@@ -34,9 +34,17 @@ int main(void)
    {
     printf("Before Grade 1\n");
    }
-   else if (NivelDeGrado < 1 || NivelDeGrado < 5)
+   else if (NivelDeGrado == 2)
    {
-    printf("Grade 1-5\n");
+    printf("Grade 2\n");
+   }
+   else if (NivelDeGrado == 3)
+   {
+    printf("Grade 3\n");
+   }
+   else if (NivelDeGrado == 5)
+   {
+    printf("Grade 5\n");
    }
    else if (NivelDeGrado == 6 )
    {
