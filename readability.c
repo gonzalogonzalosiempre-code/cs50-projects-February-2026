@@ -29,13 +29,11 @@ int main(void)
 
    int NivelDeGrado = 0.0588 * L - 0.296 * S - 15.8;
 
-   printf("%i\n", NivelDeGrado);
-
-   if (NivelDeGrado > 2)
+   if (NivelDeGrado < 2)
    {
     printf("Before Grade 1\n");
    }
-   else if (NivelDeGrado < 1 || NivelDeGrado > 5)
+   else if (NivelDeGrado < 1 || NivelDeGrado < 5)
    {
     printf("Grade 1-5\n");
    }
