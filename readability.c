@@ -15,7 +15,7 @@ int main(void)
       {
         LetrasNumero += i;
       }
-      if (isspace(Texto[i]))
+      if (isblank(Texto[i]))
       {
         PalabrasNumero += i;
       }
