@@ -38,7 +38,7 @@ int main(int argc, string argv[])
         }
         else
         {
-          printf("%c", (key[Posicion]));
+          printf("%c", (Palabra[e]));
         }
     }
     printf("\n");
