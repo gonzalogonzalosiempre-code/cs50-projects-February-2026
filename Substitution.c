@@ -38,7 +38,7 @@ int main(int argc, string argv[])
         }
         else
         {
-          printf("%c");
+          printf("%c", (key[Posicion]));
         }
     }
     printf("\n");
