@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <cs50.h>
 #include <ctype.h>
+#include <string.h>
 
 int main(void)
 {
-    string KeyCifrado = get_string("Cifrado Key.. ");
+    string KeyCifrado = get_string("Cifrado Key..");
 
-    if (KeyCifrado < 26)
+    for (int i = 0; i < strlen(KeyCifrado); ++i)
     {
-        printf("El Cifrado Debe tener 26 Caracteres.\n");
+       if (KeyCifrado[i] == )
     }
 }
