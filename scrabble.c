@@ -36,15 +36,15 @@ void Operacion(int Puntaje1, int Puntaje2)
 {
   if (Puntaje1 > Puntaje2)
   {
-    printf("Jugador Uno Gano!\n");
+    printf("Player 1 win!\n");
   }
   else if (Puntaje1 < Puntaje2)
   {
-    printf("Jugador Dos Gano!\n");
+    printf("Player 2 win!\n");
   }
   else
   {
-    printf("Empate!\n");
+    printf("Tie!\n");
   }
 }
 
