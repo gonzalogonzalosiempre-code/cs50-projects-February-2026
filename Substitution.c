@@ -14,7 +14,7 @@ int main(void)
       Codigos[i] == KeyCifrado[i];
       NumeroDeLetras ++;
       for (int e = 0; e < strlen(KeyCifrado); ++i)
-      if (NumeroDeLetras < 26 || )
+      if (NumeroDeLetras < 26 || Codigos[e] == KeyCifrado[i])
         printf("El Numero De Caracteres debe de ser de 26\n");
       }
     }
