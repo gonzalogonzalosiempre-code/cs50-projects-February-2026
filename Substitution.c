@@ -11,7 +11,7 @@ int main(int argc, string argv[])
         printf("Uso: ./substitution llave\n");
         return 1;
     }
-    string key = argv[1]
+    string key = argv[1];
     //Creamos una cadena de caracteres para la respuesta, para comprobar si tiene 26 caracteres.
     if(strlen(key) != 26)
     {
