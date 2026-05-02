@@ -40,11 +40,11 @@ int main(void)
    }
    else if (NivelDeGrado == 3)
    {
-    printf("Grade 3\n");
+    printf("Grade 2\n");
    }
    else if (NivelDeGrado == 4)
    {
-    printf("Grade 4\n");
+    printf("Grade 3\n");
    }
    else if (NivelDeGrado == 5)
    {
@@ -60,7 +60,7 @@ int main(void)
    }
    else if (NivelDeGrado == 8)
    {
-    printf("Grade 8\n");
+    printf("Grade 7\n");
    }
    else if (NivelDeGrado == 9)
    {
@@ -68,7 +68,7 @@ int main(void)
    }
    else if (NivelDeGrado == 10)
    {
-    printf("Grade 10\n");
+    printf("Grade 9\n");
    }
    else if (NivelDeGrado == 11)
    {
