@@ -11,7 +11,7 @@ int main(int argc, string argv[])
         printf("Uso: ./substitution llave\n");
         return 1;
     }
-    string key = argc[1]
+    string key = argv[1]
     //Creamos una cadena de caracteres para la respuesta, para comprobar si tiene 26 caracteres.
     if(strlen(key) != 26)
     {
@@ -23,7 +23,7 @@ int main(int argc, string argv[])
     printf("CipherText: ");
 
 
-    //Usamos for para buscar la posicion en el array de Key y imprimir cada linea dependiendo de donde se encuentre
+    //Usamos for para buscar la posicion en el array de Key y imprimir cada linea dependiendo de donde se encuentre para convertir la letra
     for (int e = 0; e < strlen(Palabra); ++e)
     {
         if (islower(Palabra[e]))
