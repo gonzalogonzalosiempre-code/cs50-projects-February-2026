@@ -5,17 +5,14 @@
 
 int main(int argc, string argv[])
 {
-    string KeyCifrado = get_string("Cifrado Key..");
-
-    int NumeroDeLetras = 0;
-    for (int i = 0; i < strlen(KeyCifrado); ++i)
+    if (argc != 2)
     {
-      NumeroDeLetras ++;
-      if (NumeroDeLetras < 26 || isdigit(KeyCifrado[i]) || ispunct(KeyCifrado[i]))
-      {
-        printf("El Numero De Caracteres debe de ser de 26, No Debe Tener Numeros, y Ninguna Letra Repetida.\n");
-        return 1;
-      }
+        printf("Uso: ./substitution llave\n");
+    }
+    string key = argc[1]
+    if(strlen(key) != 26)
+    {
+        prinf("Debe Contener 26 Caracteres\n");
     }
 
     string Palabra = get_string("Tu Palabra A Cifrar es..");
