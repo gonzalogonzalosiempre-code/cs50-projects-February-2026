@@ -13,7 +13,7 @@ int main(void)
     {
       if (isalpha(Texto[i]))
       {
-        LetrasNumero += i;
+        LetrasNumero ++;
       }
       if (isblank(Texto[i]))
       {
