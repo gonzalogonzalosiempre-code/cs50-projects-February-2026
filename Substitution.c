@@ -24,10 +24,16 @@ int main(int argc, string argv[])
         if (islower(Palabra[e]))
         {
             Palabra[e] = key[e] - 'a'
+            printf("%c", Palabra[e])
         }
         if (isupper(Palabra[e]))
         {
             Palabra[e] = key[e] - 'A'
+            printf("%c", Palabra[e])
+        }
+        else
+        {
+
         }
     }
     printf("CipherText: %s\n", Palabra);
