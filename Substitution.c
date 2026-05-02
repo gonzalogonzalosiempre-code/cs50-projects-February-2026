@@ -31,4 +31,5 @@ int main(void)
             Palabra[e] = KeyCifrado[e] - 'A'
         }
     }
+    printf("CipherText: %s\n", Palabra);
 }
