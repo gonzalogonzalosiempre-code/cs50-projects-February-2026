@@ -3,7 +3,7 @@
 #include <ctype.h>
 #include <string.h>
 
-int main(void)
+int main(int argc, string argv[])
 {
     string KeyCifrado = get_string("Cifrado Key..");
 
