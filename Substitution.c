@@ -11,12 +11,12 @@ int main(void)
     int NumeroDeLetras = 0;
     for (int i = 0; i < strlen(KeyCifrado); ++i)
     {
+      Codigos[i] == KeyCifrado[i];
       NumeroDeLetras ++;
-      if (NumeroDeLetras < 26)
-      {
+      for (int e = 0; e < strlen(KeyCifrado); ++i)
+      if (NumeroDeLetras < 26 || )
         printf("El Numero De Caracteres debe de ser de 26\n");
       }
-      Codigos[i] == KeyCifrado[i];
     }
 
     string Palabra = get_string("Tu Palabra A Cifrar es..");
