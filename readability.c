@@ -15,13 +15,13 @@ int main(void)
       {
         LetrasNumero ++;
       }
-      if (isblank(Texto[i]))
+      if (isspace(Texto[i]))
       {
-        PalabrasNumero += i;
+        PalabrasNumero ++;
       }
-      if (ispunct(Texto[i]))
+      if (Texto[i] == '.' || Texto[i] == '!' || Texto[i] == '?')
       {
-        NumeroFrases += i;
+        NumeroFrases ++;
       }
     }
    int L = LetrasNumero / PalabrasNumero * 100;
