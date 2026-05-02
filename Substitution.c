@@ -9,7 +9,15 @@ int main(void)
 
     for (int i = 0; i < strlen(KeyCifrado); ++i)
     {
-       char Letra[i] += KeyCifrado[i];
+      int NumeroDeLetras ++;
+      if (NumeroDeLetras < 26)
+      {
+        printf("El Numero De Caracteres debe de ser de 26\n");
+      }
+    }
+
+    for (int e = 0; e < strlen(KeyCifrado); ++e)
+    {
        
     }
 }
