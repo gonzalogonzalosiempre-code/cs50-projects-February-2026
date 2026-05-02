@@ -14,8 +14,21 @@ int main(void)
       if (NumeroDeLetras < 26 || isdigit(KeyCifrado[i]) || ispunct(KeyCifrado[i]))
       {
         printf("El Numero De Caracteres debe de ser de 26, No Debe Tener Numeros, y Ninguna Letra Repetida.\n");
+        return 1;
       }
     }
 
     string Palabra = get_string("Tu Palabra A Cifrar es..");
+
+    for (int e = 0; e < strlen(Palabra); ++e)
+    {
+        if (islower(Palabra[e]))
+        {
+            Palabra[e] = KeyCifrado[e] - 'a'
+        }
+        if (isupper(Palabra[e]))
+        {
+            Palabra[e] = KeyCifrado[e] - 'A'
+        }
+    }
 }
