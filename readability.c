@@ -28,7 +28,6 @@ int main(void)
    int S = ((float)NumeroFrases / PalabrasNumero) * 100;
 
    int NivelDeGrado = 0.0588 * L - 0.296 * S - 15.8;
-   printf("%i\n", NivelDeGrado);
 
    if (NivelDeGrado < 2)
    {
@@ -60,7 +59,7 @@ int main(void)
    }
    else if (NivelDeGrado == 8)
    {
-    printf("Grade 7\n");
+    printf("Grade 8\n");
    }
    else if (NivelDeGrado == 9)
    {
@@ -68,7 +67,7 @@ int main(void)
    }
    else if (NivelDeGrado == 10)
    {
-    printf("Grade 9\n");
+    printf("Grade 10\n");
    }
    else if (NivelDeGrado == 11)
    {
