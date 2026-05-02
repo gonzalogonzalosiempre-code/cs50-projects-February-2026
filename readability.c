@@ -42,6 +42,10 @@ int main(void)
    {
     printf("Grade 3\n");
    }
+   else if (NivelDeGrado == 4)
+   {
+    printf("Grade 4\n");
+   }
    else if (NivelDeGrado == 5)
    {
     printf("Grade 5\n");
