@@ -7,17 +7,17 @@ int main(void)
 {
     string KeyCifrado = get_string("Cifrado Key..");
 
+    char Codigos[];
+    int NumeroDeLetras = 0;
     for (int i = 0; i < strlen(KeyCifrado); ++i)
     {
-      int NumeroDeLetras ++;
+      NumeroDeLetras ++;
       if (NumeroDeLetras < 26)
       {
         printf("El Numero De Caracteres debe de ser de 26\n");
       }
+      Codigos[i] == KeyCifrado[i];
     }
 
-    for (int e = 0; e < strlen(KeyCifrado); ++e)
-    {
-       
-    }
+    string Palabra = get_string("Tu Palabra A Cifrar es..");
 }
