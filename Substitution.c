@@ -29,12 +29,12 @@ int main(int argc, string argv[])
         if (islower(Palabra[e]))
         {
             int Posicion = Palabra[e] - 'a';
-            printf("%c", key[Posicion]);
+            printf("%c", tolower(key[Posicion]);
         }
         if (isupper(Palabra[e]))
         {
             int Posicion = Palabra[e] - 'A';
-            printf("%c", key[Posicion]);
+            printf("%c", toupper(key[Posicion]);
         }
         else
         {
