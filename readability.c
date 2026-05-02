@@ -19,7 +19,7 @@ int main(void)
       {
         PalabrasNumero += i;
       }
-      if (ispunct(Texto[i]))
+      if (isblank(Texto[i]))
       {
         NumeroFrases += i;
       }
