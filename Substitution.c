@@ -15,7 +15,7 @@ int main(int argc, string argv[])
     //Creamos una cadena de caracteres para la respuesta, para comprobar si tiene 26 caracteres.
     if(strlen(key) != 26)
     {
-        prinf("Debe Contener 26 Caracteres\n");
+        printf("Debe Contener 26 Caracteres\n");
         return 1;
     }
     //Pedimos la palabra a cifrar
@@ -28,12 +28,12 @@ int main(int argc, string argv[])
     {
         if (islower(Palabra[e]))
         {
-            int Posicion = Palabra[e] - 'a'
+            int Posicion = Palabra[e] - 'a';
             printf("%c", key[Posicion]);
         }
         if (isupper(Palabra[e]))
         {
-            int Posicion = Palabra[e] - 'A'
+            int Posicion = Palabra[e] - 'A';
             printf("%c", key[Posicion]);
         }
         else
