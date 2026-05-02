@@ -4,5 +4,10 @@
 
 int main(void)
 {
-    string KeyCifrado = get_string(")
+    string KeyCifrado = get_string("Cifrado Key.. ");
+
+    if (KeyCifrado < 26)
+    {
+        printf("El Cifrado Debe tener 26 Caracteres.\n");
+    }
 }
