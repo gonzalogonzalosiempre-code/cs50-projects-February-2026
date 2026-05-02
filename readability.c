@@ -19,7 +19,7 @@ int main(void)
       {
         PalabrasNumero += i;
       }
-      if (isblank(Texto[i]))
+      if (ispunct(Texto[i]))
       {
         NumeroFrases += i;
       }
@@ -28,6 +28,7 @@ int main(void)
    int S = NumeroFrases / PalabrasNumero * 100;
 
    int NivelDeGrado = 0.0588 * L - 0.296 * S - 15.8;
+   printf("%i\n", NivelDeGrado);
 
    if (NivelDeGrado < 2)
    {
