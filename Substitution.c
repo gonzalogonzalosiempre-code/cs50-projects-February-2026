@@ -5,36 +5,42 @@
 
 int main(int argc, string argv[])
 {
+    //Confirmamos que el usuario escriba su respuesta.
     if (argc != 2)
     {
         printf("Uso: ./substitution llave\n");
         return 1;
     }
     string key = argc[1]
+    //Creamos una cadena de caracteres para la respuesta, para comprobar si tiene 26 caracteres.
     if(strlen(key) != 26)
     {
         prinf("Debe Contener 26 Caracteres\n");
         return 1;
     }
+    //Pedimos la palabra a cifrar
+    string Palabra = get_string("plaintext:  ");
+    printf("CipherText: ");
 
-    string Palabra = get_string("Tu Palabra A Cifrar es..");
 
+    //Usamos for para buscar la posicion en el array de Key y imprimir cada linea dependiendo de donde se encuentre
     for (int e = 0; e < strlen(Palabra); ++e)
     {
         if (islower(Palabra[e]))
         {
-            Palabra[e] = key[e] - 'a'
-            printf("%c", Palabra[e])
+            int Posicion = Palabra[e] - 'a'
+            printf("%c", key[Posicion]);
         }
         if (isupper(Palabra[e]))
         {
-            Palabra[e] = key[e] - 'A'
-            printf("%c", Palabra[e])
+            int Posicion = Palabra[e] - 'A'
+            printf("%c", key[Posicion]);
         }
         else
         {
-
+          printf("%c");
         }
     }
-    printf("CipherText: %s\n", Palabra);
+    printf("\n");
+    return 0;
 }
