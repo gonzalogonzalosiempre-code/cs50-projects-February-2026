@@ -38,17 +38,18 @@ int main(int argc, string argv[])
   {
    string Nombre = get_string("Rank: ");
    if (Nombre != Candidate[i].Name)
-   {
+    {
     printf("Invalidid Name");
     return 1;
-   }
+     }
    for (int e = 0; e < NumerosDeCandidatos; ++i)
-   {
-    if (strcmp(Nombre, Candidate[e].Name) == 0)
-    {
-     Candidate[i].Preference ++;
-    }
+     {
+      if (strcmp(Nombre, Candidate[e].Name) == 0)
+      {
+       Candidate[i].Preference ++;
+      }
+     }
+    printf("\n");
    }
-  }
-
+   
 }
