@@ -5,7 +5,8 @@
 
 typedef struct Candidatos
 {
-    
+  int Votes;
+  string 
 }
 
 int main(void)
