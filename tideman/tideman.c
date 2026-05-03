@@ -144,10 +144,7 @@ void sort_pairs(void)
 {
     for (int i = 0; i < candidate_count; ++i)
     {
-        if (pairs[i] > pairs[i+1])
-        {
-            
-        }
+      
     }
     // TODO
     return;
