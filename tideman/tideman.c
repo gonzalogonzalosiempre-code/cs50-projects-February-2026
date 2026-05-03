@@ -63,5 +63,12 @@ int main(int argc, string argv[])
         MaxVotos[p] = Candidate[o].Preference;
       }
     }
+    for (int u = 0; u < NumeroDeCandidatos; ++u)
+    {
+        if (MaxVotos[p] == Candidate[u].Preference)
+        {
+            Candidate[u].RangoPreference ++;
+        }
+    }
    }
 }
