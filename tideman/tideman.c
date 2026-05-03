@@ -98,7 +98,11 @@ int main(int argc, string argv[])
 // Update ranks given a new vote
 bool vote(int rank, string name, int ranks[])
 {
-    if (strcmp(name,  ))
+    if (strcmp(name, candidates[j]))
+    {
+        rank[j] = candidates[j];
+        return true;
+    }
     // TODO
     return false;
 }
