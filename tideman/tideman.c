@@ -33,6 +33,7 @@ int main(int argc, string argv[])
   {
     Candidate[i].Name = argv[i + 1];
     Candidate[i].Votes = 0;
+    Candidate[i].Preference = 0;
   }
   int NumeroVotos = get_int("Numeros De Votos");
   for (int i = 0; i < NumeroVotos; ++i)
@@ -48,6 +49,7 @@ int main(int argc, string argv[])
     if (strcmp(Nombre, Candidate[e].Name) == 0)
     {
      Candidate[i].Votes ++;
+     Candidate[i].Preference ++;
     }
    }
   }
