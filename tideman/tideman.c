@@ -28,6 +28,6 @@ int main(int argc, string argv[])
 
   for (int i = 0; i < NumerosDeCandidatos; ++i)
   {
-    
+    Candidates[i].Name
   }
 }
