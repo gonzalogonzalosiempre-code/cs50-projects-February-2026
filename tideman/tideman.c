@@ -48,7 +48,14 @@ int main(int argc, string argv[])
     {
     printf("Invalidid Name");
     return 1;
-     }
+    }
+   for (int k = 0; k < NumeroDeCandidatos; ++k)
+   {
+    if (strcmp(Nombre, Candidate[k].Name) == 0)
+    {
+        Candidate[k].NumeroEscogido ++;
+    }
+   }
    for (int e = 0; e < NumerosDeCandidatos; ++i)
      {
       if (strcmp(Nombre, Candidate[e].Name) == 0)
