@@ -51,7 +51,7 @@ int main(int argc, string argv[])
      {
       if (strcmp(Nombre, Candidate[e].Name) == 0)
       {
-       Candidate[i].Preference ++;
+       Candidate[e].Preference ++;
       }
     }
     for (int o = 0; o < NumeroDeCandidatos; ++i)
