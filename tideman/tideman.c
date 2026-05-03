@@ -36,8 +36,8 @@ int main(int argc, string argv[])
     Candidate[i].Rango = 0;
   }
   int NumeroVotos = get_int("Numeros De Votos");
-  int MaxVotos = 0;
-  for (int i = 0; i < NumeroDeCandidatos; ++i)
+  int MaxVotos[MAX] = {0};
+  for (int p = 0; p < NumeroDeCandidatos; ++p)
   {
   for (int i = 0; i < NumeroVotos; ++i)
   {
@@ -58,9 +58,9 @@ int main(int argc, string argv[])
     }
     for (int o = 0; o < NumeroDeCandidatos; ++i)
     {
-      if (Candidate[o].Preference > MaxVotos)
+      if (Candidate[o].Preference > MaxVotos[p])
       {
-        MaxVotos = Candidate[o].Preference;
+        MaxVotos[p] = Candidate[o].Preference;
       }
     }
    }
