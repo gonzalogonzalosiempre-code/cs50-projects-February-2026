@@ -9,7 +9,7 @@ typedef struct
 {
   string Name;
   int Preference;
-  int Rango;
+  int RangoPreference;
 } Candidates;
 
 Candidates Candidate[MAX];
@@ -64,5 +64,4 @@ int main(int argc, string argv[])
       }
     }
    }
-   for (int i = 0; i < NumeroDeCandidatos)
 }
