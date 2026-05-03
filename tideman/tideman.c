@@ -9,6 +9,7 @@ typedef struct
 {
   int Votes;
   string Name;
+  int Preference;
 } Candidates;
 
 Candidates Candidate[MAX];
@@ -33,7 +34,10 @@ int main(int argc, string argv[])
     Candidate[i].Name = argv[i + 1];
     Candidate[i].Votes = 0;
   }
-  string NumeroVotos = get_string("Numeros De Votos");
-  for (int i = 0; i < ; ++i)
+  int NumeroVotos = get_int("Numeros De Votos");
+  for (int i = 0; i < NumeroVotos; ++i)
+  {
+    
+  }
 
 }
