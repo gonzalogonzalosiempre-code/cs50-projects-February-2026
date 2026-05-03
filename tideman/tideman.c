@@ -55,6 +55,6 @@ int main(int argc, string argv[])
      }
     printf("\n");
    }
-   if (Candidate[i].Vote )
+   if (Candidate[i].Vote > )
    }
 }
