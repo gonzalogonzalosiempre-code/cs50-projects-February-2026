@@ -7,7 +7,6 @@
 
 typedef struct
 {
-  int Votes;
   string Name;
   int Preference;
 } Candidates;
@@ -32,11 +31,10 @@ int main(int argc, string argv[])
   for (int i = 0; i < NumerosDeCandidatos; ++i)
   {
     Candidate[i].Name = argv[i + 1];
-    Candidate[i].Votes = 0;
     Candidate[i].Preference = 0;
   }
-  int NumeroVotos = get_int("Numeros De Votos");
-  for (int i = 0; i < NumeroVotos; ++i)
+  int NumeroPreferencia = get_int("Numeros De Votos");
+  for (int i = 0; i < NumeroPreferencia; ++i)
   {
    string Nombre = get_string("Rank: ");
    if (Nombre != Candidate[i].Name)
@@ -48,7 +46,6 @@ int main(int argc, string argv[])
    {
     if (strcmp(Nombre, Candidate[e].Name) == 0)
     {
-     Candidate[i].Votes ++;
      Candidate[i].Preference ++;
     }
    }
