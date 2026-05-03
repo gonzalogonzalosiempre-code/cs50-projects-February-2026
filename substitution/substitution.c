@@ -20,7 +20,7 @@ int main(int argc, string argv[])
     }
     //Pedimos la palabra a cifrar
     string Palabra = get_string("plaintext:  ");
-    printf("CipherText: ");
+    printf("ciphertext: ");
 
 
     //Usamos for para buscar la posicion en el array de Key y imprimir cada linea dependiendo de donde se encuentre para convertir la letra
@@ -31,7 +31,7 @@ int main(int argc, string argv[])
             int Posicion = Palabra[e] - 'a';
             printf("%c", tolower(key[Posicion]));
         }
-        if (isupper(Palabra[e]))
+        else if (isupper(Palabra[e]))
         {
             int Posicion = Palabra[e] - 'A';
             printf("%c", toupper(key[Posicion]));
