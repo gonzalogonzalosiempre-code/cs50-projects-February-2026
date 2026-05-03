@@ -43,7 +43,10 @@ int main(int argc, string argv[])
     printf("Invalidid Name");
     return 1;
    }
-   
+   if (strcmp(Nombre, Candidate[i].name) == 0 || strcmp(Nombre,Candidate[i+1]) == 0)
+   {
+    Candidate
+   }
   }
 
 }
