@@ -25,8 +25,9 @@ int main(int argc, string argv[])
     printf("El limite es 9.. Ingrese Otra vez");
     return 2;
   }
-  
-  Candidates Candidate[]
-  Candidate[].Votes =
-  Candidate[].Name =
+
+  for (int i = 0; i < NumerosDeCandidatos; ++i)
+  {
+    
+  }
 }
