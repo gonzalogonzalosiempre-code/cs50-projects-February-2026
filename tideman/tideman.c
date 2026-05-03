@@ -11,6 +11,8 @@ typedef struct
   string Name;
 } Candidates;
 
+Candidates Candidate[MAX];
+
 int main(int argc, string argv[])
 {
   if (argc < 2)
@@ -28,6 +30,6 @@ int main(int argc, string argv[])
 
   for (int i = 0; i < NumerosDeCandidatos; ++i)
   {
-    Candidates[i].Name
+    Candidate[i].Name
   }
 }
