@@ -3,7 +3,7 @@
 #include <ctype.h>
 #include <string.h>
 
-#define MAX 9;
+#define MAX 9
 
 typedef struct
 {
@@ -22,7 +22,7 @@ int main(int argc, string argv[])
     printf("Ingrese mas Candidatos..");
     return 1;
   }
-  int NumerosDeCandidatos = argv - 1
+  int NumerosDeCandidatos = argc - 1
 
   if (NumerosDeCandidatos > MAX)
   {
