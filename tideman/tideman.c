@@ -35,8 +35,10 @@ int main(int argc, string argv[])
     Candidate[i].Preference = 0;
     Candidate[i].Rango = 0;
   }
-  int NumeroPreferencia = get_int("Numeros De Votos");
-  for (int i = 0; i < NumeroPreferencia; ++i)
+  int NumeroVotos = get_int("Numeros De Votos");
+  for (int i = 0; i < NumeroDeCandidatos; ++i)
+  {
+  for (int i = 0; i < NumeroVotos; ++i)
   {
    string Nombre = get_string("Rank: ");
    if (Nombre != Candidate[i].Name)
@@ -53,5 +55,5 @@ int main(int argc, string argv[])
      }
     printf("\n");
    }
- 
+   }
 }
