@@ -86,5 +86,5 @@ void print_winner(void)
     printf("%s", candidates[i].name);
    }
    }
-    return 0;
+    return;
 }
