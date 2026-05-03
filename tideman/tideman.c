@@ -34,8 +34,7 @@ int main(int argc, string argv[])
   {
     Candidate[i].Name = argv[i + 1];
     Candidate[i].Preference = 0;
-    Candidate[i].RangoPreference = 0;
-    Candidate[i].NumeroEscogido = 0;
+    Candidate[i].Rank = 0;
   }
   int NumeroVotos = get_int("Numeros De Votos");
   int MaxVotos[MAX] = {0};
@@ -46,16 +45,16 @@ int main(int argc, string argv[])
    string Nombre = get_string("Rank: ");
    if (Nombre != Candidate[i].Name)
     {
-    printf("Invalidid Name");
+    printf("Invalid Name");
     return 1;
     }
    for (int k = 0; k < NumeroDeCandidatos; ++k)
    {
     if (strcmp(Nombre, Candidate[k].Name) == 0)
     {
-        Candidate[k].NumeroEscogido ++;
+        Candidate[k].Rank += k + 1;
     }
-   }
+    }
    for (int e = 0; e < NumerosDeCandidatos; ++i)
      {
       if (strcmp(Nombre, Candidate[e].Name) == 0)
@@ -63,21 +62,7 @@ int main(int argc, string argv[])
        Candidate[e].Preference ++;
       }
     }
-    printf("\n");
-    }
-    for (int o = 0; o < NumeroDeCandidatos; ++i)
-    {
-      if (Candidate[o].Preference > MaxVotos[p])
-      {
-        MaxVotos[p] = Candidate[o].Preference;
-      }
-    }
-    for (int u = 0; u < NumeroDeCandidatos; ++u)
-    {
-        if (MaxVotos[p] == Candidate[u].Preference)
-        {
-            Candidate[u].RangoPreference ++;
-        }
+   printf("\n");
     }
    }
 }
