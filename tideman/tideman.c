@@ -3,13 +3,15 @@
 #include <ctype.h>
 #include <string.h>
 
-typedef struct Candidatos
+typedef struct
 {
   int Votes;
-  string 
-}
+  string Name;
+} Candidates;
 
 int main(void)
 {
-
+  Candidates Candidate[]
+  Candidate[].Votes =
+  Candidate[].Name = 
 }
