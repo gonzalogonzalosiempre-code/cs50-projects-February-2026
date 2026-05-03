@@ -54,6 +54,8 @@ int main(int argc, string argv[])
        Candidate[e].Preference ++;
       }
     }
+    printf("\n");
+    }
     for (int o = 0; o < NumeroDeCandidatos; ++i)
     {
       if (Candidate[o].Preference > MaxVotos)
@@ -61,9 +63,6 @@ int main(int argc, string argv[])
         MaxVotos = Candidate[o].Preference;
       }
     }
-     }
-    printf("\n");
    }
    for (int i = 0; i < NumeroDeCandidatos)
-   }
 }
