@@ -37,7 +37,13 @@ int main(int argc, string argv[])
   int NumeroVotos = get_int("Numeros De Votos");
   for (int i = 0; i < NumeroVotos; ++i)
   {
-    
+   string Nombre = get_string("Rank: ");
+   if (Nombre != Candidate[i].Name)
+   {
+    printf("Invalidid Name");
+    return 1;
+   }
+   
   }
 
 }
