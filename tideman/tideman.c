@@ -53,6 +53,7 @@ int main(int argc, string argv[])
       {
        Candidate[i].Preference ++;
       }
+    }
     for (int o = 0; o < NumeroDeCandidatos; ++i)
     {
       if (Candidate[o].Preference > MaxVotos)
