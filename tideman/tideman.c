@@ -31,6 +31,7 @@ void add_pairs(void);
 void sort_pairs(void);
 void lock_pairs(void);
 void print_winner(void);
+bool Ciclo_Hallar(int loser, int winner);
 
 int main(int argc, string argv[])
 {
@@ -160,17 +161,22 @@ void sort_pairs(void)
     // TODO
     return;
 }
+bool Ciclo_Hallar(int loser,int winner)
+{
+ if (loser > winner)
+ {
+    return true
+ }
+ for (int i = 0; i < pair_count; ++i)
+ {
+    
+ }
+}
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
 {
-    int direccion;
-    if (pairs[i].losser == direccion;)
-    {
-        return;
-    }
 
-    // TODO
-    return;
+
 }
 
 // Print the winner of the election
