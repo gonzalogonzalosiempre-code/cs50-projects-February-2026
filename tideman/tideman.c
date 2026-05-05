@@ -182,11 +182,13 @@ bool Halla_Elciclo(int losser,int winner)
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
 {
-    if ()
+    for (int i = 0; i < pair_count; ++i)
     {
-
+        if (!Halla_Elciclo(pairs[i].losser,pairs[i].winner))
+        {
+            
+        }
     }
-
     // TODO
     return;
 }
