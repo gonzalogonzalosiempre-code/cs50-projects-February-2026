@@ -145,7 +145,10 @@ void sort_pairs(void)
 {
     for (int i = 0; i < voter_count; ++i)
     {
-      for (int j = 0;)
+      for (int j = 0; j < j + 1 _ i; ++j)
+      {
+        
+      }
     }
     // TODO
     return;
