@@ -148,7 +148,7 @@ void sort_pairs(void)
       for (int j = 1; j < j + 1 - i; ++j)
       {
         int PrimerDuelo = pairs[i].winner[i]+pairs[i].losser[j];
-        int ProximoDuelo = pairs[i+1].winner[i+1]+pairs[j+1]
+        int ProximoDuelo = pairs[i+1].winner[i+1]+pairs[j+1];
         if (ProximoDuelo > PrimerDuelo)
         {
           pair temp = pairs[j];
