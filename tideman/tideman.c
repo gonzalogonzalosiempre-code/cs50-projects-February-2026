@@ -100,9 +100,10 @@ int main(int argc, string argv[])
 // Update ranks given a new vote
 bool vote(int rank, string name, int ranks[])
 {
+    //Empezamos contando desde el primer candidato comparando si el nombre obtenido coincide con alguno
     for (int j = 0; j < candidate_count; ++j)
     {
-    if (strcmp(name, candidates[j]) == 0)
+    if (strcmp(name, candidates[j]) == 0) // Si coincide se registra en ranks, mediante la variable rank para presicion
     {
         ranks[rank] = j;
         return true;
@@ -115,11 +116,12 @@ bool vote(int rank, string name, int ranks[])
 // Update preferences given one voter's ranks
 void record_preferences(int ranks[])
 {
+    //Contamos desde el primer candidato
     for (int i = 0; i < candidate_count; ++i)
     {
-        for (int j = i + 1; j < candidate_count; ++j)
+        for (int j = i + 1; j < candidate_count; ++j) //Contamos desde el candidato 1 es decir i + 1
         {
-         preferences[ranks[i]][ranks[j]]++;
+         preferences[ranks[i]][ranks[j]]++; // Quien prefirio mas a i que a j, el for verifica cada candidato empezando desde 1 comparandolo con i
         }
     }
     // TODO
@@ -129,15 +131,16 @@ void record_preferences(int ranks[])
 // Record pairs of candidates where one is preferred over the other
 void add_pairs(void)
 {
+    //Contamos desde el primer candidato para tener su preferencia, contra la preferencia de otros cantidadatos sobre otros candidatos y contar pares con ganadores y perdedores
     for (int i = 0; i < candidate_count; ++i)
     {
       for (int j = 0; j < candidate_count; ++j)
       {
-        if (preferences[i][j] > preferences[j][i])
+        if (preferences[i][j] > preferences[j][i]) //Si la preferencia de i sobre j es mayor a la preferencia de j sobre i entonces i es el ganador en el par y j es el perdedor en el par y se registra en pairs de la estructura pair
         {
          pairs[pair_count].winner = i;
          pairs[pair_count].loser = j;
-         pair_count++;
+         pair_count++; //Recuento de numero de pares se va sumando cada que se registra un par
         }
       }
     }
@@ -148,13 +151,14 @@ void add_pairs(void)
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
+    //empezamos contando desde 0 hasta el numero de pares que obtuvimos, para poder contar que pares tuvieron mayor prefenrecia sobre otros pares o cual tiene mas fuerza, usando el algoritmo Bubble Sort
     for (int i = 0; i < pair_count; ++i)
     {
-      for (int j = 0; j < pair_count - 1; ++j)
+      for (int j = 0; j < pair_count - 1 - i; ++j)
       {
-        int PrimerDuelo = preferences[pairs[i].winner][pairs[i].loser];
+        int PrimerDuelo = preferences[pairs[i].winner][pairs[i].loser];     //Como Dice el algoritmo Bubble Sort, Para saber los datos del primer Duelo o el primer par, y el proximo, para mayor optimizacion lo reunimos en una variable temporal
         int ProximoDuelo = preferences[pairs[j+1].winner][pairs[j+1].loser];
-        if (ProximoDuelo > PrimerDuelo)
+        if (ProximoDuelo > PrimerDuelo) //Bubble Sort plantea que compara el primero con el proximo y intercambia, para ordernar de manera decreciente, comparamos si el proximo duelo es mas fuerte que el primer duelo y ordenamos.
         {
           pair temp = pairs[j];
           pairs[i] = pairs[j + 1];
@@ -167,21 +171,22 @@ void sort_pairs(void)
 }
 bool Ciclo_Hallar(int loser,int winner)
 {
- if (loser == winner)
+    //Creamos una funcion recursiva, para poder usarla en lock pairs, ya que no tiene los parametros para crear una funcion recursiva dentro de ella.
+ if (loser == winner) // Caso base, Si el perdedor llega a el ganador es decir son iguales, se detiene porque va a volvera llamar a la funcion creando un ciclo y pudiendo agotar la Pila de cualquier forma se encontro el ciclo y devuelve verdadero, ya que siempre encontrara un ciclo en alguno de los candidatos
  {
     return true;
  }
- for (int i = 0; i < candidate_count; ++i)
+ for (int i = 0; i < candidate_count; ++i) // Contamos desde 0 hasta los candidatos
  {
-   if(locked[loser][i])
+   if(locked[loser][i]) //Si el perdero bloquea a el candidato i repite hasta encontrar un ciclo
    {
-    if(Ciclo_Hallar(i, winner))
+    if(Ciclo_Hallar(i, winner)) // Aca creamos un "clon" para poder usar denuevo la funcion para comprobar que si i tiene bloquea o apunta a alguien, hasta winner, osea hasta el candidato que le gana
     {
         return true;
     }
    }
  }
- return false;
+ return false; // No se encontro ningun ciclo
 }
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
@@ -203,9 +208,12 @@ void print_winner(void)
   for (int i = 0; i < candidate_count; ++i)
   {
     for (int j = 0; j < candidate_count; ++i)
+    {
     if (locked[j][i])
     {
      LeGana = true;
+     break;
+    }
     }
     if (!LeGana)
   {
