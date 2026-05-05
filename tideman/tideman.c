@@ -171,8 +171,10 @@ bool Ciclo_Hallar(int loser,int winner)
  {
    if(locked[loser][i])
    {
-    if(winner[i] > loser)
-    Ciclo_Hallar(winner,loser[i+1])
+    if(Ciclo_Hallar(i, winner)
+    {
+        return true;
+    }
    }
  }
  return false;
