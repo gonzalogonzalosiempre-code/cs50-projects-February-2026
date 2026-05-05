@@ -186,7 +186,7 @@ void lock_pairs(void)
  {
     if (!Ciclo_Hallar(pairs[i].loser,pairs[i].winner))
     {
-        locked[pairs[i].loser][pairs[i].winner] = true
+        locked[pairs[i].winner][pairs[i].loser] = true
     }
  }
 
@@ -197,7 +197,7 @@ void print_winner(void)
 {
    for (int i = 0; i < candidate_count; ++i)
    {
-    
+     for(int j = 0; j < candidate_count; ++i)
    }
     // TODO
     return;
