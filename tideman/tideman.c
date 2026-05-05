@@ -31,6 +31,7 @@ void add_pairs(void);
 void sort_pairs(void);
 void lock_pairs(void);
 void print_winner(void);
+bool Halla_Elciclo(int loser,int winner);
 
 int main(int argc, string argv[])
 {
@@ -160,12 +161,29 @@ void sort_pairs(void)
     // TODO
     return;
 }
+bool Halla_Elciclo(int loser,int winner)
+{
+    for (int i = 0; i < 1 ++i)
+    {
+    for (int j = 1; j < pair_count; ++j)
+    {
+      if(loser[i] > winner[j])
+      {
+        return true;
+      }
+    }
+     }
+    return false;
+}
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
 {
     for (int i = 0; i < pair_count; ++i)
     {
-
+        if (!Halla_Elciclo(pairs[i].loser,pairs[i].winner))
+        {
+          locked[pairs[i].winner][pairs[i].loser] = true;
+        }
     }
     // TODO
     return;
@@ -176,7 +194,13 @@ void print_winner(void)
 {
     for (int i = 0; i < MAX; ++i)
     {
-     
+      for (int j = 0; j < candidate_count; ++j)
+      {
+        if (pairs[i] == candidate_count[j])
+        {
+            printf("%s\n", candidate_count[j]);
+        }
+      }
     }
     // TODO
     return;
