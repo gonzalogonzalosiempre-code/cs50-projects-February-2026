@@ -150,10 +150,10 @@ void sort_pairs(void)
 {
     for (int i = 0; i < pair_count; ++i)
     {
-      for (int j = 1; j < j + 1; ++j)
+      for (int j = 0; j < pair_count - 1; ++j)
       {
         int PrimerDuelo = (preferences[pairs[i].winner][pairs[i].loser]);
-        int ProximoDuelo = (preferences[pairs[i+1].winner][pairs[j+1].loser]);
+        int ProximoDuelo = (preferences[pairs[j+1].winner][pairs[j+1].loser]);
         if (ProximoDuelo > PrimerDuelo)
         {
           pair temp = pairs[j];
@@ -210,7 +210,7 @@ void print_winner(void)
     if (!LeGana)
   {
     printf("%s\n", candidates[i]);
-  }
-  }
     return;
+  }
+  }
 }
