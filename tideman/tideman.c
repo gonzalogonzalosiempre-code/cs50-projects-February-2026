@@ -163,25 +163,24 @@ void sort_pairs(void)
 }
 bool Halla_Elciclo(int losser,int winner)
 {
-    if (losser == )
-    if (losser[i] > winner[i+1])
+    for (int i = 0; i < pair_count; ++i)
+    for (int j = 1; j < pair_count; ++j)
     {
+      if(losser[i] > winner[j])
+      {
         return true;
+      }
     }
-    else
-    {
-    Halla_Elciclo
-    }
+    return false;
 }
-
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
 {
     for (int i = 0; i < pair_count; ++i)
     {
-        if (!Halla_Elciclo(pairs[i].losser,pairs[i].winner))
+        if (!Halla_Elciclo(pairs[i].losser,pairs[i].winner)
         {
-
+          locked[pairs[i].winner][pairs[i].losser] == true;
         }
     }
     // TODO
@@ -191,6 +190,7 @@ void lock_pairs(void)
 // Print the winner of the election
 void print_winner(void)
 {
+    if
     // TODO
     return;
 }
