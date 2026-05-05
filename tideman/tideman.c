@@ -163,19 +163,14 @@ void sort_pairs(void)
 }
 bool Halla_Elciclo(int losser,int winner)
 {
-    for (int i = 0; i < pair_count; ++i)
+    if (losser == )
+    if (losser[i] > winner[i+1])
     {
-    for (int j = 0; j < pair_count; ++i)
-    {
-        if ( losser[i] > winner[j+1])
-        {
-            return true;
-        }
-        else
-        {
-            return false
-        }
+        return true;
     }
+    else
+    {
+    Halla_Elciclo
     }
 }
 
@@ -186,7 +181,7 @@ void lock_pairs(void)
     {
         if (!Halla_Elciclo(pairs[i].losser,pairs[i].winner))
         {
-            
+
         }
     }
     // TODO
