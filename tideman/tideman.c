@@ -154,7 +154,7 @@ void sort_pairs(void)
     //empezamos contando desde 0 hasta el numero de pares que obtuvimos, para poder contar que pares tuvieron mayor prefenrecia sobre otros pares o cual tiene mas fuerza, usando el algoritmo Bubble Sort
     for (int i = 0; i < pair_count; ++i)
     {
-      for (int j = 0; j < pair_count - 1 - i; ++j)
+      for (int j = 0; j < pair_count - 1 - i; ++j)// Aca usamos pair_count - 1, ya que ya tanto como es asi en el algoritmo bubble sort para su funcionamiento, usamos - i porque ya estamos revisando el primer pair count con i asi evitando errores
       {
         int PrimerDuelo = preferences[pairs[i].winner][pairs[i].loser];     //Como Dice el algoritmo Bubble Sort, Para saber los datos del primer Duelo o el primer par, y el proximo, para mayor optimizacion lo reunimos en una variable temporal
         int ProximoDuelo = preferences[pairs[j+1].winner][pairs[j+1].loser];
@@ -186,14 +186,14 @@ bool Ciclo_Hallar(int loser,int winner)
     }
    }
  }
- return false; // No se encontro ningun ciclo
+ return false; // No se encontro ningun ciclo para locked
 }
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
 {
- for (int i = 0; i < candidate_count; ++i)
+ for (int i = 0; i < candidate_count; ++i)//Usamos for, no se puede hacer una funcion recursiva dentro de esta funcion ya que no nos pide ningun valor.
  {
-    if (!Ciclo_Hallar(pairs[i].loser,pairs[i].winner))
+    if (!Ciclo_Hallar(pairs[i].loser,pairs[i].winner)) //Si el ciclo hallar es falso, para pairs i entonces bloquea con seguridad pairs i tanto como su ganador como perdedor
     {
         locked[pairs[i].winner][pairs[i].loser] = true;
     }
@@ -204,8 +204,8 @@ void lock_pairs(void)
 // Print the winner of the election
 void print_winner(void)
 {
-   bool LeGana = false;
-  for (int i = 0; i < candidate_count; ++i)
+   bool LeGana = false; // Le gana es falso por el momento
+  for (int i = 0; i < candidate_count; ++i)//Revisamos i
   {
     for (int j = 0; j < candidate_count; ++i)
     {
