@@ -171,7 +171,7 @@ bool Ciclo_Hallar(int loser,int winner)
  {
    if(locked[loser][i])
    {
-    if(Ciclo_Hallar(i, winner)
+    if(Ciclo_Hallar(i, winner))
     {
         return true;
     }
@@ -182,23 +182,23 @@ bool Ciclo_Hallar(int loser,int winner)
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
 {
-
+ for (int i = 0; i < candidate_count; ++i)
+ {
+    if (!Ciclo_Hallar(pairs[i].loser,pairs[i].winner))
+    {
+        locked[pairs[i].loser][pairs[i].winner] = true
+    }
+ }
 
 }
 
 // Print the winner of the election
 void print_winner(void)
 {
-    for (int i = 0; i < MAX; ++i)
-    {
-      for (int j = 0; j < candidate_count; ++j)
-      {
-        if (pairs[i] == candidate_count[j])
-        {
-            printf("%s\n", candidate_count[j]);
-        }
-      }
-    }
+   for (int i = 0; i < candidate_count; ++i)
+   {
+    
+   }
     // TODO
     return;
 }
