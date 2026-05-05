@@ -171,7 +171,8 @@ bool Ciclo_Hallar(int loser,int winner)
  {
    if(loser > winner[i])
    {
-    
+    if(winner[i] > loser)
+    Ciclo_Hallar
    }
  }
 }
