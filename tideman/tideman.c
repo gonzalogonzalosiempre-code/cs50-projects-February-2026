@@ -150,15 +150,15 @@ void sort_pairs(void)
 {
     for (int i = 0; i < pair_count; ++i)
     {
-      for (int j = 1; j < j + 1 - i; ++j)
+      for (int j = 1; j < j + 1; ++j)
       {
         int PrimerDuelo = (preferences[pairs[i].winner][pairs[i].loser]);
         int ProximoDuelo = (preferences[pairs[i+1].winner][pairs[j+1].loser]);
         if (ProximoDuelo > PrimerDuelo)
         {
           pair temp = pairs[j];
-          pairs[i] = pairs[j];
-          pairs[j] = pairs[i];
+          pairs[i] = pairs[j + 1];
+          pairs[j + 1] = pairs[i];
         }
       }
     }
@@ -171,7 +171,7 @@ bool Ciclo_Hallar(int loser,int winner)
  {
     return true;
  }
- for (int i = 0; i < candidate_count ++i)
+ for (int i = 0; i < candidate_count; ++i)
  {
    if(locked[loser][i])
    {
@@ -190,7 +190,7 @@ void lock_pairs(void)
  {
     if (!Ciclo_Hallar(pairs[i].loser,pairs[i].winner))
     {
-        locked[pairs[i].winner][pairs[i].loser] = true
+        locked[pairs[i].winner][pairs[i].loser] = true;
     }
  }
 
@@ -199,18 +199,18 @@ void lock_pairs(void)
 // Print the winner of the election
 void print_winner(void)
 {
+   bool LeGana = false;
   for (int i = 0; i < candidate_count; ++i)
   {
-    bool LeGana = false;
     for (int j = 0; j < candidate_count; ++i)
     if (locked[j][i])
     {
-     Legana = true;
+     LeGana = true;
     }
-  }
-  if (!Legana)
+    if (!LeGana)
   {
     printf("%s\n", candidates[i]);
+  }
   }
     return;
 }
