@@ -168,7 +168,7 @@ void lock_pairs(void)
     {
         return;
     }
-    
+
     // TODO
     return;
 }
