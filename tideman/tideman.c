@@ -165,16 +165,17 @@ bool Ciclo_Hallar(int loser,int winner)
 {
  if (loser > winner)
  {
-    return true
+    return true;
  }
  for (int i = 0; i < candidate_count ++i)
  {
    if(loser > winner[i])
    {
     if(winner[i] > loser)
-    Ciclo_Hallar
+    Ciclo_Hallar(winner,loser[i+1])
    }
  }
+ return false;
 }
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
