@@ -167,7 +167,14 @@ bool Halla_Elciclo(int losser,int winner)
     {
     for (int j = 0; j < pair_count; ++i)
     {
-        if (losser > pairs)
+        if ( losser[i] > winner[j+1])
+        {
+            return true;
+        }
+        else
+        {
+            return false
+        }
     }
     }
 }
