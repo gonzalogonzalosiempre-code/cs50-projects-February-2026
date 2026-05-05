@@ -167,7 +167,7 @@ bool Halla_Elciclo(int losser,int winner)
     {
     for (int j = 0; j < pair_count; ++i)
     {
-        if (pairs[i].losser > pairs)
+        if (losser > pairs)
     }
     }
 }
