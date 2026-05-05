@@ -167,9 +167,12 @@ bool Ciclo_Hallar(int loser,int winner)
  {
     return true
  }
- for (int i = 0; i < pair_count; ++i)
+ for (int i = 0; i < candidate_count ++i)
  {
+   if(loser > winner[i])
+   {
     
+   }
  }
 }
 // Lock pairs into the candidate graph in order, without creating cycles
