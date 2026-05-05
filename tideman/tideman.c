@@ -131,7 +131,7 @@ void add_pairs(void)
 {
     for (int i = 0; i < candidate_count; ++i)
     {
-      for (int j = 0; j < candidate_count; ++i)
+      for (int j = 0; j < candidate_count; ++j)
       {
         if (preferences[i][j] > preferences[j][i])
         {
@@ -152,8 +152,8 @@ void sort_pairs(void)
     {
       for (int j = 0; j < pair_count - 1; ++j)
       {
-        int PrimerDuelo = (preferences[pairs[i].winner][pairs[i].loser]);
-        int ProximoDuelo = (preferences[pairs[j+1].winner][pairs[j+1].loser]);
+        int PrimerDuelo = preferences[pairs[i].winner][pairs[i].loser];
+        int ProximoDuelo = preferences[pairs[j+1].winner][pairs[j+1].loser];
         if (ProximoDuelo > PrimerDuelo)
         {
           pair temp = pairs[j];
