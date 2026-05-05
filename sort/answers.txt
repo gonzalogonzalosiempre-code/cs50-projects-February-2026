@@ -1,11 +1,11 @@
-sort1 uses: TODO
+sort1 uses: Selection Sort
 
-How do you know?: TODO
+How do you know?: Ya que tarda lo mismo en cualquier tipo de dato, ya sea random reversed o uno ya ordenado, la diferencia varia un poco en la cantidad, Por su complejidad o(n)
 
-sort2 uses: TODO
+sort2 uses: Merge Sort
 
-How do you know?: TODO
+How do you know?: Este usa Merge Sort ya que funciona mejor en datos enlazados y de mayor cantidad, es decir es datos mas grandes, ya que divide su propio programa para divir los datos y ordenarlos y juntarlos nuevamente
 
-sort3 uses: TODO
+sort3 uses: Bubble Sort
 
-How do you know?: TODO
+How do you know?: Este usa Bubble Sort ya que tarda mas en datos random y de mayor cantidad, pero tarde menos en datos ordenados, tambien es bueno en datos como random
