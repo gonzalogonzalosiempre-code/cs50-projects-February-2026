@@ -207,18 +207,19 @@ void print_winner(void)
    bool LeGana = false; // Le gana es falso por el momento
   for (int i = 0; i < candidate_count; ++i)//Revisamos i
   {
-    for (int j = 0; j < candidate_count; ++i)
+    for (int j = 0; j < candidate_count; ++i)// Revisamos cada candidato para i con J
     {
-    if (locked[j][i])
+    if (locked[j][i])// Algun perdedor le gana a i?
     {
-     LeGana = true;
+     LeGana = true; //Le gana rompe el codigo no puede ser ganador
      break;
     }
     }
-    if (!LeGana)
+    if (!LeGana) // Nadie le gana es legitimo Ganador
   {
-    printf("%s\n", candidates[i]);
+    printf("%s\n", candidates[i]); //Imprime el candidato i osea el ganador
     return;
   }
   }
 }
+//ESTUVE buscando como hacer esto me demore 3 horas y algo, no tuve tiempo porque venia de la escuela y tal pero dios que satisfaccion terminarlo, buen problema C:
