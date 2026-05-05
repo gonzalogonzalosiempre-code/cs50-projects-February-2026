@@ -163,13 +163,13 @@ void sort_pairs(void)
 }
 bool Ciclo_Hallar(int loser,int winner)
 {
- if (loser > winner)
+ if (loser == winner)
  {
     return true;
  }
  for (int i = 0; i < candidate_count ++i)
  {
-   if(loser > winner[i])
+   if(locked[loser][i])
    {
     if(winner[i] > loser)
     Ciclo_Hallar(winner,loser[i+1])
