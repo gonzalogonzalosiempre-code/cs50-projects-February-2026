@@ -31,7 +31,7 @@ void add_pairs(void);
 void sort_pairs(void);
 void lock_pairs(void);
 void print_winner(void);
-bool Halla_Elciclo(int Ganador,int Perdedor);
+bool Halla_Elciclo(int losser,int winner);
 
 int main(int argc, string argv[])
 {
@@ -160,6 +160,16 @@ void sort_pairs(void)
     }
     // TODO
     return;
+}
+bool Halla_Elciclo(int losser,int winner)
+{
+    for (int i = 0; i < pair_count; ++i)
+    {
+    for (int j = 0; j < pair_count; ++i)
+    {
+        if (pairs[i].losser > pairs)
+    }
+    }
 }
 
 // Lock pairs into the candidate graph in order, without creating cycles
