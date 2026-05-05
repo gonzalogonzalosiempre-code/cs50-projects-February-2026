@@ -99,7 +99,7 @@ int main(int argc, string argv[])
 // Update ranks given a new vote
 bool vote(int rank, string name, int ranks[])
 {
-    if (strcmp(name, candidates[j]))
+    if (strcmp(name, candidates[j]) == 0)
     {
         rank[j] = candidates[j];
         return true;
@@ -148,8 +148,8 @@ void sort_pairs(void)
     {
       for (int j = 1; j < j + 1 - i; ++j)
       {
-        int PrimerDuelo = pairs[i].winner[i]+pairs[i].losser[j];
-        int ProximoDuelo = pairs[i+1].winner[i+1]+pairs[j+1];
+        int PrimerDuelo = preferences[pairs[i].winner+pairs[i].losser];
+        int ProximoDuelo = preferences[pairs[i+1].winner+pairs[j+1].losser];
         if (ProximoDuelo > PrimerDuelo)
         {
           pair temp = pairs[j];
