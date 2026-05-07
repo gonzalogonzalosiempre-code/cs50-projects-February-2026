@@ -6,7 +6,7 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
     int Total[sizeof(image)];
     int Redondeado = (int)(Redondeo + 0.5);
     int NumeroEntero = (int)Redondeo
-    while fread(&image[height][width] , sizeof(BYTE), 1 , inptr)
+    while fread(&image, sizeof(BYTE), 1 , inptr)
       for (int i = 0; i < sizeof(image); ++i)
       {
         for (int j = 0; j < sizeof(image); ++j)
@@ -16,9 +16,10 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
         {
             Total[j] = Redondeado;
         }
+        image[i][j] = Total[j];
         }
       }
-      fwrite(&Total[j] , sizeof(BYTE), 1 , outptr)
+      fwrite(&image, sizeof(BYTE), 1 , outptr)
 
     return;
 }
