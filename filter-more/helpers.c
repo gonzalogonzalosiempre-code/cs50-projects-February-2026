@@ -8,7 +8,7 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
     {
       for (int i = 0; i < )
       {
-        int Redondeo = image.[i][i]
+        int Redondeo = image.
       }
       fwrite(&image[][], sizeof(BYTE), 1 , outptr)
     }
