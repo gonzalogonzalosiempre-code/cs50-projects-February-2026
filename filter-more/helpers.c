@@ -6,9 +6,9 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
     float Total[sizeof(image)];
     int NumeroEntero = (int)Redondeo
     while fread(&image, sizeof(BYTE), 1 , inptr)
-      for (int i = 0; i < sizeof(image); ++i)
+      for (int i = 0; i < height; ++i)
       {
-        for (int j = 0; j < sizeof(image); ++j)
+        for (int j = 0; j < width; ++j)
         {
         int red = image[i][j].rgbtRed;
         int Green = image[i][j].rgbtGreen;
