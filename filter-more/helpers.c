@@ -53,7 +53,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
         {
             for (int j = 0; j < width; ++i)
             {
-              image[Cuadrado3] 
+             image[Cuadrado3] / 3.0
             }
         }
     }
