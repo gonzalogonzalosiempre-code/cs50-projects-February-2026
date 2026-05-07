@@ -3,9 +3,11 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
 
 // Number of bytes in .wav header
 const int HEADER_SIZE = 44;
+uint8_t header[];
 
 int main(int argc, char *argv[])
 {
@@ -33,12 +35,16 @@ int main(int argc, char *argv[])
 
     float factor = atof(argv[3]);
 
-    while (fread(&HEADER_SIZE, sizeof(HEADER_SIZE), 1, input) != 0)
+    while (fread(&header, sizeof(HEADER_SIZE), 1, input) != 0)
     {
-        fwrite(&HEADER_SIZE, sizeof(HEADER_SIZE), 1, output)
+        fwrite(&header, sizeof(HEADER_SIZE), 1, output);
     }
 
-    // TODO: Read samples from input file and write updated data to output file
+    while (fread(&header, sizeof(HEADER_SIZE), 1, input) != 0)
+    {
+        header *= factor
+        fwrite(&header, sizeof(HEADER_SIZE), 1, output);
+    }
 
     // Close files
     fclose(input);
