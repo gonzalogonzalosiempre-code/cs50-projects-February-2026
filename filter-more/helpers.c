@@ -16,7 +16,7 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
         {
             Total[j] = Redondeado;
         }
-        image[i][j] = Total[j];
+        image[i][j].rgbtBlue, image[i][j].rgbtGreen, image[i][j].rgbtRed = Total[j];
         }
       }
       fwrite(&image, sizeof(BYTE), 1 , outptr);
