@@ -4,11 +4,13 @@
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
     RGBTRIPLE image;
+    int Redondeo[];
     while (fread(&image , sizeof(BYTE), 1 , inptr))
     {
-      for (int i = 0; i < )
+      for (int i = 0; i < sizeof(image); ++i)
       {
-        int Redondeo = image[i].
+        for (int j = 0; j < sizeof(image); ++j)
+        Redondeo = image[i].
       }
       fwrite(&image[i], sizeof(BYTE), 1 , outptr)
     }
