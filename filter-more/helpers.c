@@ -43,7 +43,8 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
-    
+    int Cuadrado3 = image[i]
+
     return;
 }
 
