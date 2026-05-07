@@ -8,6 +8,7 @@
 // Number of bytes in .wav header
 const int HEADER_SIZE = 44;
 uint8_t header[];
+int16_t buffer;
 
 int main(int argc, char *argv[])
 {
@@ -40,10 +41,10 @@ int main(int argc, char *argv[])
         fwrite(&header, sizeof(HEADER_SIZE), 1, output);
     }
 
-    while (fread(&header, sizeof(HEADER_SIZE), 1, input) != 0)
+    while (fread(&buffer, sizeof(int16_t), 1, input) != 0)
     {
-        header *= factor;
-        fwrite(&header, sizeof(HEADER_SIZE), 1, output);
+        buffer *= factor;
+        fwrite(&buffer, sizeof(int16_t), 1, output);
     }
 
     // Close files
