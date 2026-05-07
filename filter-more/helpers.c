@@ -19,7 +19,7 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
         image[i][j] = Total[j];
         }
       }
-      fwrite(&image, sizeof(BYTE), 1 , outptr)
+      fwrite(&image, sizeof(BYTE), 1 , outptr);
 
     return;
 }
