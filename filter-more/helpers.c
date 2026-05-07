@@ -50,20 +50,17 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     {
         int i = 0;
         int j = 0;
-        int SiguientePixel = Cuadrado3 + image[i+1][j+1];
+        int Total = 0;
         int Cuadrado3 = image[3 * i + 2][3 * j + 2] + image[i + 2][3 * j + 2] + image[i + 2 + (3 * i + 2)][j + 2] + image[i+1][j+1];
-        int SiguientePixel[i][j] = image[i + 2][j + 1];
-        for ( i ; i < height; i += SiguientePixel)
+        for ( i ; i < height; ++1)
         {
             for ( j ; j < width; ++j)
             {
             Total = image[Cuadrado3] / 3.0
-            *image[3 * i + 2][3 * j + 2] , *image[i + 2][3 * j + 2] , *image[i + 2 + (3 * i + 2)][j + 2] , *image[i+1][j+1] = Total;
-
+            *image[i][j] = Total;
             }
         }
     }
-
     return;
 }
 
