@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 
     while (fread(&header, sizeof(HEADER_SIZE), 1, input) != 0)
     {
-        header *= factor
+        header *= factor;
         fwrite(&header, sizeof(HEADER_SIZE), 1, output);
     }
 
