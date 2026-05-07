@@ -10,10 +10,12 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
       for (int i = 0; i < sizeof(image); ++i)
       {
         for (int j = 0; j < sizeof(image); ++j)
+        {
         Total[j] = image[i] + image[i][j];
         if (Total[j] != NumeroEntero)
         {
             Total[j] = Redondeado;
+        }
         }
       }
       fwrite(&Total[j] , sizeof(BYTE), 1 , outptr)
