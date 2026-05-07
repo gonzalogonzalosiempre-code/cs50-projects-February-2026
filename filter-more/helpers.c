@@ -3,22 +3,23 @@
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
-    int Total[sizeof(image)];
-    int Redondeado = (int)(Redondeo + 0.5);
+    float Total[sizeof(image)];
     int NumeroEntero = (int)Redondeo
     while fread(&image, sizeof(BYTE), 1 , inptr)
       for (int i = 0; i < sizeof(image); ++i)
       {
         for (int j = 0; j < sizeof(image); ++j)
         {
-        Total[j] = image[i] + image[i][j];
-        if (Total[j] != NumeroEntero)
-        {
-            Total[j] = Redondeado;
+        int red = image[i][j].rgbtRed;
+        int Green = image[i][j].rgbtGreen;
+        int Blue = image[i][j].rgbtBlue
+
+        Total[j] = red + Green + Blue;
+        Total[j] = Total[j] / 3.0;
+        red, Green, Blue = Total[j]
+        Total[j] = 
         }
-        image[i][j].rgbtBlue, image[i][j].rgbtGreen, image[i][j].rgbtRed = Total[j];
-        }
-      }
+     }
       fwrite(&image, sizeof(BYTE), 1 , outptr);
 
     return;
