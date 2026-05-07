@@ -33,7 +33,10 @@ int main(int argc, char *argv[])
 
     float factor = atof(argv[3]);
 
-    while (fread(&HEADER_SIZE, sizeof(HEADER_SIZE)))
+    while (fread(&HEADER_SIZE, sizeof(HEADER_SIZE), 1 , input) != 0)
+    {
+        fwrite(&HEADER_SIZE, sizeof(HEADER_SIZE), 1 , output)
+    }
 
     // TODO: Read samples from input file and write updated data to output file
 
