@@ -3,13 +3,19 @@
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
-    int Redondeo[sizeof(image)];
+    int Total[sizeof(image)];
+    int Redondeado = (int)(Redondeo + 0.5);
+    int NumeroEntero = (int)Redondeo
     while (fread(&image , sizeof(BYTE), 1 , inptr))
     {
       for (int i = 0; i < sizeof(image); ++i)
       {
         for (int j = 0; j < sizeof(image); ++j)
-        Redondeo[j] = image[i] + image[i][j]
+        Total[j] = image[i] + image[i][j];
+        if (Total[j] != NumeroEntero)
+        {
+            Total[j] = Redondeado;
+        }
       }
       fwrite(&image[i], sizeof(BYTE), 1 , outptr)
     }
