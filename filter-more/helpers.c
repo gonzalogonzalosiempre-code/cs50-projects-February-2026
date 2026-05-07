@@ -19,8 +19,6 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
         red, Green, Blue = (int)Total[j];
         }
      }
-      fwrite(&image, sizeof(BYTE), 1 , outptr);
-
     return;
 }
 
