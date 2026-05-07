@@ -3,7 +3,10 @@
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
-    while (fread(&RGBTRIPLE, sizeof(BYTE), 1 , ))
+    while (fread(&RGBTRIPLE, sizeof(BYTE), 1 , inptr))
+    {
+      fwrite()
+    }
     return;
 }
 
