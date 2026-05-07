@@ -36,10 +36,8 @@ int main(int argc, char *argv[])
 
     float factor = atof(argv[3]);
 
-    while (fread(&header, sizeof(HEADER_SIZE), 1, input))
-    {
-        fwrite(&header, sizeof(HEADER_SIZE), 1, output);
-    }
+    (fread(&header, sizeof(uint8_t), 1, input))
+    fwrite(&header, sizeof(uint8_t), 1, output);
 
     while (fread(&buffer, sizeof(int16_t), 1, input))
     {
