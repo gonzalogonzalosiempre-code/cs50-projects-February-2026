@@ -17,7 +17,7 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
             Total[j] = Redondeado;
         }
       }
-      fwrite(&image[i], sizeof(BYTE), 1 , outptr)
+      fwrite(&image , sizeof(BYTE), 1 , outptr)
     }
     return;
 }
