@@ -49,14 +49,15 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     while (fread(&image, sizeof(BYTE), 1 , inptr))
     {
         int SiguientePixel = Cuadrado3 + image[i+1][j+1];
-        for (int i = 0; i < height; ++i)
+        for (int i = 0; i < height; i += SiguientePixel)
         {
-            for (int j = 0; j < width; ++i)
+            for (int j = 0; j < width; ++j)
             {
             int Cuadrado3 = image[3 * i + 2][3 * j + 2] + image[i + 2][3 * j + 2] + image[i + 2 + (3 * i + 2)][j + 2] + image[i+1][j+1];
 
             Total = image[Cuadrado3] / 3.0
             *image[3 * i + 2][3 * j + 2] , *image[i + 2][3 * j + 2] , *image[i + 2 + (3 * i + 2)][j + 2] , *image[i+1][j+1] = Total;
+            SiguientePixel = 
             }
         }
     }
