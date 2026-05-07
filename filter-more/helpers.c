@@ -5,7 +5,8 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
     while (fread(&RGBTRIPLE, sizeof(BYTE), 1 , inptr))
     {
-      fwrite()
+      for (int i = 0; i < )
+      fwrite(&RGBTRIPLE, sizeof(BYTE), 1 , outptr)
     }
     return;
 }
