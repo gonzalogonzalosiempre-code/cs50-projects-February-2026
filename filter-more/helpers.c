@@ -58,7 +58,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             {
                 for (int col = j - 1; col < j + 1; ++col)
                 {
-                    if ( fila >= 0 && height > fila && col >= 0 && width > col)
+                    if ( fila >= 0 && fila > height && col >= 0 && col > width)
                     {
                     sumaRed += temp[fila][col].rgbtRed;
                     sumaGreen += temp[fila][col].rgbtGreen;
