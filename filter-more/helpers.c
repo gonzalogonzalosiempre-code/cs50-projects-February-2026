@@ -40,8 +40,11 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
             {
              if (k == width)
             {
-                image[i][j] = temp[i][k];
+                temp[i][j] = image[i][k];
+                image[i][j] = image[i][k];
+                image[i][j] = 
             }
+
           }
         }
     }
