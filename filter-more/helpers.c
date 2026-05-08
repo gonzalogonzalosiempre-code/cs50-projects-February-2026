@@ -14,10 +14,11 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 
         Total[j] = red + Green + Blue;
         Total[j] = Total[j] / 3.0;
-        red, Green, Blue = (int)Total[j];
+        red = (int)Total[j];
+        Green = (int)Total[j];
+        Blue = (int)Total[j];
         }
       }
-     }
     return;
 }
 
@@ -25,18 +26,16 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
     RGBTRIPLE temp[height][width];
-    while (fread(&image , sizeof(BYTE), 1 , inptr))
-    {
         for (int i = 0; i <= height; ++i)
         {
           for (int j = 0; j <= width; ++j)
           {
-            *image[height][width] = image[i][j];
-            for (int k = 0; k = witdh; ++k)
+            image[height][width] = image[i][j];
+            for (int k = 0; k == witdh; ++k)
             {
-             if (j = witdh)
+             if (j == witdh)
             {
-                *image[i][j] = image[i][k];
+                image[i][j] = image[i][k];
             }
           }
         }
