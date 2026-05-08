@@ -51,12 +51,12 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
         int i = 0;
         int j = 0;
         int Total = 0;
-        int Cuadrado3 = image[3 * i + 2][3 * j + 2] + image[i + 2][3 * j + 2] + image[i + 2 + (3 * i + 2)][j + 2] + image[i+1][j+1];
-        for ( i ; i < height; ++1)
+        int Cuadrado3 = image[3 * i + 2][3 * j + 2] + image[i + 2][3 * j + 2] + image[i + 2 + (3 * i + 2)][j + 2];
+        for ( i ; i < height; ++i)
         {
             for ( j ; j < width; ++j)
             {
-            Total = image[Cuadrado3] / 3.0
+            Total = image[Cuadrado3] / 3.0;
             *image[i][j] = Total;
             }
         }
