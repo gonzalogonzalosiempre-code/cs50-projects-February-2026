@@ -82,11 +82,14 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < width; ++j)
         {
+            int Gx = 0;
+            int Gy = 0;
             for (int fila = i - 1; fila < i + 1; ++fila)
             {
+                images[fila][j]
                 for (int col = j - 1; col < j + 1; ++col)
                 {
-                 
+
                 }
 
             }
