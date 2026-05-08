@@ -103,10 +103,9 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             {
                 for (int col = j - 1; col <= j + 1; ++col)
                 {
-                  int r = i;
-                  int a = j;
-                  if ( fila >= 0 && fila < height && col >= 0 && col < width)
+                  for (int r = 1 ; r <= i; ++r)
                   {
+                   if ( fila >= 0 && fila < height && col >= 0 && col < width)
                    Gx[r][j]
                   }
                 }
