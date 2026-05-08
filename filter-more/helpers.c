@@ -31,9 +31,9 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
           for (int j = 0; j <= width; ++j)
           {
             image[height][width] = image[i][j];
-            for (int k = 0; k == witdh; ++k)
+            for (int k = 0; k == width; ++k)
             {
-             if (j == witdh)
+             if (j == width)
             {
                 image[i][j] = image[i][k];
             }
@@ -46,12 +46,12 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
-    RGBTRIPLE temp[height][width]
+    RGBTRIPLE temp[height][width];
     for (int i = 0; i < height; ++i)
     {
         for (int j = 0; j < width; ++j)
         {
-          temp[i][j] = image[i][j]
+          temp[i][j] = image[i][j];
         }
     }
     for (int i = 0; i < height; ++i)
@@ -59,7 +59,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
         for (int j = 0; j < width; ++j)
         {
             float sumaRed = 0, sumaGreen = 0, sumaBlue = 0;
-            int contador;
+            int contador = 0;
             for (int fila = i - 1; fila < i + 1; ++fila)
             {
                 for (int col = j - 1; col < j + 1; ++col)
@@ -73,9 +73,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                     }
                 }
             }
-            *image[i][j].rgbtRed = (int)(sumaRed / contador);
-            *image[i][j].rgbtGreen = (int)(sumaGreen / contador);
-            *image[i][j].rgbtBlue = (int)(sumaBlue / contador);
+            image[i][j].rgbtRed = (int)(sumaRed / contador);
+            image[i][j].rgbtGreen = (int)(sumaGreen / contador);
+            image[i][j].rgbtBlue = (int)(sumaBlue / contador);
         }
     }
     return;
