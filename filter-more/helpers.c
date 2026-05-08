@@ -4,7 +4,8 @@
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
     float Total[sizeof(image)];
-    int NumeroEntero = (int)Redondeo
+    int Redondeo = (int)Total + 0.5;
+    int NumeroEntero = (int)Redondeo;
     while (fread(&image, sizeof(BYTE), 1 , inptr))
     {
       for (int i = 0; i < height; ++i)
