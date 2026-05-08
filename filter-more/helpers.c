@@ -24,33 +24,17 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 // Reflect image horizontally
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
-        RGBTRIPLE temp[height][width];
-        for (int i = 0; i < height; ++i)
-    {
-        for (int j = 0; j < width; ++j)
-        {
-          temp[i][j] = image[i][j];
-        }
-    }
         for (int i = 0; i < height; ++i)
         {
-          for (int j = 0; j < width; ++j)
-          {
-            for (int k = 0; k <= width; ++k)
-            {
-             if (k == width)
-            {
-                temp[i][j] = image[i][j];
-                image[i][j] = image[i][k];
-                image[i][k] = temp[i][j];
-            }
+         for (int j = 0; j < width; ++j)
+         {
+          RGBTRIPLE temp[i][j] = image[i][j]
 
-          }
+          
+         }
         }
-    }
     return;
 }
-
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
