@@ -97,18 +97,17 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                 switch(fila)
                 {
                     case 1:
-                    fila = i - 1
+                    fila == i - 1
                     Gx += -1 * image[fila][j];
                     Gy += -1 * image[fila][j];
                     break;
                     case 2:
-                    fila = i
+                    fila == i
                     Gx += -2 * image[fila][j];
                     case 3:
-                    fila = i + i
+                    fila == i + i
                     Gx += -1 * image[fila][j];
                     Gy += -1 * image[fila][j];
-                    case 4:
                 }
             }
                 for (int col = j - 1; col < j + 1; ++col)
@@ -116,16 +115,23 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                   switch(col , fila)
                 {
                    case 1:
-                    col = j + 1 && fila = i - 1
+                    col == j + 1 && fila == i - 1
                     Gx += 1 * image[fila][col];
                     Gy += 1 * image[fila][col];
                     break;
                     case 2:
-                    col = j + 1 && fila = i
+                    col == j + 1 && fila == i
                     Gx += 2 * image[fila][col];
                     case 3:
-                    col = j + 1 && fila = i + 1
+                    col = =j + 1 && fila == i + 1
                     Gx += 1 * image[fila][col];
+                    Gy += 1 * image[fila][col];
+                    case 4:
+                    col == j && fila == i - 1
+                    Gy += -2 * image[fila][col];
+                    case 5:
+                    col == j && fila == i + 1
+                    Gy += 2 * image[fila][col];
                 }
                 }
 
