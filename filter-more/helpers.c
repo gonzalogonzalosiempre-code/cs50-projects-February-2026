@@ -45,21 +45,14 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
-    int Total;
-    while (fread(&image, sizeof(BYTE), 1 , inptr))
+    RGBTRIPLE temp[height][width]
+    for (int i = 0; i < height; ++i)
     {
-        int i = 0;
-        int j = 0;
-        int Total = 0;
-        int Cuadrado3 = image[3 * i + 2][3 * j + 2] + image[i + 2][3 * j + 2] + image[i + 2 + (3 * i + 2)][j + 2];
-        for ( i ; i < height; ++i)
+        for (int j = 0; j < width; ++j)
         {
-            for ( j ; j < width; ++j)
-            {
-            Total = image[Cuadrado3] / 3.0;
-            *image[i][j] = Total;
-            }
+          temp[i][j] = image[i][j]
         }
+
     }
     return;
 }
