@@ -35,14 +35,12 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
           for (int j = 0; j <= width; ++j)
           {
             image[i][j];
-            
-            if (j = witdh)
+            for (int k = 0; k = witdh; ++k)
             {
-                image[i][j];
+             if (j = witdh)
+            {
+                image[i][k];
             }
-            int Pixel = image[i][j];
-            Pixel = image[j][i];
-            *image[i][j] = Pixel;
           }
         }
     }
