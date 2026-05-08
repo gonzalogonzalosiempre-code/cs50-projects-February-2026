@@ -109,8 +109,9 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                     for(int k = 1 ; j <= j; ++j)
                     {
                      if ( fila >= 0 && fila < height && col >= 0 && col < width)
-                     OperacionGreen = temp[fila][col].rgbtGreen * Gx[r][j]
-                     OperacionRed = temp[file][col].rgbtRed * Gx[]
+                     OperacionGreen = temp[fila][col].rgbtGreen * Gx[r][j] + temp[file][col].rgbtGreen * Gy[r][j];
+                     OperacionBlue = temp[file][col].rgbtBlue * Gx[r][j] + temp[file][col].rgbtBlue * Gy[r][j];
+                     OperacionRed = temp[file][col].rgbtRed * Gx[r][j] + temp[file][col].rgbtRed * Gy[r][j];
                     }
                   }
                 }
