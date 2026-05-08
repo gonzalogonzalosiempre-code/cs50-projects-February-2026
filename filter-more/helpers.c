@@ -36,7 +36,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
           {
             if (j = witdh)
             {
-                temp[i][j]
+                image[i][j];
             }
             int Pixel = image[i][j];
             Pixel = image[j][i];
