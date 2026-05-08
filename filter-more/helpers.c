@@ -90,55 +90,13 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < width; ++j)
         {
-            int Gx = 0;
-            int Gy = 0;
+            int Gx
             for (int fila = i - 1; fila <= i + 1; ++fila)
             {
-                switch(fila)
-                {
-                    case 1:
-                    fila == i - 1
-                    Gx += -1 * image[fila][j];
-                    Gy += -1 * image[fila][j];
-                    break;
-                    case 2:
-                    fila == i
-                    Gx += -2 * image[fila][j];
-                    break;
-                    case 3:
-                    fila == i + i
-                    Gx += -1 * image[fila][j];
-                    Gy += -1 * image[fila][j];
-                    break;
-                }
+
             }
                 for (int col = j - 1; col < j + 1; ++col)
                 {
-                  switch(col , fila)
-                {
-                   case 1:
-                    col == j + 1 && fila == i - 1
-                    Gx += 1 * image[fila][col];
-                    Gy += 1 * image[fila][col];
-                    break;
-                    case 2:
-                    col == j + 1 && fila == i
-                    Gx += 2 * image[fila][col];
-                    break;
-                    case 3:
-                    col = =j + 1 && fila == i + 1
-                    Gx += 1 * image[fila][col];
-                    Gy += 1 * image[fila][col];
-                    break;
-                    case 4:
-                    col == j && fila == i - 1
-                    Gy += -2 * image[fila][col];
-                    break;
-                    case 5:
-                    col == j && fila == i + 1
-                    Gy += 2 * image[fila][col];
-                    break;
-                }
                 }
 
             }
