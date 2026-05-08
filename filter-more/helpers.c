@@ -101,10 +101,14 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             { 1 , 2 , 3};
             for (int fila = i - 1; fila <= i + 1; ++fila)
             {
-            }
-                for (int col = j - 1; col < j + 1; ++col)
+                for (int col = j - 1; col <= j + 1; ++col)
                 {
+                    for(int r = 1; <= 3; r++)
+                    {
+                        
+                    }
                 }
+            }
 
             }
         }
