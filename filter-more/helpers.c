@@ -4,8 +4,7 @@
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
     float Total[sizeof(image)];
-    int Redondeo = (int)Total + 0.5;
-    int NumeroEntero = (int)Redondeo;
+
     while (fread(&image, sizeof(BYTE), 1 , inptr))
     {
       for (int i = 0; i < height; ++i)
@@ -28,12 +27,14 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 // Reflect image horizontally
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
+    RGBTRIPLE temp[height][width];
     while (fread(&image , sizeof(BYTE), 1 , inptr))
     {
         for (int i = 0; i < height; ++i)
         {
           for (int j = 0; j < width; ++j)
           {
+            temp[i][j] = image[i +]
             int Pixel = image[i][j];
             Pixel = image[j][i];
             *image[i][j] = Pixel;
@@ -73,9 +74,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                     }
                 }
             }
-            *image[i][j].rgbtRed = sumaRed / contador;
-            *image[i][j].rgbtGreen = sumaGreen / contador;
-            *image[i][j].rgbtBlue = sumaBlue / contador;
+            *image[i][j].rgbtRed = (int)(sumaRed / contador);
+            *image[i][j].rgbtGreen = (int)(sumaGreen / contador);
+            *image[i][j].rgbtBlue = (int)(sumaBlue / contador);
         }
     }
     return;
