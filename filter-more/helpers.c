@@ -126,8 +126,9 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             int SumaGreen = (int)round(hypot(GreenGX, GreenGY))
             switch(SumaRed, SumaBlue , SumaGreen)
             {
-                case 1
-                (SumaRed > 255)
+                case SumaRed > 255:
+                SumaRed = 255;
+
             }
             image[i][j].rgbtBlue = SumaTotal;
             image[i][j].rgbtRed = SumaTotal;
