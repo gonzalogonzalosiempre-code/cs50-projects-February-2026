@@ -109,7 +109,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                 for (int col = j - 1; col <= j + 1; ++col)
                 {
                 a = (fila - i) + 1;
-                r = (col - i) + 1;
+                r = (col - j) + 1;
                      if ( fila >= 0 && fila < height && col >= 0 && col < width)
                      {
                       GreenGX += temp[fila][col].rgbtGreen * Gx[a][r];
