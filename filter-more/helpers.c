@@ -137,8 +137,8 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
               SumaTotal = 0;
             }
           }
-      image[i][j] = SumaTotal;
+      image[i][j] = (int)SumaTotal;
     }
+ return;
 }
-    return;
 
