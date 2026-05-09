@@ -134,10 +134,10 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             }
             else if (SumaTotal < 0)
             {
-              SumaTotal = 0
+              SumaTotal = 0;
             }
           }
-
+      image[i][j] = SumaTotal;
     }
 }
     return;
