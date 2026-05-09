@@ -116,7 +116,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                  }
               a -= 1;
              }
-          }
+     }
 
     }
 }
