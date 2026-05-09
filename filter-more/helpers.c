@@ -102,8 +102,8 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             { 0 , 0 , 0},
             { 1 , 2 , 3}
             };
-            float OperacionRedGX = 0, OperacionGreenGX = 0, OperacionBlueGX = 0;
-            float OperacionRedGY = 0, OperacionGreenGY = 0, OperacionBlueGY = 0;
+            float RedGX = 0, GreenGX = 0, BlueGX = 0;
+            float RedGY = 0, GreenGY = 0, BlueGY = 0;
             for (int fila = i - 1; fila <= i + 1; ++fila)
             {
              a = fila + 2;
@@ -112,12 +112,12 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                   r = col + 2;
                      if ( fila >= 0 && fila < height && col >= 0 && col < width)
                      {
-                     OperacionGreenGX = temp[fila][col].rgbtGreen * Gx[a][r];
-                     OperacionBlueGX = temp[file][col].rgbtBlue * Gx[a][r];
-                     OperacionRedGX = temp[file][col].rgbtRed * Gx[a][r];
-                     OperacionGreenGY = temp[file][col].rgbtGreen * Gx[a][r];
-                     OperacionBlueGY = temp[file][col].rgbtBlue * Gx[a][r];
-                     OperacionRedGY = temp[file][col].rgbtRed * Gx[a][r];
+                      GreenGX = temp[fila][col].rgbtGreen * Gx[a][r];
+                      BlueGX = temp[file][col].rgbtBlue * Gx[a][r];
+                      RedGX = temp[file][col].rgbtRed * Gx[a][r];
+                      GreenGY = temp[file][col].rgbtGreen * Gx[a][r];
+                      BlueGY = temp[file][col].rgbtBlue * Gx[a][r];
+                      RedGY = temp[file][col].rgbtRed * Gx[a][r];
                      }
                    r++;
                  }
