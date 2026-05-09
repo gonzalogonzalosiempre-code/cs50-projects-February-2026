@@ -86,8 +86,6 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
           temp[i][j] = image[i][j];
         }
     }
-    int a;
-    int r;
     for (int i = 0; i < height; ++i)
     {
         for (int j = 0; j < width; ++j)
@@ -108,10 +106,10 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             int GYsuma = 0;
             for (int fila = i - 1; fila <= i + 1; ++fila)
             {
-             a = fila + 2;
+             int a = fila + 2;
                 for (int col = j - 1; col <= j + 1; ++col)
                 {
-                  r = col + 2;
+                 int r = col + 2;
                      if ( fila >= 0 && fila < height && col >= 0 && col < width)
                      {
                       GreenGX = temp[fila][col].rgbtGreen * Gx[a][r];
