@@ -125,6 +125,8 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                  }
                a++;
              }
+            GXsuma = GreenGX + BlueGX + RedGX;
+            GYsuma = GreenGY + BlueGY + RedGY;
             
           }
 
