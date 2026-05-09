@@ -92,21 +92,22 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < width; ++j)
         {
-            int Gx[3][3] =
-            {-1 , 0 , 1};
-            {-2 , 0 , 2};
-            {-1 , 0 , 1};
-
-            int Gy[3][3] =
-            {-1 ,-2 ,-1};
-            { 0 , 0 , 0};
-            { 1 , 2 , 3};
+            int Gx[3][3] = {
+            {-1 , 0 , 1},
+            {-2 , 0 , 2},
+            {-1 , 0 , 1}
+            };
+            int Gy[3][3] = {
+            {-1 ,-2 ,-1},
+            { 0 , 0 , 0},
+            { 1 , 2 , 3}
+            };
             for (int fila = i - 1; fila <= i + 1; ++fila)
             {
                 for (int col = j - 1; col <= j + 1; ++col)
                 {
                   float OperacionRed = 0, OperacionGreen = 0, OperacionBlue = 0;
-                  
+
                      if ( fila >= 0 && fila < height && col >= 0 && col < width)
                      {
                      OperacionGreen = temp[fila][col].rgbtGreen * Gx[r][a];
