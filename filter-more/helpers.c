@@ -96,6 +96,8 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             { 0 , 0 , 0},
             { 1 , 2 , 1}
             };
+    int a;
+    int r;
     for (int i = 0; i < height; ++i)
     {
         for (int j = 0; j < width; ++j)
@@ -106,14 +108,16 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             {
                 for (int col = j - 1; col <= j + 1; ++col)
                 {
+                a = (fila - i) + 1;
+                r = (col - i) + 1;
                      if ( fila >= 0 && fila < height && col >= 0 && col < width)
                      {
-                      GreenGX += temp[fila][col].rgbtGreen * Gx[fila + 1][col + 1];
-                      BlueGX += temp[fila][col].rgbtBlue * Gx[fila + 1][col + 1];
-                      RedGX += temp[fila][col].rgbtRed * Gx[fila + 1][col +1];
-                      GreenGY += temp[fila][col].rgbtGreen * Gy[fila + 1][col + 1];
-                      BlueGY += temp[fila][col].rgbtBlue * Gy[fila + 1][col + 1];
-                      RedGY += temp[fila][col].rgbtRed * Gy[fila + 1][col + 1];
+                      GreenGX += temp[fila][col].rgbtGreen * Gx[a][r];
+                      BlueGX += temp[fila][col].rgbtBlue * Gx[a][r];
+                      RedGX += temp[fila][col].rgbtRed * Gx[a][r];
+                      GreenGY += temp[fila][col].rgbtGreen * Gy[a][r];
+                      BlueGY += temp[fila][col].rgbtBlue * Gy[a][r];
+                      RedGY += temp[fila][col].rgbtRed * Gy[a][r];
                      }
                  }
              }
