@@ -115,7 +115,6 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                       BlueGY += temp[fila][col].rgbtBlue * Gy[fila + 1][col + 1];
                       RedGY += temp[fila][col].rgbtRed * Gy[fila + 1][col + 1];
                      }
-
                  }
              }
             int SumaRed = (int)round(hypot(RedGX, RedGY));
