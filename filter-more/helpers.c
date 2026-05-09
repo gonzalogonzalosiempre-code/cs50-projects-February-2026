@@ -86,40 +86,37 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
           temp[i][j] = image[i][j];
         }
     }
-    for (int i = 0; i < height; ++i)
-    {
-        for (int j = 0; j < width; ++j)
-        {
-            int Gx[3][3] = {
+    int Gx[3][3] = {
             {-1 , 0 , 1},
             {-2 , 0 , 2},
             {-1 , 0 , 1}
             };
-            int Gy[3][3] = {
+    int Gy[3][3] = {
             {-1 ,-2 ,-1},
             { 0 , 0 , 0},
-            { 1 , 2 , 3}
+            { 1 , 2 , 1}
             };
+    for (int i = 0; i < height; ++i)
+    {
+        for (int j = 0; j < width; ++j)
+        {
             float RedGX = 0, GreenGX = 0, BlueGX = 0;
             float RedGY = 0, GreenGY = 0, BlueGY = 0;
             for (int fila = i - 1; fila <= i + 1; ++fila)
             {
-             int a = fila + 2;
                 for (int col = j - 1; col <= j + 1; ++col)
                 {
-                 int r = col + 2;
                      if ( fila >= 0 && fila < height && col >= 0 && col < width)
                      {
-                      GreenGX += temp[fila][col].rgbtGreen * Gx[a][r];
-                      BlueGX += temp[fila][col].rgbtBlue * Gx[a][r];
-                      RedGX += temp[fila][col].rgbtRed * Gx[a][r];
-                      GreenGY += temp[fila][col].rgbtGreen * Gy[a][r];
-                      BlueGY += temp[fila][col].rgbtBlue * Gy[a][r];
-                      RedGY += temp[fila][col].rgbtRed * Gy[a][r];
+                      GreenGX += temp[fila][col].rgbtGreen * Gx[fila + 1][col + 1];
+                      BlueGX += temp[fila][col].rgbtBlue * Gx[fila + 1][col + 1];
+                      RedGX += temp[fila][col].rgbtRed * Gx[fila + 1][col +1];
+                      GreenGY += temp[fila][col].rgbtGreen * Gy[fila + 1][col + 1];
+                      BlueGY += temp[fila][col].rgbtBlue * Gy[fila + 1][col + 1];
+                      RedGY += temp[fila][col].rgbtRed * Gy[fila + 1][col + 1];
                      }
-                   r -= 1;
+
                  }
-               a -= 1;
              }
             int SumaRed = (int)round(hypot(RedGX, RedGY));
             int SumaBlue = (int)round(hypot(BlueGX, BlueGY));
