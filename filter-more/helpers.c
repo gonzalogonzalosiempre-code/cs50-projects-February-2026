@@ -86,6 +86,8 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
           temp[i][j] = image[i][j];
         }
     }
+    int r;
+    int a;
     for (int i = 0; i < height; ++i)
     {
         for (int j = 0; j < width; ++j)
@@ -101,24 +103,26 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             { 1 , 2 , 3};
             for (int fila = i - 1; fila <= i + 1; ++fila)
             {
+                r = 1;
+                a = 1;
                 for (int col = j - 1; col <= j + 1; ++col)
                 {
                   float OperacionRed = 0, OperacionGreen = 0, OperacionBlue = 0;
-                  int r = i + 1, a = j + 1;
+
                      if ( fila >= 0 && fila < height && col >= 0 && col < width)
                      {
                      OperacionGreen = temp[fila][col].rgbtGreen * Gx[r][a];
                      OperacionBlue = temp[file][col].rgbtBlue * Gx[r][a];
                      OperacionRed = temp[file][col].rgbtRed * Gx[r][a];
-                    }
-                   }
-                  }
-                }
-            }
+                     r++;
+                     a++;
+                     }
 
-            }
-        }
+                 }
+             }
+          }
+
     }
-
-    return;
 }
+    return;
+
