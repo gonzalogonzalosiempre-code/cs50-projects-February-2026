@@ -112,12 +112,12 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                  int r = col + 2;
                      if ( fila >= 0 && fila < height && col >= 0 && col < width)
                      {
-                      GreenGX = temp[fila][col].rgbtGreen * Gx[a][r];
-                      BlueGX = temp[fila][col].rgbtBlue * Gx[a][r];
-                      RedGX = temp[fila][col].rgbtRed * Gx[a][r];
-                      GreenGY = temp[fila][col].rgbtGreen * Gy[a][r];
-                      BlueGY = temp[fila][col].rgbtBlue * Gy[a][r];
-                      RedGY = temp[fila][col].rgbtRed * Gy[a][r];
+                      GreenGX += temp[fila][col].rgbtGreen * Gx[a][r];
+                      BlueGX += temp[fila][col].rgbtBlue * Gx[a][r];
+                      RedGX += temp[fila][col].rgbtRed * Gx[a][r];
+                      GreenGY += temp[fila][col].rgbtGreen * Gy[a][r];
+                      BlueGY += temp[fila][col].rgbtBlue * Gy[a][r];
+                      RedGY += temp[fila][col].rgbtRed * Gy[a][r];
                      }
                    r++;
                  }
