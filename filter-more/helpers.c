@@ -102,8 +102,6 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             };
             float RedGX = 0, GreenGX = 0, BlueGX = 0;
             float RedGY = 0, GreenGY = 0, BlueGY = 0;
-            int GXsuma = 0;
-            int GYsuma = 0;
             for (int fila = i - 1; fila <= i + 1; ++fila)
             {
              int a = fila + 2;
@@ -123,8 +121,8 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                  }
                a++;
              }
-            GXsuma = GreenGX + BlueGX + RedGX;
-            GYsuma = GreenGY + BlueGY + RedGY;
+            int GXsuma = GreenGX + BlueGX + RedGX;
+            int GYsuma = GreenGY + BlueGY + RedGY;
             int SumaTotal = (int)round(hypot(GYsuma, GXsuma));
             if (SumaTotal > 255)
             {
