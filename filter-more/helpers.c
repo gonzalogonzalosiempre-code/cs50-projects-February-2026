@@ -117,9 +117,9 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                       BlueGY += temp[fila][col].rgbtBlue * Gy[a][r];
                       RedGY += temp[fila][col].rgbtRed * Gy[a][r];
                      }
-                   r++;
+                   r -= 1;
                  }
-               a++;
+               a -= 1;
              }
             int GXsuma = GreenGX + BlueGX + RedGX;
             int GYsuma = GreenGY + BlueGY + RedGY;
