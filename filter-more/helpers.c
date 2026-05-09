@@ -127,7 +127,15 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
              }
             GXsuma = GreenGX + BlueGX + RedGX;
             GYsuma = GreenGY + BlueGY + RedGY;
-            int SumaTotal = hypot(GYsuma )
+            int SumaTotal = hypot(GYsuma + GXsuma);
+            if (SumaTotal > 255)
+            {
+              SumaTotal = 255;
+            }
+            else if (SumaTotal < 0)
+            {
+              SumaTotal = 0
+            }
           }
 
     }
