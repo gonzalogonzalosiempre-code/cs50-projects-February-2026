@@ -114,7 +114,6 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                      OperacionBlue = temp[file][col].rgbtBlue * Gx[r][a];
                      OperacionRed = temp[file][col].rgbtRed * Gx[r][a];
                      }
-
                  }
              }
           }
