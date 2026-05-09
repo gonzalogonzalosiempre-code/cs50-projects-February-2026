@@ -104,6 +104,8 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             };
             float RedGX = 0, GreenGX = 0, BlueGX = 0;
             float RedGY = 0, GreenGY = 0, BlueGY = 0;
+            int GXsuma = 0;
+            int GXsuma = 0;
             for (int fila = i - 1; fila <= i + 1; ++fila)
             {
              a = fila + 2;
@@ -123,7 +125,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                  }
                a++;
              }
-     }
+          }
 
     }
 }
