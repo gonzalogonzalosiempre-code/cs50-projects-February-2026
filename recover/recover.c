@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
   FILE *card = fopen("card.raw", "r");
   while (fread(&buffer, 1, 512, card) == 512)
   {
-    fread(&buffer, 1 , 512 , card);
+    fread(&buffer, sizeof(BYTE) , 512 , card);
 
     if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
     {
