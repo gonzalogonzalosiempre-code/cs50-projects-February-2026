@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
   int contador = 0;
   FILE *img = NULL;
   FILE *card = fopen("card.raw", "r");
-  while (fread(&buffer, 1, 512, card) == 512)
+  while (fread(&buffer, sizeof(BYTE), 512, card) == 512)
   {
     fread(&buffer, sizeof(BYTE) , 512 , card);
 
