@@ -8,5 +8,7 @@ int main(int argc, char *argv[])
     printf("Usage: ./recover FILE\n");
     return 1;
   }
-  
+  buffer[]
+  FILE *card = fopen("card.raw", r)
+  while (fread())
 }
