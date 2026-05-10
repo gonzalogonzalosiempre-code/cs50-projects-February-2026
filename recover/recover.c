@@ -29,12 +29,15 @@ int main(int argc, char *argv[])
       fclose(img);
       contador++;
     }
-    else if ( buffer[0] != 0xff && contador > 0)
+    else
     {
+      if ( buffer[0] != 0xff && contador > 0)
+      {
       sprintf(name, "%03i.jpg", (contador - 1));
       FILE *img = fopen(name , "a");
       fwrite(&buffer, sizeof(BYTE), 512 , img);
       fclose(img);
+      }
     }
     }
   free(name);
