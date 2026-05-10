@@ -18,7 +18,6 @@ int main(int argc, char *argv[])
     return 1;
   }
   int contador = 0;
-  int encontrado = 0;
   FILE *img = NULL;
   FILE *card = fopen("card.raw", "r");
   while (fread(&buffer, 1, 512, card) == 512)
