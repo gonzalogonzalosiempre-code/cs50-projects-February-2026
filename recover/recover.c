@@ -45,10 +45,11 @@ int main(int argc, char *argv[])
     }
     else
     {
-      if (contador >= 1)
+      if ( contador >= 1)
       {
       fwrite(&buffer, sizeof(BYTE), 1 , img);
       }
+    }
     }
   }
   free(name);
