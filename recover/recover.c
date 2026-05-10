@@ -10,11 +10,15 @@ int main(int argc, char *argv[])
     printf("Usage: ./recover FILE\n");
     return 1;
   }
-  int *buffer = malloc(sizeof(BYTE * 512));
+  int *buffer = malloc(512 * sizeof(BYTE));
   if (buffer == NULL)
   {
     return 1;
   }
+
   FILE *card = fopen("card.raw", r)
-  while (fread())
+  while (fread(&buffer, sizeof(BYTE), 1 , card))
+  {
+    FILE *
+  }
 }
