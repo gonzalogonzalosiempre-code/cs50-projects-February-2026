@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
     printf("Usage: ./recover FILE\n");
     return 1;
   }
-  int *buffer = malloc(sizeof(BYTE));
+  int *buffer = malloc(sizeof(BYTE * 512));
   if (buffer == NULL)
   {
     return 1;
