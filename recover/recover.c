@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
     return 1;
   }
   int contador = 0;
-  FILE *card = fopen("card.raw", "r");
+  FILE *card = fopen(argv[1], "r");
   while (fread(&buffer, sizeof(BYTE), 512, card) == 512)
   {
     if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
