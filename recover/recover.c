@@ -27,21 +27,22 @@ int main(int argc, char *argv[])
     {
       sprintf(name, "%03i.jpg", contador);
       FILE *img = fopen(name , "w");
-      fwrite(&buffer, sizeof(BYTE), 1 , img);
+      fwrite(&buffer, sizeof(BYTE), 512 , img);
+      fclose(img);
       contador++;
     }
     else
     {
       if ( buffer[0] != 0xff && contador > 0)
       {
-      sprintf(name, "%03i.jpg", (contador - 1))
+      sprintf(name, "%03i.jpg", (contador - 1));
       FILE *img = fopen(name , "a");
-      fwrite(&buffer, sizeof(BYTE), 1 , img);
+      fwrite(&buffer, sizeof(BYTE), 512 , img);
+      fclose(img);
       }
     }
     }
   free(name);
   fclose(card);
-  fclose(img);
   return 0;
 }
