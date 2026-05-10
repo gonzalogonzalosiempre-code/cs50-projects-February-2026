@@ -21,8 +21,6 @@ int main(int argc, char *argv[])
   FILE *card = fopen("card.raw", "r");
   while (fread(&buffer, sizeof(BYTE), 512, card) == 512)
   {
-    fread(&buffer, sizeof(BYTE) , 512 , card);
-
     if (buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff && (buffer[3] & 0xf0) == 0xe0)
     {
       sprintf(name, "%03i.jpg", contador);
@@ -31,9 +29,8 @@ int main(int argc, char *argv[])
       fclose(img);
       contador++;
     }
-    else
+    else if ( buffer[0] != 0xff && contador > 0)
     {
-      if ( buffer[0] != 0xff && contador > 0)
       {
       sprintf(name, "%03i.jpg", (contador - 1));
       FILE *img = fopen(name , "a");
