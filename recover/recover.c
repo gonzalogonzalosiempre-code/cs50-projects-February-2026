@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
     }
     else
     {
-      if ( buffer[0] != 0xff && contador > 0)
+      if ( contador >= 0)
       {
       sprintf(name, "%03i.jpg", (contador - 1));
       FILE *img = fopen(name , "a");
