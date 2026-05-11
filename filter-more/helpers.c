@@ -16,7 +16,7 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
         Total = Total / 3.0;
         image[i][j].rgbtRed = (int)Total;
         image[i][j].rgbtBlue = (int)Total;
-        image[i][j].rgbtBlue = (int)Total;
+        image[i][j].rgbtGreen = (int)Total;
         }
       }
     return;
