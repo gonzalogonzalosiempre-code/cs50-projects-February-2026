@@ -64,7 +64,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                     sumaRed += temp[fila][col].rgbtRed;
                     sumaGreen += temp[fila][col].rgbtGreen;
                     sumaBlue += temp[fila][col].rgbtBlue;
-                    contador ++;
+                    contador++;
                     }
                 }
             }
