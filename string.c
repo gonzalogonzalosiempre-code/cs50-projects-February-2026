@@ -27,7 +27,7 @@ bool solution(const char *string, const char *ending)
 {
    if (strlen(string) > 1)
    {
-      if (strlen(ending) < 1)
+      if (strlen(ending) = 1)
       {
        return false;
       }
