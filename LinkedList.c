@@ -28,15 +28,7 @@ int main (void)
     }
     n->Number = i;
     n->next = list;
-
-    if (list == NULL)
-    {
-     list = n;
-    }
-    else
-    {
-      
-    }
+    list = n;
   }
   for (node *ptr = list; ptr != NULL; ptr = ptr->next)
   {
