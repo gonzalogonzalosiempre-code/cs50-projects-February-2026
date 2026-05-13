@@ -27,6 +27,8 @@ int main (void)
         return 1;
     }
     n->Number = i;
+    n->next = NULL;
+    
     n->next = list;
     list = n;
   }
