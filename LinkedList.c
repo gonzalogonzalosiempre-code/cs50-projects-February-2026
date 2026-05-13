@@ -33,11 +33,9 @@ int main (void)
     {
      list = n;
     }
-    else
-    {
+    
     n->next = list;
     list = n;
-    }
   }
   for (node *ptr = list; ptr != NULL; ptr = ptr->next)
   {
