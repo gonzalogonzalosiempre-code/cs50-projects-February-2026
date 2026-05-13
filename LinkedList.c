@@ -32,13 +32,19 @@ int main (void)
     {
     list = n;
     }
+    else if (n->Number > list->Number)
+    {
+        n->next = list;
+        list = n;
+    }
     else
     {
         for (node *ptr = list ; ptr != NULL; ptr = ptr->next)
         {
-            if (n->Number > ptr->Number)
+            if (ptr->next = NULL)
             {
-
+             ptr->next = n;
+             
             }
         }
     }
