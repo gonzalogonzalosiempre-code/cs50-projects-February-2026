@@ -21,7 +21,10 @@ int main (void)
         unload(list);
         return 1;
     }
-    n->Number = i;
+    int Numero;
+    printf("Ingre su Numero: ");
+    scanf("%i", &Numero);
+    n->Number = Numero;
     n->next = NULL;
 
     n->next = list;
