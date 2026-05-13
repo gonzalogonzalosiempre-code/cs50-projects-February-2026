@@ -13,7 +13,7 @@ int main (void)
 {
   node *list = NULL;
 
-  for (int i = 0; i < 3 ; ++i)
+  for (int i = 0; i < 8 ; ++i)
   {
     node *n = malloc(sizeof(node));
     if (n == NULL)
@@ -29,10 +29,11 @@ int main (void)
 
     n->next = list;
     list = n;
+    if (n)
   }
   for (node *ptr = list; ptr != NULL; ptr = ptr->next)
   {
-    printf("%i", ptr->Number);
+    printf("%i\n", ptr->Number);
   }
   unload(list);
   return 0;
