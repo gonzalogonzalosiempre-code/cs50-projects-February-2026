@@ -9,9 +9,12 @@ typedef struct node
 
 int main (void)
 {
-  node *list
+  node *list;
   list->Numer = 1;
   list->next = NULL;
 
-  for (node )
+  for (int i = 0; i < 3 ; ++i)
+  {
+    node *n = malloc()
+  }
 }
