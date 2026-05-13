@@ -15,6 +15,11 @@ int main (void)
 
   for (int i = 0; i < 3 ; ++i)
   {
-    node *n = malloc()
+    node *n = malloc(sizeof(node));
+    if (n == NULL)
+    {
+        return 1;
+    }
+    
   }
 }
