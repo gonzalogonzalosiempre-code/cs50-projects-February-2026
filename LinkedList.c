@@ -27,15 +27,16 @@ int main (void)
         return 1;
     }
     n->Number = i;
-    n->next = NULL;
+    n->next = list;
 
     if (list == NULL)
     {
      list = n;
     }
-    
-    n->next = list;
-    list = n;
+    else
+    {
+      
+    }
   }
   for (node *ptr = list; ptr != NULL; ptr = ptr->next)
   {
