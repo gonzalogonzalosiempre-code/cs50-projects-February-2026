@@ -14,7 +14,7 @@ int main (void)
     {
         return 1;
     }
-  list->next = NULL;
+  list = NULL;
 
   for (int i = 0; i < 3 ; ++i)
   {
@@ -24,15 +24,17 @@ int main (void)
         return 1;
     }
     n->Number = i;
-    if (list->next == NULL)
+    n->next = NULL;
+
+    if (list == NULL)
     {
-     n->next = NULL;
      list = n;
     }
-    
-    list->next = n->next;
+    else
+    {
+    n->next = list;
     list = n;
-
-
+    }
   }
+  node *ptr = list; list = NULL; ptr->next 
 }
