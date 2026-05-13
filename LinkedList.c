@@ -7,6 +7,8 @@ typedef struct node
     node *next;
 } node;
 
+void unload(node *);
+
 int main (void)
 {
   node *list = malloc(sizeof(node));
@@ -21,6 +23,7 @@ int main (void)
     node *n = malloc(sizeof(node));
     if (n == NULL)
     {
+        unload(list);
         return 1;
     }
     n->Number = i;
@@ -40,6 +43,8 @@ int main (void)
   {
     printf("%i", Number);
   }
+  unload(list);
+  return 0;
 }
 
 void unload(node *)
