@@ -44,7 +44,7 @@ int main (void)
             if (ptr->next = NULL)
             {
              ptr->next = n;
-             
+             break;
             }
         }
     }
