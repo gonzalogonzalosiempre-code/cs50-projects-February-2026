@@ -11,12 +11,7 @@ void unload(node *);
 
 int main (void)
 {
-  node *list = malloc(sizeof(node));
-    if (list == NULL)
-    {
-        return 1;
-    }
-  list = NULL;
+  node *list = NULL;
 
   for (int i = 0; i < 3 ; ++i)
   {
@@ -28,7 +23,7 @@ int main (void)
     }
     n->Number = i;
     n->next = NULL;
-    
+
     n->next = list;
     list = n;
   }
