@@ -36,5 +36,22 @@ int main (void)
     list = n;
     }
   }
-  node *ptr = list; list = NULL; ptr->next 
+  for (node *ptr = list; list != NULL; ptr = ptr->next)
+  {
+    printf("%i", Number);
+  }
+}
+
+void unload(node *)
+{
+    node *ptr = malloc(sizeof(node))
+    if (ptr = NULL)
+    {
+        return 1;
+    }
+    while (list != NULL)
+    {
+        ptr = list;
+        free()
+    }
 }
