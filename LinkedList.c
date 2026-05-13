@@ -36,9 +36,9 @@ int main (void)
     {
         for (node *ptr = list ; ptr != NULL; ptr = ptr->next)
         {
-            if (n->Number < n->next)
+            if (n->Number < ptr->next->Number)
             {
-             
+
             }
         }
     }
