@@ -10,4 +10,8 @@ typedef struct node
 int main (void)
 {
   node *list
+  list->Numer = 1;
+  list->next = NULL;
+
+  for (node )
 }
