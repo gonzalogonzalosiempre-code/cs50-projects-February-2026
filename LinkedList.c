@@ -10,12 +10,11 @@ typedef struct node
 int main (void)
 {
   node *list = malloc(sizeof(node));
-  {
     if (list == NULL)
     {
         return 1;
     }
-  }
+  list->next = NULL;
 
   for (int i = 0; i < 3 ; ++i)
   {
@@ -26,6 +25,11 @@ int main (void)
     }
     n->Number = i;
     n->next = NULL;
+    if (list->next == NULL)
+    {
+     list = n;
+    }
+
     list->next = n->next;
     list = n;
 
