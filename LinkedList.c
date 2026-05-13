@@ -24,12 +24,12 @@ int main (void)
         return 1;
     }
     n->Number = i;
-    n->next = NULL;
     if (list->next == NULL)
     {
+     n->next = NULL;
      list = n;
     }
-
+    
     list->next = n->next;
     list = n;
 
