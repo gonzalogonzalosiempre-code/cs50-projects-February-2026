@@ -49,9 +49,10 @@ void unload(node *)
     {
         return 1;
     }
+    ptr = list;
     while (list != NULL)
     {
-        ptr = list;
-        free()
+        ptr = ptr->next;
+        free(next);
     }
 }
