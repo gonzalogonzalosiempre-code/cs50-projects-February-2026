@@ -26,10 +26,22 @@ int main (void)
     scanf("%i", &Numero);
     n->Number = Numero;
     n->next = NULL;
-
     n->next = list;
+
+    if (list == NULL)
+    {
     list = n;
-    if (n)
+    }
+    else
+    {
+        for (node *ptr = list ; ptr != NULL; ptr = ptr->next)
+        {
+            if (n->Number < n->next)
+            {
+             
+            }
+        }
+    }
   }
   for (node *ptr = list; ptr != NULL; ptr = ptr->next)
   {
