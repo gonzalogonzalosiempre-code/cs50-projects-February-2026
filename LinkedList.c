@@ -4,7 +4,7 @@
 typedef struct node
 {
     int Number;
-    node *next;
+    struct node *next;
 } node;
 
 void unload(node *);
@@ -39,18 +39,18 @@ int main (void)
     list = n;
     }
   }
-  for (node *ptr = list; list != NULL; ptr = ptr->next)
+  for (node *ptr = list; ptr != NULL; ptr = ptr->next)
   {
-    printf("%i", Number);
+    printf("%i", ptr->Number);
   }
   unload(list);
   return 0;
 }
 
-void unload(node *)
+void unload(node *Lista)
 {
-     node *ptr = list;
-    while (list != NULL)
+     node *ptr = Lista;
+    while (Lista != NULL)
     {
         node *next = ptr->next;
         free(next);
