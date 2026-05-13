@@ -44,15 +44,11 @@ int main (void)
 
 void unload(node *)
 {
-    node *ptr = malloc(sizeof(node))
-    if (ptr = NULL)
-    {
-        return 1;
-    }
-    ptr = list;
+     node *ptr = list;
     while (list != NULL)
     {
-        ptr = ptr->next;
+        node *next = ptr->next;
         free(next);
+        ptr = next;
     }
 }
