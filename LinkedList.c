@@ -46,6 +46,12 @@ int main (void)
              ptr->next = n;
              break;
             }
+            if (n->number < ptr->next->number)
+            {
+             n->next = ptr->next;
+             ptr->next = n;
+             break;
+            }
         }
     }
   }
