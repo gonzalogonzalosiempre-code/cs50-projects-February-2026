@@ -87,7 +87,7 @@ unsigned int size(void)
     // TODO
     for (int i = 0; i == N; ++i)
     {
-    if (table[i]->word == NULL)
+    if (table[i] == NULL)
     {
     return 0;
     }
