@@ -28,8 +28,8 @@ bool check(const char *word)
       if (strcmp(ptr->word,word) == 0)
       {
        return true;
-       ptr = ptr->next;
       }
+     ptr = ptr->next;
     }
     // TODO
     return false;
