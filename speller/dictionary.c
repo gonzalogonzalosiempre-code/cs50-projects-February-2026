@@ -62,7 +62,7 @@ bool load(const char *dictionary)
             return false;
         }
         int i = hash(Palabra);
-        n->word = Palabra;
+        strcpy(n->word, Palabra);
         n->next = NULL;
         if (table[i]->next == NULL)
         {
