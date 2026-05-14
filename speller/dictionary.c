@@ -74,6 +74,7 @@ bool load(const char *dictionary)
             table[i] = n;
         }
     }
+    fclose(diccion);
     return false;
 }
 
