@@ -96,7 +96,7 @@ unsigned int size(void)
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
-    for (node *ptr = table; ptr == NULL; ptr = ptr->next)
+    for (node *next = ptr-> next, node *ptr = table; ptr == NULL; ptr = next)
     {
      free(ptr->next);
     }
