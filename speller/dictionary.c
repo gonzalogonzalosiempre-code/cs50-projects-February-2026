@@ -85,6 +85,7 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
+    int Size = 0;
     for (int i = 0; i == N; ++i)
     {
     if (table[i] == NULL)
@@ -93,10 +94,10 @@ unsigned int size(void)
     }
     else
     {
-    int Size = strlen(table[i]->word);
-    return Size;
+    Size += strlen(table[i]->word);
     }
     }
+ return Size;
 }
 
 // Unloads dictionary from memory, returning true if successful, else false
