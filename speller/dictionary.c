@@ -48,7 +48,7 @@ bool load(const char *dictionary)
     // TODO
     FILE *diccion = fopen(dictionary, "r")
 
-    fscanf(diccion, "%s", )
+    fscanf(diccion, "%s", word)
 
     return false;
 }
