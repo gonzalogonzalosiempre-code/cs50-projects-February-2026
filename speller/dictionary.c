@@ -1,8 +1,8 @@
 // Implements a dictionary's functionality
-
+#include <stdio.h>
 #include <ctype.h>
 #include <stdbool.h>
-#include <string.h>
+#include <strings.h>
 #include <stdlib.h>
 
 #include "dictionary.h"
@@ -48,7 +48,7 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
     // TODO
-    FILE *diccion = fopen(dictionary, "r")
+    FILE *diccion = fopen(dictionary, "r");
 
     char *Palabra = malloc(10 * sizeof(char));
     if (Palabra == NULL)
