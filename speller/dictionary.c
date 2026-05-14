@@ -23,13 +23,13 @@ bool check(const char *word)
 {
     int i = hash(word);
     node *ptr = table[i];
-    while (ptr[i] != NULL)
+    while (ptr != NULL)
     {
       if (strcmp(ptr->word,word) == 0)
       {
-       
+       return true;
+       ptr = ptr->next;
       }
-      return false;
     }
     // TODO
     return false;
