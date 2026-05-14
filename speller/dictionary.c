@@ -48,16 +48,21 @@ bool load(const char *dictionary)
     // TODO
     FILE *diccion = fopen(dictionary, "r")
 
-    char Nombre[] = {O};
-    while(fscanf(diccion, "%s", word) != NULL)
+    char *Palabra = malloc(10 * sizeof(char));
+    if (Palabra == NULL)
+    {
+        return false;
+    }
+
+    while(fscanf(diccion, "%s", Palabra) != NULL)
     {
         node *n = malloc(sizeof(node))
         if (n == NULL)
         {
             return false;
         }
-        int i = hash(word);
-        n->word = word;
+        int i = hash(Palabra);
+        n->word = Palabra;
         n->next = NULL;
         if (table[i]->next == NULL)
         {
