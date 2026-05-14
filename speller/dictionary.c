@@ -48,6 +48,7 @@ bool load(const char *dictionary)
     // TODO
     FILE *diccion = fopen(dictionary, "r")
 
+    char Nombre[] = {O};
     while(fscanf(diccion, "%s", word) != NULL)
     {
         node *n = malloc(sizeof(node))
