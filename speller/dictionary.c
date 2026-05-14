@@ -82,7 +82,8 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
-    
+    for (int i = 0; i == N; ++i)
+    int Size = strlen(table[i])
     return 0;
 }
 
