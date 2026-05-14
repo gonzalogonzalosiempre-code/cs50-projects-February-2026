@@ -55,9 +55,18 @@ bool load(const char *dictionary)
         {
             return false;
         }
+        int i = hash(word);
         n->word = word;
         n->next = NULL;
-        if ()
+        if (table[i]->next == NULL)
+        {
+            table[i] = n;
+        }
+        else
+        {
+            n->next = table[i]->next;
+            table[i] = n;
+        }
     }
     return false;
 }
