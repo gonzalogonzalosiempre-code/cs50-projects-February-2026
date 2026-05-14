@@ -105,6 +105,7 @@ bool unload(void)
       free(ptr->next);
       ptr = next;
     }
+    return true;
     }
     // TODO
     return false;
