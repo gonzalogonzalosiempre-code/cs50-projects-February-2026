@@ -47,7 +47,6 @@ bool load(const char *dictionary)
 {
     // TODO
     FILE *diccion = fopen(dictionary, "r")
-    
 
     while(fread())
 
