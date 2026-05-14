@@ -48,10 +48,10 @@ bool load(const char *dictionary)
     // TODO
     FILE *diccion = fopen(dictionary, "r")
 
-    while(diccion == 0)
+    while(diccion != NULL)
     {
     fscanf(diccion, "%s", word)
-    if (word == E0F)
+    
     }
 
     return false;
