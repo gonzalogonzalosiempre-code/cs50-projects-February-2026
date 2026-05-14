@@ -48,9 +48,11 @@ bool load(const char *dictionary)
     // TODO
     FILE *diccion = fopen(dictionary, "r")
 
-    while(diccion == )
-
+    while(diccion == 0)
+    {
     fscanf(diccion, "%s", word)
+    if (word == E0F)
+    }
 
     return false;
 }
