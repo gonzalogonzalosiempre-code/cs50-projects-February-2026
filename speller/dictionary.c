@@ -48,15 +48,10 @@ bool load(const char *dictionary)
     // TODO
     FILE *diccion = fopen(dictionary, "r")
 
-    while(diccion != NULL)
+    while(fscanf(diccion, "%s", word) != NULL)
     {
-    fscanf(diccion, "%s", word)
-    if(fscanf == E0F)
-    {
-        
+        node *
     }
-    }
-
     return false;
 }
 
