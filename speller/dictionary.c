@@ -55,7 +55,9 @@ bool load(const char *dictionary)
         {
             return false;
         }
-        n->word = 
+        n->word = word;
+        n->next = NULL;
+        if ()
     }
     return false;
 }
