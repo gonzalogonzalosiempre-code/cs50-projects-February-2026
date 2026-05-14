@@ -25,7 +25,7 @@ bool check(const char *word)
     node *ptr = table[i];
     while (ptr[i] != NULL)
     {
-      if (strcmp(word, ))
+      if (strcmp( ))
     }
     // TODO
     return false;
