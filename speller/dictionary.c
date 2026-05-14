@@ -87,11 +87,14 @@ unsigned int size(void)
     // TODO
     for (int i = 0; i == N; ++i)
     {
-    int Size = strlen(table[i]->word);
-    return Size;
     if (table[i]->word == NULL)
     {
     return 0;
+    }
+    else
+    {
+    int Size = strlen(table[i]->word);
+    return Size;
     }
     }
 }
