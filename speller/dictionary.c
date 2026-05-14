@@ -4,6 +4,7 @@
 #include <stdbool.h>
 #include <strings.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "dictionary.h"
 
@@ -56,9 +57,9 @@ bool load(const char *dictionary)
         return false;
     }
 
-    while(fscanf(diccion, "%s", Palabra) != E0F)
+    while(fscanf(diccion, "%s", Palabra) != EOF)
     {
-        node *n = malloc(sizeof(node))
+        node *n = malloc(sizeof(node));
         if (n == NULL)
         {
             return false;
