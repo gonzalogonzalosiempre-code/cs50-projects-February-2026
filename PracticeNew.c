@@ -22,7 +22,7 @@ int main (int argc, char *argv[])
     names[i] = argv[Count];
     Count++;
   }
-  char *string = likes(Count_Names, names[]);
+  char *string = likes(Count_Names, names);
 
   printf("%s", string);
 
