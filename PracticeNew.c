@@ -22,7 +22,7 @@ int main (int argc, char *argv[])
     names[i] = argv[Count];
     Count++;
   }
-  char *string = likes(Count_Names, names);
+  char *string = likes(Count_Names, (const char *const *)names);
 
   printf("%s", string);
 
@@ -40,7 +40,7 @@ char *likes(size_t n, const char *const names[n]) {
     sprintf(string, "%s likes this", names[0]);
     return string;
   }
-  else if (n >= 2)
+  else if (n == 2)
   {
    char *string = malloc(30 * sizeof(char));
     if (string == NULL)
@@ -50,7 +50,7 @@ char *likes(size_t n, const char *const names[n]) {
    sprintf(string, "%s, and %s, like this", names[0], names[1]);
    return string;
   }
-  else if (n > 3)
+  else if (n == 3)
   {
     char *string = malloc(30 * sizeof(char));
     if (string == NULL)
@@ -61,4 +61,5 @@ char *likes(size_t n, const char *const names[n]) {
     sprintf(string, "%s, %s and %i others like this", names[0],names[1],Number);
     return string;
   }
+  return string;
 }
