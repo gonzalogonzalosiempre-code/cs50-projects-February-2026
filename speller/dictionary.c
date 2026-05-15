@@ -70,15 +70,16 @@ bool load(const char *dictionary)
         if (table[i]->next == NULL)
         {
             table[i] = n;
+            return true;
         }
         else
         {
             n->next = table[i]->next;
             table[i] = n;
+            return true;
         }
     }
     fclose(diccion);
-    return false;
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
