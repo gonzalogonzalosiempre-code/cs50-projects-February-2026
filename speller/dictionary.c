@@ -80,6 +80,7 @@ bool load(const char *dictionary)
         }
     }
     fclose(diccion);
+    free(Palabra);
     return true;
 }
 
