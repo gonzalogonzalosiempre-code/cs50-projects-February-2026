@@ -75,7 +75,7 @@ unsigned int size(void)
 {
     // TODO
     int Size = 0;
-    for (int i = 0; i == N; ++i)
+    for (int i = 0; i < N; ++i)
     {
     if (table[i] == NULL)
     {
@@ -92,14 +92,14 @@ unsigned int size(void)
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
-    for (int i = 0; i == N; i++)
+    for (int i = 0; i < N; i++)
     {
     node *ptr = table[i];
     while(ptr != NULL)
     {
       node *next = ptr;
       ptr = ptr->next;
-      free(next)
+      free(next);
     }
     return true;
     }
