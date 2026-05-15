@@ -64,7 +64,7 @@ bool load(const char *dictionary)
         int i = hash(Palabra);
         strcpy(n->word, Palabra);
         n->next = NULL;
-        n->next = table[i]->next;
+        n->next = table[i];
         table[i] = n;
         word_count++;
     }
@@ -90,8 +90,7 @@ bool unload(void)
       ptr = ptr->next;
       free(next);
     }
-    return true;
     }
     // TODO
-    return false;
+    return true;
 }
