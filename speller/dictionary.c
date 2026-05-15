@@ -79,9 +79,9 @@ bool load(const char *dictionary)
             return true;
         }
      free(n);
+     free(Palabra);
     }
     fclose(diccion);
-    free(Palabra);
     return true;
 }
 
