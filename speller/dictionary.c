@@ -97,9 +97,9 @@ bool unload(void)
     node *ptr = table[i];
     while(ptr != NULL)
     {
-      node *next = ptr->next;
-      free(ptr->next);
-      ptr = next;
+      node *next = ptr;
+      ptr = ptr->next;
+      free(next)
     }
     return true;
     }
