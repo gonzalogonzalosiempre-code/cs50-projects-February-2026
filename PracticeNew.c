@@ -22,14 +22,15 @@ int main (int argc, char *argv[])
     names[i] = argv[Count];
     Count++;
   }
-  char *string = likes(Count_Names, (const char *const *)names);
+  char *string = likes(Count_Names, (const char *const *)names); //Conversion de Tipos
 
   printf("%s", string);
   free(string);
 
 }
 
-char *likes(size_t n, const char *const names[n]) {
+char *likes(size_t n, const char *const names[n])// SIZE_T Obliga a solo recibir numeros positivos mas no negativos
+{
   char *string = malloc(30 * sizeof(char));
     if (string == NULL)
     {
@@ -38,18 +39,18 @@ char *likes(size_t n, const char *const names[n]) {
     //  <----  hajime!
   if (n == 1)
   {
-    sprintf(string, "%s likes this", names[0]);
+    sprintf(string, "%s likes this\n", names[0]);
     return string;
   }
   else if (n == 2)
   {
-   sprintf(string, "%s, and %s, like this", names[0], names[1]);
+   sprintf(string, "%s, and %s, like this\n", names[0], names[1]); //Sprintf convierte o añade al string de mi buffer, otro string o int o variable
    return string;
   }
   else if (n == 3)
   {
     int Number = n - 2;
-    sprintf(string, "%s, %s and %i others like this", names[0],names[1],Number);
+    sprintf(string, "%s, %s and %i others like this\n", names[0],names[1],Number);
     return string;
   }
   return string;
