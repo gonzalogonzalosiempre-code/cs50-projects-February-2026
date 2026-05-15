@@ -63,15 +63,8 @@ bool load(const char *dictionary)
         int i = hash(Palabra);
         strcpy(n->word, Palabra);
         n->next = NULL;
-        if (table[i]->next == NULL)
-        {
-            table[i] = n;
-        }
-        else
-        {
-            n->next = table[i]->next;
-            table[i] = n;
-        }
+        n->next = table[i]->next;
+        table[i] = n;
     }
     free(n);
     fclose(diccion);
