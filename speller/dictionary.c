@@ -70,15 +70,12 @@ bool load(const char *dictionary)
         if (table[i]->next == NULL)
         {
             table[i] = n;
-            return true;
         }
         else
         {
             n->next = table[i]->next;
             table[i] = n;
-            return true;
         }
-     free(n);
      free(Palabra);
      Palabra = malloc(10 * sizeof(char));
      if (Palabra == NULL)
@@ -86,6 +83,7 @@ bool load(const char *dictionary)
         return false;
     }
     }
+    free(n);
     fclose(diccion);
     free(Palabra);
     return true;
