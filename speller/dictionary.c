@@ -51,7 +51,7 @@ bool load(const char *dictionary)
     // TODO
     FILE *diccion = fopen(dictionary, "r");
 
-    char *Palabra[LENGTH];
+    char Palabra[LENGTH];
 
     while(fscanf(diccion, "%s", Palabra) != EOF)
     {
@@ -66,7 +66,6 @@ bool load(const char *dictionary)
         n->next = table[i]->next;
         table[i] = n;
     }
-    free(n);
     fclose(diccion);
     return true;
 }
