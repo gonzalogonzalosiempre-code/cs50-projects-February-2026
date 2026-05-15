@@ -51,11 +51,7 @@ bool load(const char *dictionary)
     // TODO
     FILE *diccion = fopen(dictionary, "r");
 
-    char *Palabra = malloc(10 * sizeof(char));
-    if (Palabra == NULL)
-    {
-        return false;
-    }
+    char *Palabra[LENGTH];
 
     while(fscanf(diccion, "%s", Palabra) != EOF)
     {
@@ -76,16 +72,9 @@ bool load(const char *dictionary)
             n->next = table[i]->next;
             table[i] = n;
         }
-     free(Palabra);
-     Palabra = malloc(10 * sizeof(char));
-     if (Palabra == NULL)
-    {
-        return false;
-    }
     }
     free(n);
     fclose(diccion);
-    free(Palabra);
     return true;
 }
 
