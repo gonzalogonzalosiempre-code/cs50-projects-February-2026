@@ -80,8 +80,14 @@ bool load(const char *dictionary)
         }
      free(n);
      free(Palabra);
+     Palabra = malloc(10 * sizeof(char));
+     if (Palabra == NULL)
+    {
+        return false;
+    }
     }
     fclose(diccion);
+    free(Palabra);
     return true;
 }
 
