@@ -78,10 +78,10 @@ bool load(const char *dictionary)
             table[i] = n;
             return true;
         }
+     free(n);
     }
     fclose(diccion);
     free(Palabra);
-    free(n);
     return true;
 }
 
