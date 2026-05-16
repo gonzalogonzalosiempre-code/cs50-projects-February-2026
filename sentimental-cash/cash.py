@@ -5,6 +5,12 @@ except ValueError:
         Valor1 = float(input("Change: "))
         if Valor1 >= 1:
             break
-while Valor1 == 0:
-    Valor1 
+Suma25 = 0
+Suma10 = 0
+Suma5 = 0
+Suma1 = 0
+while Valor1 < 0:
+    Suma = Valor1 - 25
+    if (25 * 2) > Suma:
+
 
