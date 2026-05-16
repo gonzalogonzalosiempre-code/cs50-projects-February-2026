@@ -5,7 +5,6 @@ except ValueError:
         Valor1 = int(input("Change: "))
         if Valor1 >= 1:
             break
-Count = 0
 
 while Valor1 > 0:
     if Valor1 / 25 <= 0:
