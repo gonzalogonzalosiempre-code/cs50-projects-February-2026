@@ -7,7 +7,7 @@ except ValueError:
             break
 Monedas = 0
 while Valor1 > 0:
-    if Valor1 - 25 <= 0:
+    if Valor1 - 25 <= 25:
         break
     else:
         Valor1 = Valor - 25
