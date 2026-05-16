@@ -28,7 +28,7 @@ while Valor1 > 0:
         Valor1 = Valor1 - (1 * Monedas)
         break
     else: break
-print(int(Monedas))
+print(Count)
 
 
 
