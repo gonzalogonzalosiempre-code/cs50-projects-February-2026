@@ -6,8 +6,7 @@ if len(Tarjeta) == 15:
 elif len(Tarjeta) == 16:
     if Tarjeta[0] == "5":
         print("MASTERCARD")
-elif len(Tarjeta) == 16:
-    if Tarjeta[0] == "4":
+    elif Tarjeta[0] == "4":
         print("VISA")
-else: print("INVALID")
+    else: print("INVALID")
 
