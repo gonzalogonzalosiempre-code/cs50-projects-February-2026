@@ -1,8 +1,9 @@
 Tarjeta = str(input("Number: "))
 
-if len(Tarjeta) == 15:
-    if Tarjeta[0] == "3":
-        print("AMEX")
+if len(Tarjeta) == 15 and Tarjeta[14] == "4":
+        print("INVALID")
+elif len(Tarjeta) == 15 and Tarjeta[0] == "3":
+     print("AMEX")
 elif len(Tarjeta) == 16:
     if Tarjeta[0] == "5":
         print("MASTERCARD")
