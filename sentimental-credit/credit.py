@@ -1,13 +1,13 @@
 Tarjeta = str(input("Number: "))
 
 if len(Tarjeta) == 15:
-    if Tarjeta[0] == 3:
+    if Tarjeta[0] == "3":
         print("AMEX")
 elif len(Tarjeta) == 16:
-    if Tarjeta[0] == 5:
+    if Tarjeta[0] == "5":
         print("MASTERCARD")
 elif len(Tarjeta) == 16:
-    if Tarjeta[0] == 4:
+    if Tarjeta[0] == "4":
         print("VISA")
 else: print("INVALID")
 
