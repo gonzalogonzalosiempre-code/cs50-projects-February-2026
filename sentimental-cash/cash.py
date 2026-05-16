@@ -1,10 +1,10 @@
-try:
+while True:
+    try:
     Valor1 = float(input("Change: "))
-except ValueError:
-    while True:
-        Valor1 = float(input("Change: "))
-        if Valor1 >= 0:
-            break
+    if Valor1 >= 0:
+         break
+    except ValueError:
+            pass
 if Valor1 < 1:
     Valor1 = int(Valor1 * 10)
 Count = 0
