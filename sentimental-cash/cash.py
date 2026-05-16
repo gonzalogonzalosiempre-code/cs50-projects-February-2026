@@ -5,7 +5,7 @@ except ValueError:
         Valor1 = float(input("Change: "))
         if Valor1 >= 1:
             break
-Valor1 = round(Valor1)
+Valor1 *= 10
 Count = 0
 while Valor1 > 0:
     if Valor1 / 25 >= 0:
