@@ -9,5 +9,6 @@ elif len(Tarjeta) == 16:
     elif Tarjeta[0] == "4":
         print("VISA")
     else: print("INVALID")
-else: print("INVALID")
+elif len(Tarjeta) == :
+   print("INVALID")
 
