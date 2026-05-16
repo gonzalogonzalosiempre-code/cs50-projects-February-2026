@@ -3,7 +3,7 @@ try:
 except ValueError:
     while True:
         Valor1 = float(input("Change: "))
-        if Valor1 >= 1:
+        if Valor1 >= 0:
             break
 if Valor1 < 1:
     Valor1 = int(Valor1 * 10)
