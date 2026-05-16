@@ -11,24 +11,31 @@ while Valor1 > 0:
         Monedas = Valor1 / 25
         Count = Monedas
         Valor1 = Valor1 - (25 * Monedas)
-    else: break
+    else:
+        print(f"{Count}")
+        break
     if Valor1 / 10 <= 0:
         Monedas = Valor1 / 10
         Count += Monedas
         Valor1 = Valor1 - (10 * Monedas)
-    else: break
+    else:
+        print(f"{Count}")
+        break
     if Valor1 / 5 <= 0:
         Monedas = Valor1 / 5
         Count += Monedas
         Valor1 = Valor1 - (5 * Monedas)
-    else: break
+    else:
+        print(f"{Count}")
+        break
     if Valor1 / 1 <= 0:
         Monedas = Valor1 / 1
         Count += Monedas
         Valor1 = Valor1 - (1 * Monedas)
+        print(f"{Count}")
         break
     else: break
-print(f"{Count}")
+
 
 
 
