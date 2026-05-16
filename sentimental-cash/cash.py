@@ -5,8 +5,7 @@ while True:
             break
     except ValueError:
             pass
-if Valor1 < 1:
-    Valor1 = round(Valor1 * 100)
+Valor1 = round(Valor1 * 100)
 Count = 0
 while Valor1 > 0:
     if Valor1 >= 25:
