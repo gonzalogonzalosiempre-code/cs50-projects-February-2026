@@ -24,7 +24,7 @@ while Valor1 > 0:
          Monedas = Valor1 // 1
          Count += Monedas
          Valor1 -= (1 * Monedas)
-print(f"{round(Count)}")
+print(f"{Count}")
 
 
 
