@@ -10,8 +10,6 @@ if Height > 8 or Height <= 0:
 for i in range(Height):
     n = i + 1
     print(" " * (Height - n), end=(""))
-    print("#" * (i+1))
-    print("\n")
-    print(" " * (Height - i + i), end=(""))
+    print("#" * (i+1), end=(" "))
     print("#" * (i+1))
 
