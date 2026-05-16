@@ -1,7 +1,9 @@
-try:
-    Height = int(input("Height: "))
-except ValueError:
-    while 
+while True :
+   try:
+        Height = int(input("Height: "))
+        break
+    except ValueError:
+        Height = int(input("Height: "))
 if Height > 8 or Height <= 0:
     while Height > 8 or Height <= 0:
         Height = int(input("Height: "))
