@@ -13,6 +13,13 @@ while Valor1 > 0:
         Valor1 = Valor - 25
         Monedas += 1
 
+while Valor1 > 0:
+    if Valor1 - 10 <= 0:
+        break
+    else:
+        Valor1 = Valor - 10
+        Monedas += 1
+
 
 
 
