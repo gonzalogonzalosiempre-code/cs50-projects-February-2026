@@ -6,10 +6,12 @@ except ValueError:
         if Valor1 >= 1:
             break
 Monedas = 0
-while Valor1 > 0:
-    if Valor1 - 25 <= 0:
+Valor = Valor1
+while Valor > 0:
+    if Valor - 25 <= 0:
         break
     else:
+        Valor = Valor - 25
         Monedas += 1
 
 
