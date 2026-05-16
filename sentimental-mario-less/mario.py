@@ -1,3 +1,4 @@
 Height = int(input("Height: "))
 for i in range(Height):
-    print("*" * (i+1))
+    print("#" * (i+1))
+    print(" " * (Height - i))
