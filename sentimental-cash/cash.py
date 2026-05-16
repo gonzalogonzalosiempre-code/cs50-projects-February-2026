@@ -5,6 +5,6 @@ except ValueError:
         Valor1 = float(input("Change: "))
         if Valor1 >= 1:
             break
-i = Valor1
-for i 
+while Valor1 == 0:
+    Valor1 
 
