@@ -1,3 +1,4 @@
 Tarjeta = int(input("Number :"))
 
-if 
+if len(Tarjeta) == 15:
+    if 
