@@ -1,6 +1,6 @@
 Height = int(input("Height: "))
-if Height > 8:
-    while Height > 8:
+if Height > 8 or Height <= 0:
+    while Height > 8 or Height <= 0:
         Height = int(input("Height: "))
 
 for i in range(Height):
