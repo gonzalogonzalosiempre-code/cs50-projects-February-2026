@@ -6,8 +6,12 @@ except ValueError:
         if Valor1 >= 1:
             break
 Monedas = 0
-while Valor1 < 0:
-    Suma = Valor1 - 25
+while Valor1 > 0:
+    if Valor1 - 25 <= 0:
+        break
+    else:
+        Monedas += 1
+
 
 
 
