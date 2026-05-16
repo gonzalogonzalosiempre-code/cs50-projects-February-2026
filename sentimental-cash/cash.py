@@ -19,10 +19,12 @@ while True:
         break
     if Valor1 / 5 <= 0:
         Monedas = Valor1 / 5
-        Valor1 = Valor1 - (5 *Monedas)
+        Valor1 = Valor1 - (5 * Monedas)
     else:
         break
     if Valor1 / 1 <= 0:
+        Monedas = Valor1 / 1
+        Valor1 = Valor1 - (1 * Monedas)
 
 
 
