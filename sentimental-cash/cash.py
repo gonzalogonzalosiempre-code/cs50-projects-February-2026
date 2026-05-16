@@ -5,6 +5,7 @@ except ValueError:
         Valor1 = int(input("Change: "))
         if Valor1 >= 1:
             break
+Count = 0
 
 while Valor1 > 0:
     if Valor1 / 25 <= 0:
@@ -28,7 +29,7 @@ while Valor1 > 0:
         Valor1 = Valor1 - (1 * Monedas)
         break
     else: break
-print(Count)
+print(f"{Count}")
 
 
 
