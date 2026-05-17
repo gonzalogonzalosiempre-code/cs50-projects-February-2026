@@ -32,6 +32,8 @@ def main(argv[]):
                   count_str[str[0]].value += 1
                   comienzo = longitud
                   longitud += longitud
+         else:
+              count_str[str[0]].value = 0
 
 
     # TODO: Check database for matching profiles
