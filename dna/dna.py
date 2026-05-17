@@ -10,10 +10,15 @@ def main():
     # TODO: Read database file into a variable
     file_cvs = []
     sequence = []
-    with open("Nombrescvs") as file:
+    with open("") as file:
         reader = cvs.DictReader(file)
-        for row in reader
-        
+        for file_cvs in reader
+        file_cvs.append(file_cvs)
+
+    with open("Sequence") as file:
+        reader = cvs.DictReader(file)
+        for file_cvs in reader
+        file_cvs.append(file_cvs)
 
     # TODO: Read DNA sequence file into a variable
 
