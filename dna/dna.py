@@ -18,13 +18,9 @@ def main():
         for row in reader:
             row.append(row)
     with open(Sequence) as file:
-        database_date = cvs.DictReader(file)
-
-
-
-
-
+        database_date = file.read()
     # TODO: Check database for matching profiles
+    if strs[0:] 
 
     return
 
