@@ -6,7 +6,7 @@ bool validate_pin(const char *pin);
 
 int main(void)
 {
-  char *Num = malloc(6 * sizeof(char));
+  char *Num = malloc(7 * sizeof(char));
   if (Num == NULL)
     {
     return 1;
