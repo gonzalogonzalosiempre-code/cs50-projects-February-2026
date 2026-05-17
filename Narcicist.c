@@ -17,24 +17,21 @@ int main(void)
 
 bool narcissistic(int num)
 {
+ int copianum = num;
  char buffer[5];
  sprintf(buffer, "%i", num);
  double n[5];
  int i = 0;
-   while (num > 0)
+   while (copianum > 0)
   {
-     n[i] = num % 10;
+     n[i] = copianum % 10;
      i++;
-     n[i] = n[i] / 10.0;
+     copianum = copianum / 10.0;
+     
    }
   int Total = 0;
   double Resultado[strlen(buffer)];
   double longitud = strlen(buffer);
-  for (int e = 0; i < longitud; ++i)
-  {
-    Resultado[i] = pow(n[i],longitud);
-    Total += Resultado[i];
-  }
   if ( Total == num )
     {
     printf("IS Narcicist!\n");
