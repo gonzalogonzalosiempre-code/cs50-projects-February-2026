@@ -3,7 +3,7 @@ import re
 def CaracterCount(Text):
     CountCaracter = 0
     for i in range(len(Text)):
-        Text[i] = CountCaracter
+        CountCaracter += 1
     return CountCaracter
 def WordCount(Text):
     CountWord = 0
