@@ -30,7 +30,7 @@ def main():
                       match_bool = False
         if match_bool == True and len(row["name"]) < 1:
            print("No match")
-        elif match_bool == True:
+        else:
             print(row["name"])
     return
 
