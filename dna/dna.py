@@ -24,8 +24,14 @@ def main(argv[]):
         count_str = {fila[fila_count:]}
 
     # TODO: Find longest match of each STR in DNA sequence
-    if count_str in sequence:
-        count_str 
+    str = list(count_str.values())
+    comienzo = 0
+    longitud = len(str[0])
+    for count_str in sequence:
+         if str[0] == sequence[comienzo:longitud]:
+                  count_str[str[0]]
+                  comienzo = longitud
+                  longitud += longitud
 
 
     # TODO: Check database for matching profiles
