@@ -25,7 +25,7 @@ def main():
         match_count = longest_match(database_date, str_name)
         resultado_adn[str_name] = match_count
         if int(rows[str_name]) == resultado_adn[str_name]:
-            print(f"{rows["name"]})
+             print(row["name"])
 
     return
 
