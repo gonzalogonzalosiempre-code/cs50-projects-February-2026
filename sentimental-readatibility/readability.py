@@ -1,7 +1,8 @@
 import re
 def main():
     Text = str(input(Text: ))
-    L = WordCount(Text) / 
+    L = CaracterCount(Text) / WordCount(Text) * 100
+    S = SentenceCount(Text) / WordCount(Text) * 100
 
 def CaracterCount(Text):
     CountCaracter = 0
