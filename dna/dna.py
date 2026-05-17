@@ -12,6 +12,7 @@ def main(argv[]):
     # TODO: Read database file into a variable
     file_cvs = []
     sequence = []
+    fila_count = 1
     with open(database) as file:
         file_cvs = cvs.DictReader(file)
 
@@ -20,7 +21,8 @@ def main(argv[]):
 
     # TODO: Read DNA sequence file into a variable
     for fila in file_cvs:
-        count_str[] = fila[1:]
+        count_str[] = fila[fila_count:]
+        fila_count += 1
 
 
 
