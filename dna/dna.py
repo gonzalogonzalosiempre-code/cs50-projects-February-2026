@@ -26,7 +26,7 @@ def main(argv[]):
     # TODO: Find longest match of each STR in DNA sequence
     Comienzo = 0
     for str in sequence:
-        if count_str[0:0] == str[1:]
+        if count_str[0:0] 
 
     # TODO: Check database for matching profiles
 
