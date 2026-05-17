@@ -7,13 +7,10 @@ def CaracterCount(Text):
             CountCaracter += 1
     return CountCaracter
 def WordCount(Text):
-    CountWord = 0
-    for i in range(len(Text)):
-        if Text[i].isspace():
-            CountWord += 1
-    return CountWord
+    Palabras = Text.split()
+    return len(Palabras)
 def SentenceCount(Text):
-    Signos = re.findall(r"[.!¿?¡]", Text)
+    Signos = re.findall(r"[.!?]", Text)
 
     return len(Signos)
 
