@@ -4,11 +4,14 @@
 #include <string.h>
 #include <math.h>
 
+bool narcissistic(int num);
+
 int main(void)
 {
  int Number;
   printf("Ingrese su Numero ");
   scanf("%i", &Number);
+  narcissistic(Number);
 
 }
 
