@@ -11,7 +11,7 @@ def main():
     # TODO: Read database file into a variable
     file_cvs = []
     sequence = []
-    with open(database) as file:
+    with open("") as file:
         reader = cvs.DictReader(file)
         for file_cvs in reader
         file_cvs.append(file_cvs)
