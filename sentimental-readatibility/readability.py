@@ -8,5 +8,5 @@ def CaracterCount(Text):
 def WordCount(Text):
     CountWord = 0
     for i in len(Text):
-        if Text[i] == 
+        if Text[i]
 
