@@ -14,8 +14,7 @@ def main(argv[]):
     sequence = []
     with open(database) as file:
         reader = cvs.DictReader(file)
-        for file_cvs in reader:
-            file_cvs.append(file_cvs)
+        
 
     with open(Sequence) as file:
         reader2 = cvs.DictReader(file)
