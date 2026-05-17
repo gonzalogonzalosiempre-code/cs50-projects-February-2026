@@ -13,7 +13,7 @@ def main():
     row = []
     with open(database) as file:
         reader = cvs.DictReader(file)
-        strs = database.fieldnames[1:]
+        strs = reader.fieldnames[1:]
 
         for row in reader:
             row.append(row)
