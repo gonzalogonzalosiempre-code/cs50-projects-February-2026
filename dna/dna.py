@@ -13,17 +13,13 @@ def main(argv[]):
     file_cvs = []
     sequence = []
     with open(database) as file:
-        reader = cvs.DictReader(file)
-        
+        file_cvs = cvs.DictReader(file)
 
-    with open(Sequence) as file:
-        reader2 = cvs.DictReader(file)
-        for sequence in reader2:
-            sequence.append(file_cvs)
+    with open(Sequence) as Secuencia:
+        sequence = cvs.DictReader(Secuencia)
 
     # TODO: Read DNA sequence file into a variable
-    for sequence in reader2:
-        sequence[0]
+    
 
 
 
