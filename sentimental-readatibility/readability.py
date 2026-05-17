@@ -1,6 +1,7 @@
 import re
-
-Text = str(input(Text: ))
+def main():
+    Text = str(input(Text: ))
+    L = WordCount(Text)
 
 def CaracterCount(Text):
     CountCaracter = 0
@@ -17,6 +18,7 @@ def SentenceCount(Text):
     Signos = re.findall(r"[.!¿?¡]", Text)
 
     return len(Signos)
+def
 
 
 
