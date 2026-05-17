@@ -10,15 +10,18 @@ def main():
     database = argv[1]
     Sequence = argv[2]
     # TODO: Read database file into a variable
-    file_cvs = []
-    sequence = []
+    row = []
     with open(database) as file:
-        file_cvs = cvs.DictReader(file)
+        reader = cvs.DictReader(file)
+        strs = database.fieldnames[1:]
 
-    with open(Sequence) as Secuencia:
-        sequence = cvs.DictReader(Secuencia)
+        for row in reader:
+            row.append(row)
+    with open(Sequence) as file:
+        database_date = cvs.DictReader(file)
 
-    
+
+
 
 
     # TODO: Check database for matching profiles
