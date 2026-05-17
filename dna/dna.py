@@ -7,10 +7,11 @@ def main():
     # TODO: Check for command-line usage
     if len(argv) < 1:
         return
+    database = argv[1]
     # TODO: Read database file into a variable
     file_cvs = []
     sequence = []
-    with open("") as file:
+    with open(database) as file:
         reader = cvs.DictReader(file)
         for file_cvs in reader
         file_cvs.append(file_cvs)
