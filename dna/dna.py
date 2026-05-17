@@ -22,11 +22,11 @@ def main():
     # TODO: Check database for matching profiles
     resultado_adn = []
     for str_name in strs:
-        match_count = longest_match(database_date, strs)
+        match_count = longest_match(database_date, str_name)
         resultado_adn[str_name] = match_count
     ProfileMatch = ""
     for name in resultado_adn:
-        if resultado_adn[1:] == row[1:]:
+        if resultado_adn == rows[1:]:
             ProfileMatch = row[name]
     print(f"{ProfileMatch}")
 
