@@ -19,7 +19,7 @@ def main(argv[]):
         sequence = cvs.DictReader(Secuencia)
 
     # TODO: Read DNA sequence file into a variable
-    
+    sequence[0] 
 
 
 
