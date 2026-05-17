@@ -22,11 +22,10 @@ def main(argv[]):
     # TODO: Read DNA sequence file into a variable
     for fila in file_cvs:
         count_str[] = fila[fila_count:]
-    count_str[0][0] 
-
-
 
     # TODO: Find longest match of each STR in DNA sequence
+    for str in sequence:
+        Coincidence
 
     # TODO: Check database for matching profiles
 
