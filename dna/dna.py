@@ -20,7 +20,10 @@ def main():
     with open(Sequence) as file:
         database_date = file.read()
     # TODO: Check database for matching profiles
-    match_count = longest_match()
+    for strs in database:
+        match_count = longest_match(database_date, strs)
+        
+
 
     return
 
