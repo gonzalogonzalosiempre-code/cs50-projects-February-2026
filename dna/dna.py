@@ -20,15 +20,12 @@ def main():
     with open(Sequence) as file:
         database_date = file.read()
     # TODO: Check database for matching profiles
-    resultado_adn = []
-    for str_name in strs:
+    resultado_adn = {}
+    for row in rows:
         match_count = longest_match(database_date, str_name)
         resultado_adn[str_name] = match_count
-    ProfileMatch = ""
-    for name in resultado_adn:
-        if resultado_adn == rows[1:]:
-            ProfileMatch = row[name]
-    print(f"{ProfileMatch}")
+        if int(rows[str_name]) == resultado_adn[str_name]:
+            print(f"{rows[str_name]})
 
     return
 
