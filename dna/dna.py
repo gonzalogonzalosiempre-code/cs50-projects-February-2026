@@ -24,7 +24,9 @@ def main():
     for str_name in strs:
         match_count = longest_match(database_date, strs)
         resultado_adn[str_name] = match_count
-    for 
+    for name in resultado_adn:
+        if resultado_adn[1:] == row[1:]:
+            ProfileMatch = row[name]
     return
 
 
