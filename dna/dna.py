@@ -2,10 +2,10 @@ import csv
 import sys
 
 
-def main(argv[]):
+def main():
 
     # TODO: Check for command-line usage
-    if len(sys.argv) != 2:
+    if len(sys.argv) != 3:
         return
     database = argv[1]
     Sequence = argv[2]
