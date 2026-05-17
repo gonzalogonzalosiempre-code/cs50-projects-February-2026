@@ -10,13 +10,13 @@ def main():
     database = argv[1]
     Sequence = argv[2]
     # TODO: Read database file into a variable
-    row = []
+    rows = []
     with open(database) as file:
         reader = cvs.DictReader(file)
         strs = reader.fieldnames[1:]
 
         for row in reader:
-            row.append(row)
+            rows.append(row)
     with open(Sequence) as file:
         database_date = file.read()
     # TODO: Check database for matching profiles
@@ -24,6 +24,7 @@ def main():
     for str_name in strs:
         match_count = longest_match(database_date, strs)
         resultado_adn[str_name] = match_count
+    for 
     return
 
 
