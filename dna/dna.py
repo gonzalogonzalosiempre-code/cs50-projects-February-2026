@@ -24,9 +24,9 @@ def main(argv[]):
         count_str = {fila[fila_count:]}
 
     # TODO: Find longest match of each STR in DNA sequence
-    Comienzo = 0
-    for str in sequence:
-        if count_str{0}
+    if count_str in sequence:
+        count_str 
+
 
     # TODO: Check database for matching profiles
 
