@@ -19,8 +19,8 @@ def main(argv[]):
         sequence = cvs.DictReader(Secuencia)
 
     # TODO: Read DNA sequence file into a variable
-    for fila in sequence:
-        count_str = fila[1:]
+    for fila in file_cvs:
+        count_str[] = fila[1:]
 
 
 
