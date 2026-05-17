@@ -28,8 +28,8 @@ def main(argv[]):
     comienzo = 0
     longitud = len(str[0])
     for count_str in sequence:
-         if str[0] == sequence[comienzo:longitud]:
-                  count_str[str[0]]
+         if str[0] in sequence[comienzo:longitud]:
+                  count_str[str[0]].value += 1
                   comienzo = longitud
                   longitud += longitud
 
