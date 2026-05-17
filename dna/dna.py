@@ -12,28 +12,13 @@ def main():
     # TODO: Read database file into a variable
     file_cvs = []
     sequence = []
-    fila_count = 1
     with open(database) as file:
         file_cvs = cvs.DictReader(file)
 
     with open(Sequence) as Secuencia:
         sequence = cvs.DictReader(Secuencia)
 
-    # TODO: Read DNA sequence file into a variable
-    for fila in file_cvs:
-        count_str = {fila[fila_count:]}
-
-    # TODO: Find longest match of each STR in DNA sequence
-    str = list(count_str.values())
-    comienzo = 0
-    longitud = len(str[0])
-    for count_str in sequence:
-         if str[0] in sequence[comienzo:longitud]:
-                  count_str[str[0]].value += 1
-                  comienzo = longitud
-                  longitud += longitud
-         else:
-              count_str[str[0]].value = 0
+    
 
 
     # TODO: Check database for matching profiles
