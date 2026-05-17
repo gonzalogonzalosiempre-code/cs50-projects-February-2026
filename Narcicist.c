@@ -21,12 +21,15 @@ bool narcissistic(int num)
  char buffer[5];
  sprintf(buffer, "%i", num);
  double n[5];
+ int longitud = strlen(buffer);
  int i = 0;
+ int Total = 0;
    while (copianum > 0)
   {
      n[i] = copianum % 10;
      i++;
      copianum = copianum / 10.0;
+     Total += pow()
    }
   if ( Total == num )
     {
