@@ -24,11 +24,11 @@ def main():
     for str_name in strs:
         match_count = longest_match(database_date, strs)
         resultado_adn[str_name] = match_count
-    ProfileMatch
+    ProfileMatch = ""
     for name in resultado_adn:
         if resultado_adn[1:] == row[1:]:
             ProfileMatch = row[name]
-            print("{ProfileMatch}")
+    print("{ProfileMatch}")
 
     return
 
