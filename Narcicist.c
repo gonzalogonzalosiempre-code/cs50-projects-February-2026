@@ -27,11 +27,7 @@ bool narcissistic(int num)
      n[i] = copianum % 10;
      i++;
      copianum = copianum / 10.0;
-     
    }
-  int Total = 0;
-  double Resultado[strlen(buffer)];
-  double longitud = strlen(buffer);
   if ( Total == num )
     {
     printf("IS Narcicist!\n");
