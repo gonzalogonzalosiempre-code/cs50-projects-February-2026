@@ -25,7 +25,7 @@ def main(argv[]):
 
     # TODO: Find longest match of each STR in DNA sequence
     for str in sequence:
-        Coincidence
+        
 
     # TODO: Check database for matching profiles
 
