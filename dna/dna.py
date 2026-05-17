@@ -5,21 +5,22 @@ import sys
 def main():
 
     # TODO: Check for command-line usage
-    if len(argv) < 1:
+    if len(sys.argv) < 1:
         return
     database = argv[1]
+    Sequence = argv[2]
     # TODO: Read database file into a variable
     file_cvs = []
     sequence = []
-    with open("") as file:
+    with open(database) as file:
         reader = cvs.DictReader(file)
-        for file_cvs in reader
-        file_cvs.append(file_cvs)
+        for file_cvs in reader:
+            file_cvs.append(file_cvs)
 
-    with open("Sequence") as file:
-        reader = cvs.DictReader(file)
-        for file_cvs in reader
-        file_cvs.append(file_cvs)
+    with open(Sequence) as file:
+        reader2 = cvs.DictReader(file)
+        for sequence in reader2:
+            sequence.append(file_cvs)
 
     # TODO: Read DNA sequence file into a variable
 
