@@ -8,6 +8,8 @@ def main():
     if len(argv) < 1:
         return
     # TODO: Read database file into a variable
+    file_cvs = []
+    sequence = []
     
 
     # TODO: Read DNA sequence file into a variable
