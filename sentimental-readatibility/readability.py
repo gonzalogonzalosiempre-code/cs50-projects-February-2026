@@ -14,8 +14,9 @@ def WordCount(Text):
             CountWord += 1
     return CountWord
 def SentenceCount(Text):
-    Signos = re.findall(r'[.!?]
-    CountSentence = 0
-    for i in range(len(Text)):
+    Signos = re.findall(r"[.!¿?¡]", Text)
+
+    return len(Signos)
+
 
 
