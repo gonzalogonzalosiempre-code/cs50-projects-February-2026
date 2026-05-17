@@ -23,6 +23,7 @@ def main(argv[]):
             sequence.append(file_cvs)
 
     # TODO: Read DNA sequence file into a variable
+    
 
     # TODO: Find longest match of each STR in DNA sequence
 
