@@ -1,3 +1,5 @@
+import re
+
 Text = str(input(Text: ))
 
 def CaracterCount(Text):
@@ -12,7 +14,8 @@ def WordCount(Text):
             CountWord += 1
     return CountWord
 def SentenceCount(Text):
+    Signos = re.findall(r'[.!?]
     CountSentence = 0
     for i in range(len(Text)):
-        if Text[i].
+
 
