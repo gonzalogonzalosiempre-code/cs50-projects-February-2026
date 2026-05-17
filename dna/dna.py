@@ -28,9 +28,10 @@ def main():
                resultado_adn[str_name] = match_count
                if int(row[str_name]) != resultado_adn[str_name]:
                       match_bool = False
-        if match_bool == True:
-           print(row["name"])
-
+        if match_bool == True and len(row["name"]) < 1:
+           print("No match")
+        elif match_bool == True:
+            print(row["name"])
     return
 
 
