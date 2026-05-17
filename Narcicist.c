@@ -12,7 +12,6 @@ int main(void)
   printf("Ingrese su Numero ");
   scanf("%i", &Number);
   narcissistic(Number);
-
 }
 
 bool narcissistic(int num)
@@ -20,16 +19,13 @@ bool narcissistic(int num)
  int copianum = num;
  char buffer[5];
  sprintf(buffer, "%i", num);
- double n[5];
  int longitud = strlen(buffer);
- int i = 0;
  int Total = 0;
    while (copianum > 0)
   {
-     n[i] = copianum % 10;
-     i++;
+     int Digito = copianum % 10;
+     Total += pow(Digito, longitud);
      copianum = copianum / 10.0;
-     Total += pow()
    }
   if ( Total == num )
     {
@@ -38,6 +34,7 @@ bool narcissistic(int num)
   }
   else
     {
+    printf("No es\n");
     return false;
   }
     return false;
