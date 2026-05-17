@@ -7,12 +7,12 @@ def main():
     # TODO: Check for command-line usage
     if len(sys.argv) != 3:
         return
-    database = argv[1]
-    Sequence = argv[2]
+    database = sys.argv[1]
+    Sequence = sys.argv[2]
     # TODO: Read database file into a variable
     rows = []
     with open(database) as file:
-        reader = cvs.DictReader(file)
+        reader = csv.DictReader(file)
         strs = reader.fieldnames[1:]
 
         for row in reader:
@@ -28,7 +28,7 @@ def main():
     for name in resultado_adn:
         if resultado_adn[1:] == row[1:]:
             ProfileMatch = row[name]
-    print("{ProfileMatch}")
+    print(f"{ProfileMatch}")
 
     return
 
