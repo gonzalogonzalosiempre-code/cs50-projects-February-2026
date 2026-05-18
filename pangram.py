@@ -11,7 +11,7 @@ def is_pangram(st):
     count_Abc = 0
     st_lower = st.lower()
     for character in st_lower:
-        if character == Pangram[0:]:
+        if character in Pangram:
             count_Abc += 1
     if count_Abc >= 27:
         return True
