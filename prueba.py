@@ -21,7 +21,7 @@ def binary_array_to_number(arr):
             "10": "1010"}
 
         for clave in Combinaciones:
-            if arr == Combinaciones[]:
+            if arr == Combinaciones[clave]:
                 print(clave)
                 break
     return
