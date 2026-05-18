@@ -48,6 +48,7 @@ char *order_words (char *String)
   }
   for (int i = 0; i <= 9; ++i)
   {
+    if (Words_Ordened[i] != NULL)
     strcat(NewChar, Words_Ordened[i]);
     strcat(NewChar, " ");
   }
