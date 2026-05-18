@@ -22,8 +22,10 @@ def binary_array_to_number(arr):
 
         i = 0
         for clave in Combinaciones:
-            if arr == clave:
+            if arr == Combinaciones[0]:
                 print(clave)
+            else:
+                i += 1
     return
 
 main()
