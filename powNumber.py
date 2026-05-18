@@ -1,6 +1,6 @@
 def main():
     Numero = int(input("Ingrese su Numero "))
-    NumPowList = [square_digits(Numero)]
+    NumPowList = square_digits(Numero)
     print(NumPowList)
 
 def square_digits(num):
