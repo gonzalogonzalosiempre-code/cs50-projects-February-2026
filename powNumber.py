@@ -4,8 +4,8 @@ def main():
     print(NumPowList)
 
 def square_digits(num):
-    NumPowList = ""
-    for digit in num:
+    NumPowList = []
+    for digit in str(num):
         PowDigit = pow(digit, 2)
         NumPowList.append(PowDigit)
     return NumPowList
