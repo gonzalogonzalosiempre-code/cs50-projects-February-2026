@@ -1,5 +1,5 @@
 def main():
-    TestBin = input("Ingrese sus numeros")
+    TestBin = input("Ingrese sus numeros ")
     binary_array_to_number(TestBin)
 
 
@@ -20,13 +20,10 @@ def binary_array_to_number(arr):
             "9": "1001",
             "10": "1010"}
 
-        i = 0
-        for clave in Combinaciones:
-            if arr == Combinaciones["0"]:
+        for clave, i in Combinaciones:
+            if arr == Combinaciones[i]:
                 print(clave)
-                return
-            else:
-                i += 1
+                break
     return
 
 main()
