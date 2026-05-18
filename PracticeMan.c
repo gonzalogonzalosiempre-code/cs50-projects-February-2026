@@ -33,10 +33,8 @@ char *order_words (char *ordered, const char *words[])
   NewChar[0] = '\0';
   char *Words_Ordened[];
   char *token = strtok(String, " ");
-  if (token == NULL)
+  while (token != NULL)
   {
-    return NULL;
-  }
   for (int i = 0; token[i] != '\0'; ++i)
   {
     if(isdigit(token[i]))
@@ -44,6 +42,8 @@ char *order_words (char *ordered, const char *words[])
       int indice = token[i] - '0';
       Words_Ordened[indice] = token;
     }
+  }
+  token = strtok(NULL, " ");
   }
   for (int i = 0; i <= 9; ++i)
   {
