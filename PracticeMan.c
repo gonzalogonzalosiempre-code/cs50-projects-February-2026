@@ -7,16 +7,15 @@ char *order_words (char *String);
 
 int main(void)
 {
-  char *words[];
   char String[100];
   printf("Ingrese su texto ");
-  if (fgets(String, sizeof(String),stdin) !=)
+  if (fgets(String, sizeof(String),stdin) != NULL)
   {
    String[strcspn(String, "\n")] = '\0';
    }
   char *Ordenado = order_words(String);
 
-  if (Orneado != NULL)
+  if (Ordenado != NULL)
   {
     printf("%s", Ordenado);
   }
@@ -24,7 +23,7 @@ int main(void)
 
 char *order_words (char *String)
 {
-  int longitud = strlen(ordered);
+  int longitud = strlen(Ordered);
   char *NewChar = malloc(longitud * sizeof(char));
   if (NewChar == NULL)
   {
