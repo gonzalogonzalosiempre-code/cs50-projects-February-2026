@@ -20,8 +20,8 @@ def binary_array_to_number(arr):
             "9": "1001",
             "10": "1010"}
 
-        for clave, Numero in Combinaciones:
-            if arr == Combinaciones[i]:
+        for clave in Combinaciones:
+            if arr == Combinaciones[]:
                 print(clave)
                 break
     return
