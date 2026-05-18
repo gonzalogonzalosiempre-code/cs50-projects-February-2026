@@ -2,6 +2,8 @@ def main():
     Texto = input("Ingrese Su Texto ")
     if is_pangram(Texto) == True:
         print("Is pangram")
+    else:
+        print("Not is Pangram")
 
 def is_pangram(st):
     Pangram = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
