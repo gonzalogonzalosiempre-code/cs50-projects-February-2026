@@ -23,14 +23,14 @@ int main(void)
 
 char *order_words (char *String)
 {
-  int longitud = strlen(Ordered);
+  int longitud = strlen(String);
   char *NewChar = malloc(longitud * sizeof(char));
   if (NewChar == NULL)
   {
     return NULL;
   }
   NewChar[0] = '\0';
-  char *Words_Ordened[];
+  char *Words_Ordened[10] = {NULL};
   char tmp[100];
   strcpy(tmp,String);
   char *token = strtok(tmp, " ");
