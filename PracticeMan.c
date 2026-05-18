@@ -10,45 +10,45 @@ int main(void)
   char *words[];
   char String[100];
   printf("Ingrese su texto ");
-  scanf("%s", String);
-  int count = 0;
-  for (int i = 0; i <= strlen(String); ++i)
+  if (fgets(String, sizeof(String),stdin) !=)
   {
-    if (isspace(String[i]))
-      {
-      count++;
-      }
-    else
-    {
-      words[count] = String[i];
-    }
-  }
+   String[strcspn(String, "\n")] = '\0';
+   }
   char *Ordenado = order_words(String, words)
-  printf("%s", Ordenado);
+
+  if (Orneado != NULL)
+  {
+    printf("%s", Ordenado);
+  }
 }
 
 char *order_words (char *ordered, const char *words[])
 {
   int longitud = strlen(ordered);
   char *NewChar = malloc(longitud * sizeof(char));
+  if (NewChar == NULL)
+  {
+    return NULL;
+  }
+  NewChar[0] = '\0';
   char *Words_Ordened[];
-  int Valores[9] = {1, 2, 3 ,4 ,5 ,6 ,7 ,8 ,9 ,10};
-    for (int e = 0; e <= 9 ++i)
-      int Number[10];
+  char *token = strtok(String, " ");
+  if (token == NULL)
+  {
+    return NULL;
+  }
+  for (int i = 0; token[i] != '\0'; ++i)
+  {
+    if(isdigit(token[i]))
     {
-      for (int j = 0; j <= strlen(ordered); ++j)
-        {
-         if (ordered[j] == ((char)Valores[e]))
-          {
-           Words_Ordened[e] = words[e];
-          }
-        }
+      int indice = token[i] - '0';
+      Words_Ordened[indice] = token;
     }
-   NewChar[0] = '\0';
-   for (int i = 0; i <= 9; ++i)
-     {
-     strcat(NewChar, Words_Ordened[i]);
-     strcat(NewChar, " ");
-     }
+  }
+  for (int i = 0; i <= 9; ++i)
+  {
+    strcat(NewChar, Words_Ordened[i]);
+    strcat(NewChar, " ");
+  }
 	return NewChar;
 }
