@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-char *order_words (char *ordered, const char *words[]);
+char *order_words (char *String);
 
 int main(void)
 {
@@ -14,7 +14,7 @@ int main(void)
   {
    String[strcspn(String, "\n")] = '\0';
    }
-  char *Ordenado = order_words(String, words)
+  char *Ordenado = order_words(String);
 
   if (Orneado != NULL)
   {
@@ -22,7 +22,7 @@ int main(void)
   }
 }
 
-char *order_words (char *ordered, const char *words[])
+char *order_words (char *String)
 {
   int longitud = strlen(ordered);
   char *NewChar = malloc(longitud * sizeof(char));
@@ -32,7 +32,9 @@ char *order_words (char *ordered, const char *words[])
   }
   NewChar[0] = '\0';
   char *Words_Ordened[];
-  char *token = strtok(String, " ");
+  char tmp[100];
+  strcpy(tmp,String);
+  char *token = strtok(tmp, " ");
   while (token != NULL)
   {
   for (int i = 0; token[i] != '\0'; ++i)
