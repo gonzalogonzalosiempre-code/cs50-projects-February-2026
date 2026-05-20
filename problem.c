@@ -25,7 +25,7 @@ int main (void)
     }
 }
 
-long long * tribonacci(const long long *signature[3], size_t n) {
+long long * tribonacci(const long long signature[3], size_t n) {
 
   long long *Nuevo = malloc(n * sizeof(long long));
   if (Nuevo != NULL)
