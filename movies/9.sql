@@ -5,4 +5,4 @@ SELECT person_id, name FROM stars JOIN people ON stars.person_id = (
             SELECT id FROM movies WHERE year = '2004'
         )
     )
-)ORDER BY birth ASC;
+)ORDER BY birth DESC;
