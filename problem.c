@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-long long *tribonacci(const long long *signature[3], size_t n);
+long long * tribonacci(const long long signature[3], size_t n);
 
 int main (void)
 {
@@ -17,7 +17,7 @@ int main (void)
   printf("Ingrese su Numero N: ");
   scanf("%zi", &n);
 
-  long long *Resultado = tribonacci(&signatur, n);
+  long long *Resultado = tribonacci(signatur, n);
 
   for (size_t i = 0; i <= n; ++i)
     {
@@ -25,7 +25,7 @@ int main (void)
     }
 }
 
-long long *tribonacci(const long long *signature[3], size_t n) {
+long long * tribonacci(const long long *signature[3], size_t n) {
 
   long long *Nuevo = malloc(n * sizeof(long long));
   if (Nuevo != NULL)
