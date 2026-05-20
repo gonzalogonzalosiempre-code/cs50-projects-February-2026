@@ -28,7 +28,10 @@ void move_zeros(size_t len, int arr[len])
         count_zero++;
       }
     }
-  for 9
+  for (int i = 0; i <= count_zero; ++i)
+  {
+    tmp[len - i] = arr[]
+  }
     for (size_t i =  0 ; i <= len; ++i)
       {
       printf("%i ", arr[i]);
