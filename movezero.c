@@ -29,7 +29,7 @@ void move_zeros(size_t len, int arr[len])
           if (arr[e] != 0)
             {
             tmp[e] = arr[e];
-            arr[i] = arr[e];
+            arr[e] = arr[i];
             arr[i] = tmp[e];
           }
         }
