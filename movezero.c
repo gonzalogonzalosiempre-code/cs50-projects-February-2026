@@ -20,7 +20,7 @@ int main(void)
 void move_zeros(size_t len, int arr[len])
 {
   int tmp[len];
-  for (size_t i = 0; i <= len; ++i)
+  for (size_t i = 0; i <= len / 2; ++i)
     {
       if (arr[i] == 0)
         {
