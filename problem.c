@@ -17,7 +17,7 @@ int main (void)
   printf("Ingrese su Numero N: ");
   scanf("%zi", &n);
 
-  long long *Resultado = tribonacci(signatur, n);
+  long long *Resultado = tribonacci(&signatur, n);
 
   for (size_t i = 0; i <= n; ++i)
     {
