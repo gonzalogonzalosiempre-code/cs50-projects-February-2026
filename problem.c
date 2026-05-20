@@ -7,7 +7,7 @@ long long *tribonacci(const long long *signature[3], size_t n);
 
 int main (void)
 {
-  long long *signature[3] = {0};
+  long long *signatur[3] = {0};
   for (int i = 0; i <= 2; ++i)
     {
     printf("Ingrese Su %i numero: ", i);
@@ -17,7 +17,7 @@ int main (void)
   printf("Ingrese su Numero N: ");
   scanf("%zi", &n);
 
-  long long *Resultado = tribonacci(signature, n);
+  long long *Resultado = tribonacci(signatur, n);
 
   for (size_t i = 0; i <= n; ++i)
     {
