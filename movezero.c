@@ -20,18 +20,21 @@ int main(void)
 void move_zeros(size_t len, int arr[len])
 {
   int tmp[len];
-  int count_zero = 0;
-  for (size_t i = 0; i <= len / 2; ++i)
+  for (size_t i = 0; i <= len; ++i)
     {
       if (arr[i] == 0)
         {
-        count_zero++;
+        for (size_t e = i + 1; e <= len; ++e)
+          {
+          if (arr[e] != 0)
+            {
+            tmp[e] = arr[e];
+            arr[i] = arr[e];
+            arr[i] = tmp[e];
+          }
+        }
       }
     }
-  for (int i = 0; i <= count_zero; ++i)
-  {
-    arr[len - i] = 0
-  }
     for (size_t i =  0 ; i <= len; ++i)
       {
       printf("%i ", arr[i]);
