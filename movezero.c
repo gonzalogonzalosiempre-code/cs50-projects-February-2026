@@ -30,7 +30,9 @@ void move_zeros(size_t len, int arr[len])
     }
   for (int i = 0; i <= count_zero; ++i)
   {
-    tmp[len - i] = arr[]
+    tmp[len - i] = arr[len - i];
+    arr[len - i] = 0
+    arr
   }
     for (size_t i =  0 ; i <= len; ++i)
       {
