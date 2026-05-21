@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <stdbool.h>
 
 int Count_Valores = 0;
 int Variable[Count_Valores][];
@@ -24,6 +25,18 @@ int main(void)
  }
 }
 
+bool VariableComprobada(char Text[], int n)
+{
+    if (Variable[Count_Valores][HashClave(Texto[n])] != NULL OR Variable[Count_Valores][HashClave(Texto[i])] != 0 )
+    {
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+}
+
 int Asignar(char Text[] int n) // Asigna en Variable y devuelve el Valor de esa Variable
 {
     int i = n + 1;
@@ -43,7 +56,7 @@ int Asignar(char Text[] int n) // Asigna en Variable y devuelve el Valor de esa 
           }
           else if (isalpha(Texto[i]))
           {
-            
+
           }
           else if (Texto[i] == '(')
          {
