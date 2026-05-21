@@ -27,7 +27,14 @@ int main(void)
                Varible[Count_Valores][e] = Texto[i];
                break;
             }
-            if 
+          }
+          for (i; i <= strlen(Texto); ++i)
+          {
+            if (Texto[i] != " ")
+            {
+                int e = HashClave[Texto[i]]
+                
+            }
           }
         }
     }
