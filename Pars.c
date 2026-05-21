@@ -105,7 +105,7 @@ int OperacionParentesis(char Text[] int n) //Opera si encuentra Parentesis y ret
     {
      if (ispunct(Text[j]) && (c == '+' || c == '-' || c == '*' || c == '/'))
      {
-      Resultado = OperacionOperador(Text[], j);
+      Resultado = OperacionOperador(Text, e);
      }
     }
    }
