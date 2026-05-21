@@ -24,7 +24,7 @@ int main(void)
  }
 }
 
-int Arr[][] AsignarOperar(char Text[])
+int AsignarOperar(char Text[] int n) // Asigna en Variable y devuelve el Valor de esa Variable
 {
     if (int i = 0; i < strlen(Texto); ++i)
     {
@@ -62,7 +62,7 @@ char HashClave(char arr[])
     arr[]
 }
 
-int OperacionParentesis(char Text[], int n)
+int OperacionParentesis(char Text[], int n) //Opera si encuentra Parentesis y returna en otras funciones
 {
  int i = n + 1;
  for (n; n <= strlen(Text); ++i)
@@ -73,7 +73,8 @@ int OperacionParentesis(char Text[], int n)
    }
    else if (isdigit(Text[n]))
    {
-    int e =
+    int e = Text[n] - '0';
+
    }
  }
 }
