@@ -81,12 +81,8 @@ int Asignar(char Texto[] int n) // Asigna en Variable y devuelve el Valor de esa
        }
         break;
       }
-    }
-    else
-    {
-        int Resultado = Variable[Count_Valores][HashClave(Texto[i])];
-        return Resultado;
 }
+
 
 
 char HashClave(char arr[])
