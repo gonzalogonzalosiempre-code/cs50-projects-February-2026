@@ -100,8 +100,9 @@ int OperacionOperator(char Text[], int n ) //Operacion para el Operador
      {
         if (isalpha(Text[i]))
         {
-         Resultado = OperacionParentesis(Text[], int i);
-         
+         Resultado = AsignarOperar(Text[], int i);
+         Resultado = Resultado + 
+
         }
      }
     }
