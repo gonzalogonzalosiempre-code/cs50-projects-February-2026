@@ -44,6 +44,7 @@ int Asignar(char Text[] int n) // Asigna en Variable y devuelve el Valor de esa 
     if (isalpha(Texto[n]))
   {
     if (Variable[Count_Valores][HashClave(Texto[n])] != NULL OR Variable[Count_Valores][HashClave(Texto[i])] != 0 )
+    {
     Count_Valores++;
     int e = HashClave(Texto[n]);
     for (i; i <= strlen(Texto); ++i)
