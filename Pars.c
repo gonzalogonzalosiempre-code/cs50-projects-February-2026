@@ -216,3 +216,4 @@ int Operacion(char Text[], int n ) //Operacion para el Operador
    }
 }
 // Te falta crear un hash, imprimir las variables creadas, y el sistema de input y el imprimir Resultado y Variables.
+// Tambien crear linked list para las count variables
