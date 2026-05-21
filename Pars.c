@@ -7,12 +7,16 @@ char TableHash[];
 
 int main(void)
 {
-
+ char Texto[];
+ printf("Ingresa Operacion: ");
+ if ((fgets(Texto, sizeof(Texto), stdin)) != NULL)
+ {
+    strtok(Texto, " ")
+ }
 }
 
 char HashClave(int arr[])
 {
-    if 
-    scanf()
+
     arr[]
 }
