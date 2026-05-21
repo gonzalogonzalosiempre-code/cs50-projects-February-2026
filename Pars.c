@@ -3,8 +3,7 @@
 #include <stdlib.h>
 
 int Count_Valores = 0;
-char Variable[][];
-char TableHash[Count_Valores][];
+char Variable[Count_Valores][];
 
 int main(void)
 {
@@ -64,5 +63,5 @@ char HashClave(char arr[])
 
 int OperacionParentesis(char Text[int n])
 {
-    
+
 }
