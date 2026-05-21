@@ -120,7 +120,7 @@ int OperacionParentesis(char Text[] int n) //Opera si encuentra Parentesis y ret
 
 int Operacion(char Text[], int n ) //Operacion para el Operador
 {
-    if (n == strlen(Text))
+    if (n == strlen(Text) || Text[n] == ')')
     {
         return 0;
     }
