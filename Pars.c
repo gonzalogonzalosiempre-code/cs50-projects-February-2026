@@ -107,7 +107,7 @@ void OperacionOperador(char Text[], int n ) //Operacion para el Operador
         {
          Resultado = AsignarOperar(Text[], i);
          int e = i + 1;
-         Resultado = Resultado + OperacionParentesis(Text[], e);
+         Resultado = Resultado + OperacionOperador(Text[], e);
         }
      }
     }
