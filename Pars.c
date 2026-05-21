@@ -132,8 +132,6 @@ int Operacion(char Text[], int n ) //Operacion para el Operador
          int Val = Asignar(Text, e);
          int e = i + 1;
          &Resultado = Val + Operacion(Text[], e);
-         if ()
-
         }
         else if ((Text[e] = '('))
         {
