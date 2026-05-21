@@ -120,7 +120,11 @@ int OperacionParentesis(char Text[] int n) //Opera si encuentra Parentesis y ret
 
 int Operacion(char Text[], int n ) //Operacion para el Operador
 {
-    int *Resultado = 0;
+    if (n == strlen(Text))
+    {
+        return 0;
+    }
+    int Resultado = 0;
     for (int i = n + 1; i <= strlen(Text); ++i)
     {
     if (Text[i] == '+')
@@ -131,12 +135,17 @@ int Operacion(char Text[], int n ) //Operacion para el Operador
         {
          int Val = Asignar(Text, e);
          int e = i + 1;
-         &Resultado = Val + Operacion(Text[], e);
+         Resultado = Val + Operacion(Text[], e);
+         return Resultado;
         }
         else if ((Text[e] = '('))
         {
             Resultado = OperacionParentesis(Text, e)
             return Resultado;
+        }
+        else if (isdigit(Text[e]))
+        {
+            
         }
      }
     }
