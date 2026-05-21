@@ -4,7 +4,7 @@
 #include <ctype.h>
 
 int Count_Valores = 0;
-char Variable[Count_Valores][];
+int Variable[Count_Valores][];
 
 int main(void)
 {
@@ -73,7 +73,7 @@ int OperacionParentesis(char Text[], int n)
    }
    else if (isdigit(Text[n]))
    {
-    int e = 
+    int e =
    }
  }
 }
