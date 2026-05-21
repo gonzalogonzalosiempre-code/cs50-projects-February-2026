@@ -75,7 +75,13 @@ int OperacionParentesis(char Text[], int n) //Opera si encuentra Parentesis y re
     int j = e + 1;
     while (Text[j] != ')')
     {
-     
+     if (ispunct(c) && (c == '+' || c == '-' || c == '*' || c == '/'))
+     {
+       while (Text[j] != ')')
+       {
+        
+       }
+     }
     }
    }
    else if (isdigit(Text[n]))
