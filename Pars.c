@@ -70,7 +70,7 @@ int OperacionParentesis(char Text[], int n) //Opera si encuentra Parentesis y re
  {
    if (isalpha(Text[n]))
    {
-    char e = AsignarOperar(Text[n]);
+    int e = AsignarOperar(Text[n]);
    }
    else if (isdigit(Text[n]))
    {
