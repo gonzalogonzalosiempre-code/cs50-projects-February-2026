@@ -129,9 +129,10 @@ int Operacion(char Text[], int n ) //Operacion para el Operador
      {
         if (isalpha(Text[e]))
         {
-         Resultado = Asignar(Text, e);
+         int Val = Asignar(Text, e);
          int e = i + 1;
-         Resultado = Resultado + Operacion(Text[], e);
+         Resultado = Val + Operacion(Text[], e);
+         
         }
         else if ((Text[e] = '('))
         {
