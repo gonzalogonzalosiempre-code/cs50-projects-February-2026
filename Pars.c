@@ -9,7 +9,8 @@ int main(void)
 {
  char Texto[];
  char *Valores[];
- 
+ char Variable[];
+
  printf("Ingresa Operacion: ");
  if ((fgets(Texto, sizeof(Texto), stdin)) != NULL)
  {
@@ -21,7 +22,7 @@ int main(void)
           {
             if (Texto[i] != ' ')
             {
-               N
+               Varible[]
             }
           }
         }
