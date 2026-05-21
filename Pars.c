@@ -39,6 +39,7 @@ bool VariableComprobada(int Text[][], int Count_Valores, int n)
 
 int Asignar(char Text[] int n) // Asigna en Variable y devuelve el Valor de esa Variable
 {
+    int Valor = 0;
     int i = n + 1;
     if (isalpha(Texto[n]))
   {
@@ -52,17 +53,21 @@ int Asignar(char Text[] int n) // Asigna en Variable y devuelve el Valor de esa 
          if (isdigit(Texto[i]))
          {
           Variable[Count_Valores][e] = Texto[i] - '0';
-         break;
+          int Valor = Variable[Count_Valores][e]
+          return Valor;
           }
           else if (isalpha(Texto[i]))
           {
            if (VariableComprobada(Variable, Count_Valores, i ) == true)
            {
-            return Variable[Count_Valores][i];
+            int Valor = Variable[Count_Valores][i];
+            return Valor;
            }
            else
            {
             Variable[Count_Valores][e] = Asignar(Texto, i)
+            int Valor = Variable[Count_Valores][e]
+            return Valor;
            }
           }
           else if (Texto[i] == '(')
