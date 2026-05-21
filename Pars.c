@@ -26,6 +26,7 @@ int main(void)
                int e = HashClave[Texto[i]]
                Varible[Count_Valores][e] = Texto[i];
             }
+            if
           }
         }
     }
