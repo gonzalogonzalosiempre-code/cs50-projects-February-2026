@@ -3,17 +3,29 @@
 #include <stdlib.h>
 
 int Count_Valores = 0;
+char Variable[][];
 char TableHash[Count_Valores][];
 
 int main(void)
 {
  char Texto[];
  char *Valores[];
- char Variable[][];
 
  printf("Ingresa Operacion: ");
  if ((fgets(Texto, sizeof(Texto), stdin)) != NULL)
  {
+    }
+   Valores[Count] = strtok(Texto, " ");
+  while (strtok != NULL)
+  {
+    ++Count_Valores
+  Valores[i] = strtok(NULL, " ");
+
+ }
+}
+
+char AsignarOperar(char Text[])
+{
     if (int i = 0; i < strlen(Texto); ++i)
     {
         if (Texto[i] == '=')
@@ -29,11 +41,11 @@ int main(void)
              if (Texto[i] != " ")
               {
                 Variable[Count_Valores][e] = Texto[i] - '0';
-
+                break;
               }
               else if (Texto[i] == '(')
               {
-                
+
               }
              }
                break;
@@ -41,14 +53,7 @@ int main(void)
           }
 
         }
-    }
-   Valores[Count] = strtok(Texto, " ");
-  while (strtok != NULL)
-  {
-    ++Count_Valores
-  Valores[i] = strtok(NULL, " ");
-
- }
+     }
 }
 
 char HashClave(char arr[])
