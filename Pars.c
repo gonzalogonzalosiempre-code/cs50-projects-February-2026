@@ -101,7 +101,7 @@ int OperacionParentesis(char Text[] int n) //Opera si encuentra Parentesis y ret
    {
     int e = Asignar(Text[], n); // Te da un valor para el char
     int j = e + 1;
-    Resultado = Operacion(Text, e);
+      Resultado = Operacion(Text, e);
      }
     }
    }
@@ -112,7 +112,6 @@ int OperacionParentesis(char Text[] int n) //Opera si encuentra Parentesis y ret
     }
    }
  }
-}
 
 int Operacion(char Text[], int n ) //Operacion para el Operador
 {
