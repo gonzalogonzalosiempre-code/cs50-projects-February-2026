@@ -121,6 +121,8 @@ int OperacionParentesis(char Text[] int n) //Opera si encuentra Parentesis y ret
 void Operacion(char Text[], int n ) //Operacion para el Operador
 {
     int Resultado = 0;
+    for (int i = n + 1; i <= strlen(Text); ++i)
+    {
     if (Text[n] == '+')
     {
      for(int i = n + 1; i <= strlen(Text); ++i)
@@ -145,4 +147,5 @@ void Operacion(char Text[], int n ) //Operacion para el Operador
     {
 
     }
+   }
 }
