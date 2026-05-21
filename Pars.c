@@ -26,7 +26,8 @@ int main(void)
 
 int AsignarOperar(char Text[] int n) // Asigna en Variable y devuelve el Valor de esa Variable
 {
-    if (int i = 0; i < strlen(Texto); ++i)
+    int i = n;
+    if (i; i < strlen(Texto); ++i)
     {
         if (Texto[i] == '=')
         {
