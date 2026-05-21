@@ -56,7 +56,7 @@ int Asignar(char Text[] int n) // Asigna en Variable y devuelve el Valor de esa 
           }
           else if (isalpha(Texto[i]))
           {
-
+           
           }
           else if (Texto[i] == '(')
          {
