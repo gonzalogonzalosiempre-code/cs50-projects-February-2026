@@ -36,7 +36,7 @@ int Asignar(char Text[] int n) // Asigna en Variable y devuelve el Valor de esa 
     {
     if (i; i < strlen(Texto); ++i)
     {
-         if (Texto[i] != " ")
+         if (isdigit(Texto[i]))
          {
           Variable[Count_Valores][e] = Texto[i] - '0';
          break;
