@@ -10,7 +10,9 @@ int main(void)
 
 }
 
-char Hash(int arr[])
+char HashClave(int arr[])
 {
+    if 
+    scanf()
     arr[]
 }
