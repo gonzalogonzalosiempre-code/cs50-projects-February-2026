@@ -8,10 +8,11 @@ char TableHash[];
 int main(void)
 {
  char Texto[];
+ char Valores[];
  printf("Ingresa Operacion: ");
  if ((fgets(Texto, sizeof(Texto), stdin)) != NULL)
  {
-    strtok(Texto, " ")
+  Valores = strtok(Texto, " ");
  }
 }
 
