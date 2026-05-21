@@ -10,6 +10,7 @@ int main(void)
  char Texto[];
  char *Valores[];
  char Variable[][];
+ int indice = 0;
 
  printf("Ingresa Operacion: ");
  if ((fgets(Texto, sizeof(Texto), stdin)) != NULL)
@@ -23,8 +24,7 @@ int main(void)
             if (Texto[i] != ' ')
             {
                 Count_Valores++;
-               int e = HashClave[Texto[i]]
-               Varible[Count_Valores][e] = Texto[i];
+               indice = HashClave[Texto[i]]
                for (i; i <= strlen(Texto); ++i)
             {
              if (Texto[i] != " ")
