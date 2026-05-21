@@ -24,7 +24,7 @@ int main(void)
  }
 }
 
-char AsignarOperar(char Text[])
+int Arr[][] AsignarOperar(char Text[])
 {
     if (int i = 0; i < strlen(Texto); ++i)
     {
