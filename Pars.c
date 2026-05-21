@@ -157,7 +157,7 @@ int Operacion(char Text[], int n ) //Operacion para el Operador
         if (isalpha(Text[e]))
         {
          int Val = Asignar(Text, e);
-         Resultado = Val + Operacion(Text[], e);
+         Resultado = Val - Operacion(Text[], e);
          return Resultado;
         }
         else if ((Text[e] = '('))
@@ -168,18 +168,56 @@ int Operacion(char Text[], int n ) //Operacion para el Operador
         else if (isdigit(Text[e]))
         {
          int Val = Text[e] - '0';
-         Resultado = Val + Operacion(Text[], e);
+         Resultado = Val - Operacion(Text[], e);
          return Resultado;
         }
      }
     }
     else if (Text[i] == '*')
     {
-
+     for(int e = i + 1; e <= strlen(Text); ++e)
+     {
+        if (isalpha(Text[e]))
+        {
+         int Val = Asignar(Text, e);
+         Resultado = Val * Operacion(Text[], e);
+         return Resultado;
+        }
+        else if ((Text[e] = '('))
+        {
+            Resultado = OperacionParentesis(Text, e)
+            return Resultado;
+        }
+        else if (isdigit(Text[e]))
+        {
+         int Val = Text[e] - '0';
+         Resultado = Val * Operacion(Text[], e);
+         return Resultado;
+        }
+     }
     }
     else if (Text[i] == '/')
     {
-
+     for(int e = i + 1; e <= strlen(Text); ++e)
+     {
+        if (isalpha(Text[e]))
+        {
+         int Val = Asignar(Text, e);
+         Resultado = Val / Operacion(Text[], e);
+         return Resultado;
+        }
+        else if ((Text[e] = '('))
+        {
+            Resultado = OperacionParentesis(Text, e)
+            return Resultado;
+        }
+        else if (isdigit(Text[e]))
+        {
+         int Val = Text[e] - '0';
+         Resultado = Val / Operacion(Text[], e);
+         return Resultado;
+        }
+     }
     }
    }
 }
