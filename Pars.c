@@ -111,9 +111,8 @@ int OperacionParentesis(char Text[] int n) //Opera si encuentra Parentesis y ret
    }
    else if (isdigit(Text[n]))
    {
-    while (Text[n] != ')')
-
-
+    
+    }
    }
  }
 }
