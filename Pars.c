@@ -100,16 +100,17 @@ int OperacionParentesis(char Text[] int n) //Opera si encuentra Parentesis y ret
    if (isalpha(Text[n]))
    {
     int e = Asignar(Text[], n); // Te da un valor para el char
-    int j = e + 1;
       Resultado = Operacion(Text, e);
+      return Resultado;
      }
-    }
-   }
    else if (isdigit(Text[n]))
    {
     Resultado = Operacion(Text, n);
     return Resultado;
+   }
+  }
 }
+
 
 int Operacion(char Text[], int n ) //Operacion para el Operador
 {
