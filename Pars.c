@@ -72,7 +72,8 @@ int OperacionParentesis(char Text[], int n) //Opera si encuentra Parentesis y re
    if (isalpha(Text[n]))
    {
     int e = AsignarOperar(Text[n]); // Te da un valor para el char
-    while (Text[n] != ')')
+    int j = e + 1;
+    while (Text[j] != ')')
     {
      
     }
