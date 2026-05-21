@@ -3,13 +3,13 @@
 #include <stdlib.h>
 
 int Count_Valores = 0;
-char TableHash[Count_Valores];
+char TableHash[Count_Valores][];
 
 int main(void)
 {
  char Texto[];
  char *Valores[];
- char Variable[];
+ char Variable[][];
 
  printf("Ingresa Operacion: ");
  if ((fgets(Texto, sizeof(Texto), stdin)) != NULL)
@@ -24,7 +24,7 @@ int main(void)
             {
                 Count_Valores++;
                int e = HashClave[Texto[i]]
-               Varible[e] = Texto[i];
+               Varible[Count_Valores][e] = Texto[i];
             }
           }
         }
