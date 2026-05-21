@@ -41,6 +41,10 @@ int Asignar(char Text[] int n) // Asigna en Variable y devuelve el Valor de esa 
           Variable[Count_Valores][e] = Texto[i] - '0';
          break;
           }
+          else if (isalpha(Texto[i]))
+          {
+            
+          }
           else if (Texto[i] == '(')
          {
 
