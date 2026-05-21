@@ -24,20 +24,18 @@ int main(void)
  }
 }
 
-int AsignarOperar(char Text[] int n) // Asigna en Variable y devuelve el Valor de esa Variable
+int Asignar(char Text[] int n) // Asigna en Variable y devuelve el Valor de esa Variable
 {
     int i = n;
     if (i; i < strlen(Texto); ++i)
     {
         if (Texto[i] == '=')
         {
-          for (j = i ; j >= 0; --i)
-          {
-            if (isalpha(Texto[i]))
+            if (isalpha(Texto[n]))
             {
-                if (Variable[Count_Valores][HashClave(Texto[i])] != NULL OR Variable[Count_Valores][HashClave(Texto[i])] != 0 )
+                if (Variable[Count_Valores][HashClave(Texto[n])] != NULL OR Variable[Count_Valores][HashClave(Texto[i])] != 0 )
                 Count_Valores++;
-               int e = HashClave(Texto[i]);
+               int e = HashClave(Texto[n]);
                for (k = i; k <= strlen(Texto); ++i)
             {
              if (Texto[i] != " ")
@@ -60,7 +58,6 @@ int AsignarOperar(char Text[] int n) // Asigna en Variable y devuelve el Valor d
           }
         }
      }
-}
 
 char HashClave(char arr[])
 {
@@ -76,7 +73,7 @@ int OperacionParentesis(char Text[] int n) //Opera si encuentra Parentesis y ret
  {
    if (isalpha(Text[n]))
    {
-    int e = AsignarOperar(Text[], n); // Te da un valor para el char
+    int e = Asignar(Text[], n); // Te da un valor para el char
     int j = e + 1;
     while (Text[j] != ')')
     {
@@ -104,7 +101,7 @@ void OperacionOperador(char Text[], int n ) //Operacion para el Operador
      {
         if (isalpha(Text[i]))
         {
-         Resultado = AsignarOperar(Text[], i);
+         Resultado = Asignar(Text[], i);
          int e = i + 1;
          Resultado = Resultado + OperacionOperador(Text[], e);
         }
