@@ -8,11 +8,24 @@ char TableHash[];
 int main(void)
 {
  char Texto[];
- char Valores[];
+ char *Valores[];
+ int Count_Valores = 0;
  printf("Ingresa Operacion: ");
  if ((fgets(Texto, sizeof(Texto), stdin)) != NULL)
  {
-  Valores = strtok(Texto, " ");
+    if (int i = 0; i < strlen(Texto); ++i)
+    {
+        if (Texto[i] == '=')
+        {
+          
+        }
+    }
+   Valores[Count] = strtok(Texto, " ");
+  while (strtok != NULL)
+  {
+    ++Count_Valores
+  Valores[i] = strtok(NULL, " ");
+
  }
 }
 
