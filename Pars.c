@@ -27,8 +27,6 @@ int main(void)
 int Asignar(char Text[] int n) // Asigna en Variable y devuelve el Valor de esa Variable
 {
     int i = n;
-    if (i; i < strlen(Texto); ++i)
-    {
         if (Texto[i] == '=')
         {
             if (isalpha(Texto[n]))
@@ -57,7 +55,6 @@ int Asignar(char Text[] int n) // Asigna en Variable y devuelve el Valor de esa 
             }
           }
         }
-     }
 
 char HashClave(char arr[])
 {
