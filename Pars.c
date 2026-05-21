@@ -67,6 +67,10 @@ int OperacionParentesis(char Text[], int n)
  int i = n + 1;
  for (n; n <= strlen(Text); ++i)
  {
-   if
+   if (isalpha(Text[n]))
+   {
+    char e = AsignarOperar(Text[n]);
+    
+   }
  }
 }
