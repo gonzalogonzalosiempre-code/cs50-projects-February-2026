@@ -61,7 +61,11 @@ char HashClave(char arr[])
     arr[]
 }
 
-int OperacionParentesis(char Text[int n])
+int OperacionParentesis(char Text[], int n)
 {
-
+ int i = n + 1;
+ for (n; n <= strlen(Text); ++i)
+ {
+   
+ }
 }
