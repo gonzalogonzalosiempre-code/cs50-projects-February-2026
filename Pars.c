@@ -25,17 +25,18 @@ int main(void)
                 Count_Valores++;
                int e = HashClave[Texto[i]]
                Varible[Count_Valores][e] = Texto[i];
+               for (i; i <= strlen(Texto); ++i)
+            {
+             if (Texto[i] != " ")
+              {
+                int e = HashClave[Texto[i]]
+
+              }
+             }
                break;
             }
           }
-          for (i; i <= strlen(Texto); ++i)
-          {
-            if (Texto[i] != " ")
-            {
-                int e = HashClave[Texto[i]]
-                
-            }
-          }
+
         }
     }
    Valores[Count] = strtok(Texto, " ");
