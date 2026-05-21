@@ -2,14 +2,14 @@
 #include <string.h>
 #include <stdlib.h>
 
-int N = 0;
-char TableHash[];
+int Count_Valores = 0;
+char TableHash[Count_Valores];
 
 int main(void)
 {
  char Texto[];
  char *Valores[];
- int Count_Valores = 0;
+ 
  printf("Ingresa Operacion: ");
  if ((fgets(Texto, sizeof(Texto), stdin)) != NULL)
  {
