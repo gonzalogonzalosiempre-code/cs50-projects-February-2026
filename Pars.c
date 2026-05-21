@@ -66,13 +66,16 @@ char HashClave(char arr[])
 int OperacionParentesis(char Text[], int n) //Opera si encuentra Parentesis y returna en otras funciones
 {
  int Resultado = 0;
- int i = n + 1;
+ int i = n;
  for (n; n <= strlen(Text); ++i)
  {
    if (isalpha(Text[n]))
    {
     int e = AsignarOperar(Text[n]); // Te da un valor para el char
-    Resultado = e +
+    while (Text[n] != ')')
+    {
+     
+    }
    }
    else if (isdigit(Text[n]))
    {
