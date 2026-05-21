@@ -134,7 +134,6 @@ int Operacion(char Text[], int n ) //Operacion para el Operador
         if (isalpha(Text[e]))
         {
          int Val = Asignar(Text, e);
-         int e = i + 1;
          Resultado = Val + Operacion(Text[], e);
          return Resultado;
         }
@@ -145,7 +144,8 @@ int Operacion(char Text[], int n ) //Operacion para el Operador
         }
         else if (isdigit(Text[e]))
         {
-            
+         Resultado = Val + Operacion(Text[], e);
+         return Resultado;
         }
      }
     }
