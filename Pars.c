@@ -25,7 +25,7 @@ int main(void)
  }
 }
 
-bool VariableComprobada(char Text[], int n)
+bool VariableComprobada(int Text[][], int Count_Valores, int n)
 {
     if (Variable[Count_Valores][HashClave(Texto[n])] != NULL OR Variable[Count_Valores][HashClave(Texto[i])] != 0 )
     {
@@ -56,7 +56,10 @@ int Asignar(char Text[] int n) // Asigna en Variable y devuelve el Valor de esa 
           }
           else if (isalpha(Texto[i]))
           {
-           
+           if (VariableComprobada(Variable[][HashClave(Texto[i])]) == true)
+           {
+
+           }
           }
           else if (Texto[i] == '(')
          {
