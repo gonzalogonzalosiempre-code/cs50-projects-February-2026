@@ -105,7 +105,7 @@ int OperacionParentesis(char Text[] int n) //Opera si encuentra Parentesis y ret
     {
      if (ispunct(Text[j]) && (c == '+' || c == '-' || c == '*' || c == '/'))
      {
-      Resultado = OperacionOperador(Text, e);
+      Resultado = Operacion(Text, e);
      }
     }
    }
@@ -118,7 +118,7 @@ int OperacionParentesis(char Text[] int n) //Opera si encuentra Parentesis y ret
  }
 }
 
-void OperacionOperador(char Text[], int n ) //Operacion para el Operador
+void Operacion(char Text[], int n ) //Operacion para el Operador
 {
     int Resultado = 0;
     if (Text[n] == '+')
@@ -129,7 +129,7 @@ void OperacionOperador(char Text[], int n ) //Operacion para el Operador
         {
          Resultado = Asignar(Text[], i);
          int e = i + 1;
-         Resultado = Resultado + OperacionOperador(Text[], e);
+         Resultado = Resultado + Operacion(Text[], e);
         }
      }
     }
