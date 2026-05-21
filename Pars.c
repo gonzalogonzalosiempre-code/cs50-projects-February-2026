@@ -58,7 +58,6 @@ int AsignarOperar(char Text[] int n) // Asigna en Variable y devuelve el Valor d
               return Resultado;
             }
           }
-
         }
      }
 }
