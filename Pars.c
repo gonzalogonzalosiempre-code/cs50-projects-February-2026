@@ -93,13 +93,14 @@ int OperacionParentesis(char Text[] int n) //Opera si encuentra Parentesis y ret
 
 int OperacionOperator(char Text[], int n ) //Operacion para el Operador
 {
+    int Resultado = 0;
     if (Text[n] == '+')
     {
      for(int i = n + 1; i <= strlen(Text); ++i)
      {
         if (isalpha(Text[i]))
         {
-            
+
         }
      }
     }
