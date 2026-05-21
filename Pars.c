@@ -95,7 +95,10 @@ int OperacionOperator(char Text[], int n ) //Operacion para el Operador
 {
     if (Text[n] == '+')
     {
-     for(int i = n + 1; i <= )
+     for(int i = n + 1; i <= strlen(Text); ++i)
+     {
+        
+     }
     }
     else if (Text[n] == '-')
     {
