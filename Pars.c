@@ -26,7 +26,7 @@ int main(void)
 
 int Asignar(char Text[] int n) // Asigna en Variable y devuelve el Valor de esa Variable
 {
-    int i = n;
+    int i = n + 1;
     if (isalpha(Texto[n]))
   {
     if (Variable[Count_Valores][HashClave(Texto[n])] != NULL OR Variable[Count_Valores][HashClave(Texto[i])] != 0 )
@@ -36,7 +36,7 @@ int Asignar(char Text[] int n) // Asigna en Variable y devuelve el Valor de esa 
     {
     if (i; i < strlen(Texto); ++i)
     {
-         if (Texto[i] = " ")
+         if (Texto[i] != " ")
          {
           Variable[Count_Valores][e] = Texto[i] - '0';
          break;
