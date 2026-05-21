@@ -37,10 +37,16 @@ bool VariableComprobada(int Text[][], int Count_Valores, int n)
     }
 }
 
-int Asignar(char Text[] int n) // Asigna en Variable y devuelve el Valor de esa Variable
+int Asignar(char Texto[] int n) // Asigna en Variable y devuelve el Valor de esa Variable
 {
     int Valor = 0;
+    int p = n;
     int i = n + 1;
+    if (VariableComprobada(Text, p) == true)
+    {
+        int Valor = Variable[][Texto[p]];
+        return Valor;
+    }
     if (isalpha(Texto[n]))
   {
     Count_Valores++;
@@ -71,7 +77,7 @@ int Asignar(char Text[] int n) // Asigna en Variable y devuelve el Valor de esa 
           }
           else if (Texto[i] == '(')
          {
-
+          int Valor = OperacionParentesis
          }
        }
          break;
