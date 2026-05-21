@@ -56,9 +56,13 @@ int Asignar(char Text[] int n) // Asigna en Variable y devuelve el Valor de esa 
           }
           else if (isalpha(Texto[i]))
           {
-           if (VariableComprobada(Variable[][HashClave(Texto[i])]) == true)
+           if (VariableComprobada(Variable, Count_Valores, i ) == true)
            {
-
+            return Variable[Count_Valores][i];
+           }
+           else
+           {
+            Variable[Count_Valores][e] = Asignar(Texto, i)
            }
           }
           else if (Texto[i] == '(')
