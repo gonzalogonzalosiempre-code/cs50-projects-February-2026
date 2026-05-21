@@ -120,7 +120,7 @@ int OperacionParentesis(char Text[] int n) //Opera si encuentra Parentesis y ret
 
 int Operacion(char Text[], int n ) //Operacion para el Operador
 {
-    int Resultado = 0;
+    int *Resultado = 0;
     for (int i = n + 1; i <= strlen(Text); ++i)
     {
     if (Text[i] == '+')
@@ -131,8 +131,9 @@ int Operacion(char Text[], int n ) //Operacion para el Operador
         {
          int Val = Asignar(Text, e);
          int e = i + 1;
-         Resultado = Val + Operacion(Text[], e);
-         
+         &Resultado = Val + Operacion(Text[], e);
+         if ()
+
         }
         else if ((Text[e] = '('))
         {
