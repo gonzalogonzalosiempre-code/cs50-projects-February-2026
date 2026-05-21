@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 int Count_Valores = 0;
 char Variable[Count_Valores][];
@@ -31,7 +32,7 @@ char AsignarOperar(char Text[])
         {
           for (j = i ; j >= 0; --i)
           {
-            if (Texto[i] != ' ')
+            if (isalpha(Texto[i]))
             {
                 Count_Valores++;
                int e = HashClave[Texto[i]]
@@ -66,6 +67,6 @@ int OperacionParentesis(char Text[], int n)
  int i = n + 1;
  for (n; n <= strlen(Text); ++i)
  {
-   if 
+   if
  }
 }
