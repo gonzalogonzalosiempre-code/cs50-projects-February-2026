@@ -53,8 +53,6 @@ int Asignar(char Texto[] int n) // Asigna en Variable y devuelve el Valor de esa
     int e = HashClave(Texto[n]);
     for (i; i <= strlen(Texto); ++i)
     {
-    if (i; i < strlen(Texto); ++i)
-    {
          if (isdigit(Texto[i]))
          {
           Variable[Count_Valores][e] = Texto[i] - '0';
@@ -78,18 +76,18 @@ int Asignar(char Texto[] int n) // Asigna en Variable y devuelve el Valor de esa
           else if (Texto[i] == '(')
          {
           int Valor = OperacionParentesis(Texto, i);
+          return Valor;
          }
        }
-         break;
+        break;
       }
     }
     else
     {
         int Resultado = Variable[Count_Valores][HashClave(Texto[i])];
         return Resultado;
-    }
-
 }
+
 
 char HashClave(char arr[])
 {
