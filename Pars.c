@@ -118,32 +118,37 @@ int OperacionParentesis(char Text[] int n) //Opera si encuentra Parentesis y ret
  }
 }
 
-void Operacion(char Text[], int n ) //Operacion para el Operador
+int Operacion(char Text[], int n ) //Operacion para el Operador
 {
     int Resultado = 0;
     for (int i = n + 1; i <= strlen(Text); ++i)
     {
-    if (Text[n] == '+')
+    if (Text[i] == '+')
     {
-     for(int i = n + 1; i <= strlen(Text); ++i)
+     for(int e = i + 1; e <= strlen(Text); ++e)
      {
-        if (isalpha(Text[i]))
+        if (isalpha(Text[e]))
         {
-         Resultado = Asignar(Text[], i);
+         Resultado = Asignar(Text, e);
          int e = i + 1;
          Resultado = Resultado + Operacion(Text[], e);
         }
+        else if ((Text[e] = '('))
+        {
+            Resultado = OperacionParentesis(Text, e)
+            return Resultado;
+        }
      }
     }
-    else if (Text[n] == '-')
+    else if (Text[i] == '-')
     {
 
     }
-    else if (Text[n] == '*')
+    else if (Text[i] == '*')
     {
 
     }
-    else if (Text[n] == '/')
+    else if (Text[i] == '/')
     {
 
     }
