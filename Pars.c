@@ -17,7 +17,13 @@ int main(void)
     {
         if (Texto[i] == '=')
         {
-          
+          for (i ; i >= 0; --i)
+          {
+            if (Texto[i] != ' ')
+            {
+               N
+            }
+          }
         }
     }
    Valores[Count] = strtok(Texto, " ");
