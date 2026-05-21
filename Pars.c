@@ -22,7 +22,8 @@ int main(void)
           {
             if (Texto[i] != ' ')
             {
-               Varible[]
+               int e = HashClave[Texto[i]]
+               Varible[e] = 
             }
           }
         }
@@ -36,7 +37,7 @@ int main(void)
  }
 }
 
-char HashClave(int arr[])
+char HashClave(char arr[])
 {
 
     arr[]
