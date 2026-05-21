@@ -62,4 +62,7 @@ char HashClave(char arr[])
     arr[]
 }
 
-int OperacionPa
+int OperacionParentesis(char Text[int n])
+{
+    
+}
