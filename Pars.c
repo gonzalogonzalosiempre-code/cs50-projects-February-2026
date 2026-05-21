@@ -75,6 +75,7 @@ int OperacionParentesis(char Text[], int n) //Opera si encuentra Parentesis y re
    else if (isdigit(Text[n]))
    {
     int e = Text[n] - '0';
+    
 
    }
  }
