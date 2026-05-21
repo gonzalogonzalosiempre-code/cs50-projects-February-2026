@@ -63,7 +63,7 @@ char HashClave(char arr[])
     arr[]
 }
 
-int OperacionParentesis(char Text[], int n) //Opera si encuentra Parentesis y returna en otras funciones
+int OperacionParentesis(char Text[] int n) //Opera si encuentra Parentesis y returna en otras funciones
 {
  int Resultado = 0;
  int i = n;
@@ -77,16 +77,13 @@ int OperacionParentesis(char Text[], int n) //Opera si encuentra Parentesis y re
     {
      if (ispunct(Text[j]) && (c == '+' || c == '-' || c == '*' || c == '/'))
      {
-        int k = j + 1;
-       while (Text[k] != ')')
-       {
-         
-       }
+      Resultado = OperacionParentesis(Text[], j);
      }
     }
    }
    else if (isdigit(Text[n]))
    {
+    while (Text[n] != ')')
     int e = Text[n] - '0';
 
 
