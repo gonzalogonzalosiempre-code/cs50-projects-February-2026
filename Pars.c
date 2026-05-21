@@ -71,11 +71,12 @@ int OperacionParentesis(char Text[], int n) //Opera si encuentra Parentesis y re
    if (isalpha(Text[n]))
    {
     int e = AsignarOperar(Text[n]);
+    
    }
    else if (isdigit(Text[n]))
    {
     int e = Text[n] - '0';
-    
+
 
    }
  }
