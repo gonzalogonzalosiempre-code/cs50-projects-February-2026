@@ -70,7 +70,10 @@ int OperacionParentesis(char Text[], int n)
    if (isalpha(Text[n]))
    {
     char e = AsignarOperar(Text[n]);
-    
+   }
+   else if (isdigit(Text[n]))
+   {
+    int e = 
    }
  }
 }
