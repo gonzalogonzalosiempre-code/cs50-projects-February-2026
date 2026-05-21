@@ -22,8 +22,9 @@ int main(void)
           {
             if (Texto[i] != ' ')
             {
+                Count_Valores++;
                int e = HashClave[Texto[i]]
-               Varible[e] = 
+               Varible[e] = Texto[i];
             }
           }
         }
