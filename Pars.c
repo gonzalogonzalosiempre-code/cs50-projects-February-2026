@@ -91,7 +91,7 @@ int OperacionParentesis(char Text[] int n) //Opera si encuentra Parentesis y ret
  }
 }
 
-int OperacionOperator(char Text[], int n ) //Operacion para el Operador
+void OperacionOperator(char Text[], int n ) //Operacion para el Operador
 {
     int Resultado = 0;
     if (Text[n] == '+')
@@ -100,9 +100,9 @@ int OperacionOperator(char Text[], int n ) //Operacion para el Operador
      {
         if (isalpha(Text[i]))
         {
-         Resultado = AsignarOperar(Text[], int i);
-         Resultado = Resultado + 
-
+         Resultado = AsignarOperar(Text[], i);
+         int e = i + 1;
+         Resultado = Resultado + OperacionParentesis(Text[], e);
         }
      }
     }
