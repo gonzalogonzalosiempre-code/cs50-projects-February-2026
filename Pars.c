@@ -61,3 +61,5 @@ char HashClave(char arr[])
 
     arr[]
 }
+
+int OperacionPa
