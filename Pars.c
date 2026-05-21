@@ -144,6 +144,7 @@ int Operacion(char Text[], int n ) //Operacion para el Operador
         }
         else if (isdigit(Text[e]))
         {
+         int Val = Text[e] - '0';
          Resultado = Val + Operacion(Text[], e);
          return Resultado;
         }
