@@ -66,6 +66,6 @@ int OperacionParentesis(char Text[], int n)
  int i = n + 1;
  for (n; n <= strlen(Text); ++i)
  {
-   
+   if 
  }
 }
