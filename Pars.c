@@ -91,4 +91,22 @@ int OperacionParentesis(char Text[] int n) //Opera si encuentra Parentesis y ret
  }
 }
 
+int OperacionOperator(char Text[], int n ) //Operacion para el Operador
+{
+    if (Text[n] == '+')
+    {
+     for(int i = n + 1; i <= )
+    }
+    else if (Text[n] == '-')
+    {
 
+    }
+    else if (Text[n] == '*')
+    {
+
+    }
+    else if (Text[n] == '/')
+    {
+
+    }
+}
