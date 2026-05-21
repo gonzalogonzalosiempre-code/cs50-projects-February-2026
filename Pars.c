@@ -27,34 +27,35 @@ int main(void)
 int Asignar(char Text[] int n) // Asigna en Variable y devuelve el Valor de esa Variable
 {
     int i = n;
-        if (Texto[i] == '=')
-        {
-            if (isalpha(Texto[n]))
-            {
-                if (Variable[Count_Valores][HashClave(Texto[n])] != NULL OR Variable[Count_Valores][HashClave(Texto[i])] != 0 )
-                Count_Valores++;
-               int e = HashClave(Texto[n]);
-               for (k = i; k <= strlen(Texto); ++i)
-            {
-             if (Texto[i] != " ")
-              {
-                Variable[Count_Valores][e] = Texto[i] - '0';
-                break;
-              }
-              else if (Texto[i] == '(')
-              {
-
-              }
-             }
-               break;
-            }
-            else
-            {
-              int Resultado = Variable[Count_Valores][HashClave(Texto[i])];
-              return Resultado;
-            }
+    if (isalpha(Texto[n]))
+  {
+    if (Variable[Count_Valores][HashClave(Texto[n])] != NULL OR Variable[Count_Valores][HashClave(Texto[i])] != 0 )
+    Count_Valores++;
+    int e = HashClave(Texto[n]);
+    for (i; i <= strlen(Texto); ++i)
+    {
+    if (i; i < strlen(Texto); ++i)
+    {
+         if (Texto[i] = " ")
+         {
+          Variable[Count_Valores][e] = Texto[i] - '0';
+         break;
           }
-        }
+          else if (Texto[i] == '(')
+         {
+
+         }
+       }
+         break;
+      }
+    }
+    else
+    {
+        int Resultado = Variable[Count_Valores][HashClave(Texto[i])];
+        return Resultado;
+    }
+
+}
 
 char HashClave(char arr[])
 {
