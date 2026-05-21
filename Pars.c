@@ -77,7 +77,7 @@ int Asignar(char Texto[] int n) // Asigna en Variable y devuelve el Valor de esa
           }
           else if (Texto[i] == '(')
          {
-          int Valor = OperacionParentesis
+          int Valor = OperacionParentesis(Texto, i);
          }
        }
          break;
