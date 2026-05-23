@@ -13,16 +13,17 @@ int main(void)
   fgets(Text, sizeof(Text), stdin);
 
   size_t Puntaje = duplicate_count(Text);
-  printf(" Numero de Repeticiones es %zu", Puntaje);
+  printf(" Numero de Repeticiones es %zu\n", Puntaje);
 
 }
 
-size_t duplicate_count(const char *text) {
+size_t duplicate_count(const char *text)
+{
   size_t count_repeats = 0;
   char data_tmp;
   for (int i = 0, n = strlen(text); i <= n; ++i)
     {
-        if (data_tmp == text[i] || text[i] == '\n' || text[i] == '\000)
+        if (data_tmp == text[i] || text[i] == '\n' || text[i] == '\000')
           {
           continue;
         }
@@ -37,4 +38,4 @@ size_t duplicate_count(const char *text) {
       }
     }
   return count_repeats;
-  }
+}
