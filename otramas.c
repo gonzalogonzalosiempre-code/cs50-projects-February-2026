@@ -1,3 +1,9 @@
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
 size_t duplicate_count(const char *text);
 
 int main(void)
