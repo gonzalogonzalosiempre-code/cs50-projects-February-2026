@@ -22,7 +22,7 @@ size_t duplicate_count(const char *text) {
   char data_tmp;
   for (int i = 0, n = strlen(text); i <= n; ++i)
     {
-      for (size_t e = i; e <= strlen(text); ++e)
+      for (size_t e = i; e <= strlen(; ++e)
         {
         if (data_tmp == text[i])
           {
