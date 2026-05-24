@@ -24,7 +24,8 @@ ESPECIFICACIONES DEL PROYECTO
 5. filter          - Aplica efectos visuales avanzados como la rotación de tono.
 6. Hover           - Es lo que se utiliza para marca la accion o funcion que se realiza
 Como pasar el cursor.
-7. Before          - Es lo que se utiliza para poder 
+7. Before          - Es lo que se utiliza para poder marcar lo que realiza despues y no
+durante como Hover.
 
 USO DE JAVASCRIPT Y BOOTSTRAP:
 ------------------------------------------------------------------------
