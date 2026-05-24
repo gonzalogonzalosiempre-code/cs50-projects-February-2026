@@ -1,0 +1,28 @@
+========================================================================
+ESPECIFICACIONES DEL PROYECTO
+========================================================================
+
+10 ETIQUETAS HTML UTILIZADAS:
+------------------------------------------------------------------------
+1. <!DOCTYPE html> - Define la versión del documento como HTML5.
+2. <html>          - Actúa como el contenedor raíz de toda la página web.
+3. <head>          - Almacena los metadatos, el título y los enlaces a estilos.
+4. <body>          - Contiene todo el contenido visible para los usuarios.
+5. <header>        - Representa el grupo de contenido introductorio o de navegación.
+6. <main>          - Encapsula el contenido principal y dominante del sitio.
+7. <h1>            - Define el título de mayor jerarquía e importancia.
+8. <p>             - Estructura y organiza los bloques de texto en párrafos.
+9. <div>           - Funciona como contenedor genérico para estructurar el diseño.
+10. <script>       - Enlaza o incrusta el código JavaScript en el documento.
+
+5 PROPIEDADES CSS UTILIZADAS:
+------------------------------------------------------------------------
+1. animation       - Configura la secuencia, duración y fluidez de la animación.
+2. opacity         - Controla el nivel de transparencia y visibilidad de los elementos.
+3. transform       - Modifica el espacio de coordenadas para mover o rotar elementos.
+4. background      - Define el fondo del elemento mediante un degradado lineal de color.
+5. filter          - Aplica efectos visuales avanzados como la rotación de tono.
+
+USO DE JAVASCRIPT Y BOOTSTRAP:
+------------------------------------------------------------------------
+Decidí usar Bootstrap para estructurar rápidamente un diseño adaptivo y limpio mediante su sistema de rejilla, mientras que utilicé JavaScript para interceptar eventos de usuario y activar las clases de animación de forma dinámica.
