@@ -22,6 +22,9 @@ ESPECIFICACIONES DEL PROYECTO
 3. transform       - Modifica el espacio de coordenadas para mover o rotar elementos.
 4. background      - Define el fondo del elemento mediante un degradado lineal de color.
 5. filter          - Aplica efectos visuales avanzados como la rotación de tono.
+6. Hover           - Es lo que se utiliza para marca la accion o funcion que se realiza
+Como pasar el cursor.
+7. Before          - Es lo que se utiliza para poder 
 
 USO DE JAVASCRIPT Y BOOTSTRAP:
 ------------------------------------------------------------------------
