@@ -34,7 +34,11 @@ def after_request(response):
 @app.route("/")
 @login_required
 def index():
-    symbol = 
+    symbol = db.execute("SELECT symbol FROM registerbuy")
+    shares = db.execute("SELECT shares FROM registerbuy")
+    price = db.execute("SELECT precio FROM registerbuy")
+    stock = lookup(symbol)
+    Total = 
 
 
     """Show portfolio of stocks"""
