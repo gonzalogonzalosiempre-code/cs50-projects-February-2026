@@ -107,6 +107,8 @@ def logout():
 def quote():
     symbol = request.form.get("symbol")
     stock = lookup(symbol)
+    if not symbol:
+        return apology("Simbolo inexistente")
     if request.form == "POST":
         return render_template("quoted.html", stock=stock)
     else:
