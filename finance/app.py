@@ -38,12 +38,9 @@ def index():
     shares = db.execute("SELECT shares FROM registerbuy")
     price = db.execute("SELECT precio FROM registerbuy")
     stock = lookup(symbol)
-    Total = 
-
-
-    """Show portfolio of stocks"""
-    return apology("TODO")
-
+    user_cost = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
+    Total = user_cost + int(stock)
+    return render_template("index.html", symbol=symbol, shares=shares,price=price, Total=Total)
 
 @app.route("/buy", methods=["GET", "POST"])
 @login_required
@@ -153,5 +150,7 @@ def register():
 @app.route("/sell", methods=["GET", "POST"])
 @login_required
 def sell():
+    symbol = request.form.get("symbol")
+    
     """Sell shares of stock"""
     return apology("TODO")
