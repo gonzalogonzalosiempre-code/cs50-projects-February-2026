@@ -52,10 +52,8 @@ def buy():
     user_cost = db.execute("SELECT cash FROM users WHERE id = ?", session[user_id])
     if user_cost < cost:
         return apology("Fondo insuficientes", 400)
-    
-    """Buy shares of stock"""
-    return apology("TODO")
-
+    db.execute("UPDATE users GET cash = cash - ? WHERE id = ?",cost, session[user_id])
+    db.execute("INSERT INTO registerbuy (user_id, precio, shares, symbol, date) VALUES (?, ? , ?, ?, CURRENT_TIMESTAMP)", session[user_id], stock["price"], int(shares), symbol)
 
 @app.route("/history")
 @login_required
