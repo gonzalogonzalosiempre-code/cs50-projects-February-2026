@@ -43,7 +43,11 @@ def index():
 def buy():
     symbol = request.form.get("symbol")
     stock = lookup(symbol)
+    shares = request.form.get("shares")
+    if not stock:
+        return apology("Symbolo inexistente, 400)
     
+
     """Buy shares of stock"""
     return apology("TODO")
 
