@@ -34,6 +34,7 @@ def after_request(response):
 @app.route("/")
 @login_required
 def index():
+    
     """Show portfolio of stocks"""
     return apology("TODO")
 
@@ -49,11 +50,11 @@ def buy():
     if shares.isdigit() or int(shares) <= 0:
           return apology("Numero negativo no admitido", 400)
     cost = int(shares) * stock["price"]
-    user_cost = db.execute("SELECT cash FROM users WHERE id = ?", session[user_id])
+    user_cost = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
     if user_cost < cost:
         return apology("Fondo insuficientes", 400)
-    db.execute("UPDATE users GET cash = cash - ? WHERE id = ?",cost, session[user_id])
-    db.execute("INSERT INTO registerbuy (user_id, precio, shares, symbol, date) VALUES (?, ? , ?, ?, CURRENT_TIMESTAMP)", session[user_id], stock["price"], int(shares), symbol)
+    db.execute("UPDATE users GET cash = cash - ? WHERE id = ?",cost, session["user_id"])
+    db.execute("INSERT INTO registerbuy (user_id, precio, shares, symbol, date) VALUES (?, ? , ?, ?, CURRENT_TIMESTAMP)", session["user_id"], stock["price"], int(shares), symbol)
 
 @app.route("/history")
 @login_required
