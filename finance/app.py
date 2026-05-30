@@ -48,7 +48,8 @@ def buy():
         return apology("Symbolo inexistente", 400)
     if shares.isdigit() or int(shares) <= 0:
           return apology("Numero negativo no admitido", 400)
-    if shares < 
+    cost = int(shares) * stock["price"]
+    user_cost = db.execute("SELECT cash FROM )
     """Buy shares of stock"""
     return apology("TODO")
 
