@@ -113,7 +113,7 @@ def quote():
 def register():
     if request.method == "POST":
         symbol = request.form.get("symbol")
-        if not username in 
+        if not username in request.form.get("username")
 
     """Register user"""
     return apology("TODO")
