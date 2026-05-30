@@ -46,7 +46,8 @@ def buy():
     shares = request.form.get("shares")
     if not stock:
         return apology("Symbolo inexistente, 400)
-    
+    if shares.isdigit() or int(shares) =< 0:
+          return apology("Numero negativo no admitido", 400)
 
     """Buy shares of stock"""
     return apology("TODO")
