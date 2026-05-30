@@ -37,7 +37,9 @@ def index():
     symbol = db.execute("SELECT symbol FROM registerbuy")
     shares = db.execute("SELECT shares FROM registerbuy")
     price = db.execute("SELECT precio FROM registerbuy")
+    Stock = lookup(symbol)
     
+
     """Show portfolio of stocks"""
     return apology("TODO")
 
