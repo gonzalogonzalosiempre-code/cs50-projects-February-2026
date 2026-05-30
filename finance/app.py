@@ -116,7 +116,12 @@ def register():
         password = request.form.get("password")
         confirmation = request.form.get("confirmation")
         if not username or not password or not confirmation:
-            return apology("todos los datos son obligatorios". 400)
+            return apology("todos los datos son obligatorios", 400)
+        if password != confirmation:
+            return apology("Contraseña no confirmada", 400)
+        hash = generate_password_hash("password")
+        try:
+            db.execute("INSERT INTO users)
 
     """Register user"""
     return apology("TODO")
