@@ -34,7 +34,10 @@ def after_request(response):
 @app.route("/")
 @login_required
 def index():
-    symbol = db.execute("SELECT  )
+    symbol = db.execute("SELECT symbol FROM registerbuy")
+    shares = db.execute("SELECT shares FROM registerbuy")
+    price = db.execute("SELECT precio FROM registerbuy")
+    
     """Show portfolio of stocks"""
     return apology("TODO")
 
