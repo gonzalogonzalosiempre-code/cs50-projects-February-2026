@@ -124,11 +124,9 @@ def register():
             db.execute("INSERT INTO users (username, hash) VALUES (? , ?)", username, hash)
         except:
             return apology("Nombre de Usuario ya existe", 400)
-        return redirect(")
-
-    """Register user"""
-    return apology("TODO")
-
+        return redirect("/")
+    else:
+        return render_template("register.html")
 
 @app.route("/sell", methods=["GET", "POST"])
 @login_required
