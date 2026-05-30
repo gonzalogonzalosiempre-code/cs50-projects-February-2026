@@ -34,7 +34,7 @@ def after_request(response):
 @app.route("/")
 @login_required
 def index():
-    
+    symbol = db.execute("SELECT  )
     """Show portfolio of stocks"""
     return apology("TODO")
 
