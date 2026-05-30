@@ -48,7 +48,7 @@ def buy():
         return apology("Symbolo inexistente", 400)
     if shares.isdigit() or int(shares) <= 0:
           return apology("Numero negativo no admitido", 400)
-    if shares < stock 
+    if shares < 
     """Buy shares of stock"""
     return apology("TODO")
 
