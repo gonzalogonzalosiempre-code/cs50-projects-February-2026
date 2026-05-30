@@ -41,6 +41,9 @@ def index():
 @app.route("/buy", methods=["GET", "POST"])
 @login_required
 def buy():
+    symbol = request.form.get("symbol")
+    stock = lookup(symbol)
+    
     """Buy shares of stock"""
     return apology("TODO")
 
@@ -113,11 +116,6 @@ def quote():
         return render_template("quoted.html", stock=stock)
     else:
         return render_template("quote.html")
-
-
-    """Get stock quote."""
-    return apology("TODO")
-
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
