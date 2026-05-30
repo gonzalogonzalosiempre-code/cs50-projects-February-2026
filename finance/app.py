@@ -105,6 +105,9 @@ def logout():
 @app.route("/quote", methods=["GET", "POST"])
 @login_required
 def quote():
+    symbol = request.form.get("symbol")
+    stock = request.form.get("stock")
+    
     """Get stock quote."""
     return apology("TODO")
 
