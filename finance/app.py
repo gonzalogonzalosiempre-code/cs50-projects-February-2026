@@ -49,7 +49,10 @@ def buy():
     if shares.isdigit() or int(shares) <= 0:
           return apology("Numero negativo no admitido", 400)
     cost = int(shares) * stock["price"]
-    user_cost = db.execute("SELECT cash FROM users WHERE id V )
+    user_cost = db.execute("SELECT cash FROM users WHERE id = ?", session[user_id])
+    if user_cost < cost:
+        return apology("Fondo insuficientes", 400)
+    
     """Buy shares of stock"""
     return apology("TODO")
 
