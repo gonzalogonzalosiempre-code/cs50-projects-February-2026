@@ -121,7 +121,10 @@ def register():
             return apology("Contraseña no confirmada", 400)
         hash = generate_password_hash("password")
         try:
-            db.execute("INSERT INTO users)
+            db.execute("INSERT INTO users (username, hash) VALUES (? , ?)", username, hash)
+        except:
+            return apology("Nombre de Usuario ya existe", 400)
+        return redirect(")
 
     """Register user"""
     return apology("TODO")
