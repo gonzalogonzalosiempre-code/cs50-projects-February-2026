@@ -34,14 +34,17 @@ def after_request(response):
 @app.route("/")
 @login_required
 def index():
-    Stock = db.execute("""
+    Stocks = db.execute("""
     SELECT symbol, SUM(shares) as Total_Sum
     FROM registerbuy
     WHERE user_id = ?
     GROUP BY symbol
     HAVING Total_Sum < 0""",
     session["user_id"])
-    
+    cash = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
+    index = []
+    for stock in Stocks:
+        
 
 @app.route("/buy", methods=["GET", "POST"])
 @login_required
