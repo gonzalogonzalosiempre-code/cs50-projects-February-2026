@@ -152,6 +152,8 @@ def register():
 def sell():
     symbol = request.form.get("symbol")
     shares = db.execute("SELECT shares FROM registerbuy WHERE symbol = ?", symbol)
+    if not shares:
+        return apology("No shares", 400)
     
     """Sell shares of stock"""
     return apology("TODO")
