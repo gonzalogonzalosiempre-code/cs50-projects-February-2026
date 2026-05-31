@@ -155,6 +155,7 @@ def sell():
         shares = db.execute("SELECT shares FROM registerbuy WHERE symbol = ?", symbol)
         if not int(shares) or not symbol:
               return apology("No shares", 400)
-        db.execute(")
+        db.execute("UPDATE cash FROM users VALUE cash = cash - ?", shares)
+        return redirect("/")
     """Sell shares of stock"""
     return apology("TODO")
