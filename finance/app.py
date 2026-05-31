@@ -41,7 +41,7 @@ def index():
     GROUP BY symbol
     HAVING Total_Sum < 0""",
     session["user_id"])
-    cash = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
+    cash = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])[0]["cash"]
     index = []
     total_value = cash
     for stock in Stocks:
