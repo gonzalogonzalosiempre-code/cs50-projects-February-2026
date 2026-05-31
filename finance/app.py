@@ -65,10 +65,8 @@ def history():
     symbol = db.execute("SELECT symbol FROM registerbuy")
     shares = db.execute("SELECT shares FROM registerbuy")
     price = db.execute("SELECT price FROM registerbuy")
-    
-    """Show history of transactions"""
-    return apology("TODO")
-
+    transacted = db.execute("SELECT date FROM registerbuy")
+    return render_template("history.html", symbol=symbol, shares=shares, price=price, transacted=transacted)
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
@@ -161,5 +159,3 @@ def sell():
               return apology("No shares", 400)
         db.execute("UPDATE cash FROM users VALUE cash = cash - ?", shares)
         return redirect("/")
-    """Sell shares of stock"""
-    return apology("TODO")
