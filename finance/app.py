@@ -43,8 +43,20 @@ def index():
     session["user_id"])
     cash = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
     index = []
+    total_value = cash
     for stock in Stocks:
-        
+        quote = lookup(stock["symbol"])
+        item_total = quote["price"] * stock["total_shares"]
+        index.append({
+            "symbol": stock["symbol"],
+            "name": quote["name"],
+            "shares": stock["total_shares"],
+            "price": quote["price"],
+            "total": item_total
+        })
+        total_value += item_total
+    return render_template("index.html", )
+
 
 @app.route("/buy", methods=["GET", "POST"])
 @login_required
