@@ -35,7 +35,12 @@ def after_request(response):
 @login_required
 def index():
     Stock = db.execute("
-    SELECT symbol,                    )
+    SELECT symbol, SUM(shares) as Total_Sum
+    FROM registerbuy
+    WHERE user_id = ?
+    GROUP BY symbol
+    HAVING Total_Sum < 0",
+    session["user_id"])
 
 @app.route("/buy", methods=["GET", "POST"])
 @login_required
