@@ -75,8 +75,9 @@ def buy():
                    return apology("Fondo insuficientes", 400)
         db.execute("UPDATE users GET cash = cash - ? WHERE id = ?",cost, session["user_id"])
         db.execute("INSERT INTO registerbuy (user_id, precio, shares, symbol, date) VALUES (?, ? , ?, ?, CURRENT_TIMESTAMP)", session["user_id"], stock["price"], int(shares), symbol)
-
-        
+        return redirect("/")
+    else:
+         render_template("buy.html")
 
 
 @app.route("/history")
