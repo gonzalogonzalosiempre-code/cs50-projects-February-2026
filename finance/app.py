@@ -135,7 +135,7 @@ def register():
     if request.method == "POST":
         username = request.form.get("username")
         password = request.form.get("password")
-        confirmation = request.form.get("Confirmation")
+        confirmation = request.form.get("confirmation")
         if not username or not password or not confirmation:
             return apology("todos los datos son obligatorios", 400)
         if password != confirmation:
