@@ -153,8 +153,8 @@ def sell():
     if request.form == "POST":
         symbol = request.form.get("symbol")
         shares = db.execute("SELECT shares FROM registerbuy WHERE symbol = ?", symbol)
-        if not int(shares or not symbol:
+        if not int(shares) or not symbol:
               return apology("No shares", 400)
-
+        db.execute(")
     """Sell shares of stock"""
     return apology("TODO")
