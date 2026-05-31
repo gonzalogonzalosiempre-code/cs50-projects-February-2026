@@ -34,13 +34,8 @@ def after_request(response):
 @app.route("/")
 @login_required
 def index():
-    symbol = db.execute("SELECT symbol FROM registerbuy")
-    shares = db.execute("SELECT shares FROM registerbuy")
-    price = db.execute("SELECT precio FROM registerbuy")
-    stock = lookup(symbol)
-    user_cost = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
-    Total = user_cost + int(stock)
-    return render_template("index.html", symbol=symbol, shares=shares,price=price, Total=Total)
+    Stock = db.execute("
+    SELECT symbol,                    )
 
 @app.route("/buy", methods=["GET", "POST"])
 @login_required
