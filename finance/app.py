@@ -144,7 +144,7 @@ def register():
         try:
             db.execute("INSERT INTO users (username, hash) VALUES (? , ?)", username, hash)
         except:
-            return apology("Nombre de Usuario ya existe", 400)
+               return apology("Nombre de Usuario ya existe", 400)
         return redirect("/")
     else:
         return render_template("register.html")
