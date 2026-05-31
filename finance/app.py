@@ -62,6 +62,9 @@ def buy():
 @app.route("/history")
 @login_required
 def history():
+    symbol = db.execute("SELECT symbol FROM registerbuy")
+    shares = db.execute("SELECT shares FROM registerbuy")
+    price = db.execute("SELECT price FROM registerbuy")
     
     """Show history of transactions"""
     return apology("TODO")
