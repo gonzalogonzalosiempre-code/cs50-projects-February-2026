@@ -140,7 +140,7 @@ def register():
             return apology("todos los datos son obligatorios", 400)
         if password != confirmation:
             return apology("Contraseña no confirmada", 400)
-        hash = generate_password_hash("password")
+        hash = generate_password_hash(request.form.get("password"))
         try:
             db.execute("INSERT INTO users (username, hash) VALUES (?, ?)", username, hash)
         except:
