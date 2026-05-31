@@ -55,7 +55,7 @@ def index():
             "total": item_total
         })
         total_value += item_total
-    return render_template("index.html", )
+    return render_template("index.html", index=index, cash=cash, )
 
 
 @app.route("/buy", methods=["GET", "POST"])
