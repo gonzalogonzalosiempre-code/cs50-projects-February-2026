@@ -180,3 +180,5 @@ def sell():
               return apology("No shares", 400)
         db.execute("UPDATE cash FROM users VALUE cash = cash - ?", shares)
         return redirect("/")
+    else:
+         return render_template("sell.html")
