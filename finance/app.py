@@ -54,7 +54,7 @@ def index():
             "price": quote["price"],
             "total": item_total
         })
-        total_value += item_total
+    total_value += item_total
     return render_template("index.html", index=index, cash=cash, total_value=total_value )
 
 
@@ -79,7 +79,7 @@ def buy():
                        return apology("Cantidad debe ser un entero positivo", 400)
         except ValueError:
              return apology("Cantidad no válida", 400)
-        
+
         db.execute("UPDATE users GET cash = cash - ? WHERE id = ?",cost, session["user_id"])
         db.execute("INSERT INTO registerbuy (user_id, precio, shares, symbol, date) VALUES (?, ? , ?, ?, CURRENT_TIMESTAMP)", session["user_id"], stock["price"], int(shares), symbol)
         return redirect("/")
