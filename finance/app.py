@@ -77,7 +77,7 @@ def buy():
         db.execute("INSERT INTO registerbuy (user_id, precio, shares, symbol, date) VALUES (?, ? , ?, ?, CURRENT_TIMESTAMP)", session["user_id"], stock["price"], int(shares), symbol)
         return redirect("/")
     else:
-         render_template("buy.html")
+         return render_template("buy.html")
 
 
 @app.route("/history")
