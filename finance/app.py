@@ -84,7 +84,7 @@ def buy():
 @login_required
 def history():
     transactions = db.execute("""
-    SELECT symbol, shares, price, date
+    SELECT symbol, shares, precio, date
     FROM registerbuy
     WHERE user_id = ?
     ORDER BY date DESC""", session["user_id"])
