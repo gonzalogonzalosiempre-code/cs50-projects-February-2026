@@ -78,9 +78,8 @@ def buy():
         if not shares.isdigit() or int(shares) <= 0:
                    return apology("Numero negativo no admitido", 400)
         cost = int(shares) * stock["price"]
-        rows = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
-        cash = rows[0]["cash"]
-        if cash < cost:
+        user_cost = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
+        if user_cost < cost:
                    return apology("Fondo insuficientes", 400)
         db.execute("UPDATE users GET cash = cash - ? WHERE id = ?",cost, session["user_id"])
         db.execute("INSERT INTO registerbuy (user_id, precio, shares, symbol, date) VALUES (?, ? , ?, ?, CURRENT_TIMESTAMP)", session["user_id"], stock["price"], int(shares), symbol)
