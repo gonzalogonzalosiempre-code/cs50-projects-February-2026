@@ -73,17 +73,16 @@ def buy():
         symbol = request.form.get("symbol")
         stock = lookup(symbol)
         shares = request.form.get("shares")
-        shares_data = int(shares)
         if not stock:
                return apology("Symbolo inexistente", 400)
-        if shares_data.isdigit() or shares_data <= 0:
+        if not shares.isdigit() or int(shares) <= 0:
                    return apology("Numero negativo no admitido", 400)
-        cost = shares_data * stock["price"]
+        cost = int(shares) * stock["price"]
         user_cost = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])
         if user_cost < cost:
                    return apology("Fondo insuficientes", 400)
         db.execute("UPDATE users GET cash = cash - ? WHERE id = ?",cost, session["user_id"])
-        db.execute("INSERT INTO registerbuy (user_id, precio, shares, symbol, date) VALUES (?, ? , ?, ?, CURRENT_TIMESTAMP)", session["user_id"], stock["price"], shares_data, symbol)
+        db.execute("INSERT INTO registerbuy (user_id, precio, shares, symbol, date) VALUES (?, ? , ?, ?, CURRENT_TIMESTAMP)", session["user_id"], stock["price"], int(shares), symbol)
         return redirect("/")
     else:
          return render_template("buy.html")
