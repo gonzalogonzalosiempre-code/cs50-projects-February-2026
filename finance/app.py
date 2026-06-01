@@ -143,12 +143,18 @@ def logout():
 @app.route("/quote", methods=["GET", "POST"])
 @login_required
 def quote():
-    if request.form == "POST":
-          symbol = request.form.get("symbol")
-          stock = lookup(symbol)
-          if not stock:
-                return apology("Simbolo inexistente", 400)
-          return render_template("quoted.html", stock=stock)
+    if request.method == "POST":
+        symbol = request.form.get("symbol")
+
+        if not symbol:
+            return apology("Debe ingresar un símbolo", 400)
+
+        stock = lookup(symbol)
+
+        if stock is None:
+            return apology("Símbolo inválido", 400)
+
+        return render_template("quoted.html", stock=stock)
     else:
         return render_template("quote.html")
 
