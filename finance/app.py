@@ -83,11 +83,12 @@ def buy():
 @app.route("/history")
 @login_required
 def history():
-    symbol = db.execute("SELECT symbol FROM registerbuy")
-    shares = db.execute("SELECT shares FROM registerbuy")
-    price = db.execute("SELECT price FROM registerbuy")
-    transacted = db.execute("SELECT date FROM registerbuy")
-    return render_template("history.html", symbol=symbol, shares=shares, price=price, transacted=transacted)
+    transactions = db.execute("""
+    SELECT symbol, shares, price, date
+    FROM registerbuy
+    WHERE user_id = ?
+    ORDER BY date DESC""", session["user_id"])
+    return render_template("history.html", transactions=transactions)
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
