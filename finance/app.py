@@ -34,28 +34,31 @@ def after_request(response):
 @app.route("/")
 @login_required
 def index():
-    Stocks = db.execute("""
-    SELECT symbol, SUM(shares) as Total_Sum
-    FROM registerbuy
-    WHERE user_id = ?
-    GROUP BY symbol
-    HAVING Total_Sum < 0""",
-    session["user_id"])
-    cash = db.execute("SELECT cash FROM users WHERE id = ?", session["user_id"])[0]["cash"]
-    index = []
+    # ... (tus consultas SQL de cash y stocks) ...
+
     total_value = cash
-    for stock in Stocks:
+    portfolio = []
+
+    for stock in stocks:
         quote = lookup(stock["symbol"])
-        item_total = quote["price"] * stock["total_shares"]
-        index.append({
+
+        # DEFINIR LA VARIABLE CLARAMENTE
+        item_price = quote["price"]
+        item_shares = stock["total_shares"]
+        item_total = item_price * item_shares  # <--- Asegúrate de que esta línea se ejecute siempre
+
+        portfolio.append({
             "symbol": stock["symbol"],
             "name": quote["name"],
-            "shares": stock["total_shares"],
-            "price": quote["price"],
+            "shares": item_shares,
+            "price": item_price,
             "total": item_total
         })
-    total_value += item_total
-    return render_template("index.html", index=index, cash=cash, total_value=total_value )
+
+        total_value += item_total
+
+    return render_template("index.html", portfolio=portfolio, cash=cash, total_value=total_value)
+
 
 
 @app.route("/buy", methods=["GET", "POST"])
